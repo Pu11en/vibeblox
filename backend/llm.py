@@ -30,6 +30,9 @@ def json_call(system, user, max_tokens=8000, extra=None, timeout=300):
         "messages": messages,
         "max_tokens": max_tokens,
         "temperature": 0.4,
+        # non-thinking mode: thinking burns the token budget and returns
+        # empty content on big prompts (same pattern as the proven z.ai bridge)
+        "thinking": {"type": "disabled"},
     }).encode()
     req = urllib.request.Request(f"{BASE}/chat/completions", data=payload, method="POST")
     req.add_header("Authorization", f"Bearer {API_KEY}")

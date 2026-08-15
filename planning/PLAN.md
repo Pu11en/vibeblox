@@ -1,6 +1,6 @@
-# Plan: The real Play2Build game
+# Plan: Play2Build — harness-first loop, gamified later
 
-**Status:** planning
+**Status:** awaiting approval
 
 ## Continuation
 
@@ -11,41 +11,52 @@
 ## Destination
 
 A usable Play2Build loop that runs in the harness first — pick an idea,
-answer A/B/C questions, get a precise plan, receive a real repo (later:
-deployed with a link). The Roblox game becomes the gamified shell on top,
-built only after the loop produces real results.
+answer A/B/C questions, get a precise plan, receive a real repo. The Roblox
+game becomes the gamified shell on top, built only after the loop produces
+real results.
 
 ## Success
 
-- Drew runs the loop in the harness and gets a real repo from a plan he
-  made with a few A/B/C answers (per session, verified). The Roblox
-  gamified layer is a later phase, not a prerequisite.
+- Drew runs the loop in the harness and gets a real repo from a few A/B/C
+  answers — already proven (3 real public repos). The gamified Roblox shell
+  is a later phase, not a prerequisite.
 
 ## Boundaries
 
-- In: the Play2Build game design and build route (game, factory, ideas feed, economy).
-- Out: the published-place infrastructure saga (the link works or it's handled in execution), and the Wayfinder planning folder at `~/main-projects/roblox/planning/` (closed, separate).
+- In: the loop (CLI + skill + factory), ideas, quality, later: deploy,
+  feed, gamified shell.
+- Out: the published-place infrastructure saga (separate P1), and the
+  Wayfinder planning folder (closed, separate).
 
 ## Map
 
-`0/1`
+`2/2 planning tickets`
 
-- ▶ [P-001 — Destination: what game are we building?](decisions/P-001-destination.md) — depends on: none
+- ✓ [P-001 — Destination](decisions/P-001-destination.md) — depends on: none
+- ✓ [P-002 — Post-build](decisions/P-002-post-build.md) — depends on: P-001
 
 ## Confirmed decisions
 
-- (none yet)
+- [P-001](decisions/P-001-destination.md): harness-first — loop as CLI +
+  skill, produce real results, gamify into Roblox later.
+- [P-002](decisions/P-002-post-build.md): repo link only for now;
+  deployment added when web-app ideas appear.
 
 ## Execution
 
-- (execution tickets appear after planning decisions support them)
+- ✓ [E-001 — Harness loop (CLI)](execution/E-001-harness-loop.md)
+- ✓ [E-002 — Skill (harness plugin)](execution/E-002-skill.md)
+- ○ [E-003 — Deploy web ideas](execution/E-003-deploy-web-ideas.md) — deferred
+- ○ [E-004 — Idea feed (repo-idealab)](execution/E-004-idea-feed.md) — deferred
+- ○ [E-005 — Gamified shell (Roblox)](execution/E-005-gamified-shell.md) — deferred
 
 ## Approval
 
-- Visual review: not ready
+- Visual review: ready
 - Build handoff: not authorized
 
 ## Now
 
-- Current: P-001 — Destination: what game are we building?
-- Next: settle P-001, then the next highest-leverage human decision
+- Current: human final review of the plan
+- Next: on approval — use the loop (E-001/E-002 are done; iterate with real
+  use, then E-003+ in order)

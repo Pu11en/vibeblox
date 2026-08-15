@@ -67,6 +67,7 @@ def pick_idea(ideas):
     for i, idea in enumerate(ideas, 1):
         print(f"  [{i:>2}] {idea['emoji']} {idea['name']} — {idea['description']}")
     print(f"  [{len(ideas) + 1:>2}] 🎲 Surprise me!")
+    print(f"  [ {0} ] ✍️  Type your own idea")
     while True:
         raw = input("> ").strip()
         if raw.isdigit():
@@ -76,15 +77,25 @@ def pick_idea(ideas):
             if n == len(ideas) + 1:
                 import random
                 return random.choice(ideas)
-        print(f"  (type a number 1-{len(ideas) + 1})")
+            if n == 0:
+                name = input("What do you want to build? ").strip()
+                if name:
+                    return {"id": "custom", "name": name,
+                            "description": f"A {name}, built from scratch by the workers."}
+        print(f"  (type a number 1-{len(ideas) + 1}, 0 to type your own)")
 
 
-def run(auto_idea=None, auto_answers=None):
+def run(auto_idea=None, auto_answers=None, auto_name=None):
     ideas = get("/api/ideas")["ideas"]
     questions = get("/api/questions")["questions"]
 
     if auto_idea:
-        idea = next((i for i in ideas if i["id"] == auto_idea), ideas[0])
+        if auto_idea == "custom":
+            name = auto_name or "Custom Project"
+            idea = {"id": "custom", "emoji": "✨", "name": name,
+                    "description": f"A {name}, built from scratch by the workers."}
+        else:
+            idea = next((i for i in ideas if i["id"] == auto_idea), ideas[0])
     else:
         idea = pick_idea(ideas)
 
@@ -132,11 +143,12 @@ def run(auto_idea=None, auto_answers=None):
 def main():
     load_env()
     ap = argparse.ArgumentParser()
-    ap.add_argument("--auto-idea", help="idea id for non-interactive runs")
+    ap.add_argument("--auto-idea", help="idea id for non-interactive runs ('custom' + --auto-name for any idea)")
+    ap.add_argument("--auto-name", help="name for --auto-idea custom")
     ap.add_argument("--auto-answers", nargs="+", help="a/b/c answers (one per question)")
     args = ap.parse_args()
     try:
-        return run(args.auto_idea, args.auto_answers)
+        return run(args.auto_idea, args.auto_answers, args.auto_name)
     except urllib.error.URLError as e:
         print(f"\n❌ Can't reach the factory at {BASE} — is backend/run.sh running? ({e})")
         return 1

@@ -200,7 +200,7 @@ def run_job(job):
         else:
             result, cost = None, 0.0
             last_err = None
-            for attempt in (1, 2):
+            for attempt in (1, 2, 3):
                 try:
                     result, cost = llm.json_call(system, user, max_tokens=12000,
                                                  extra=None if attempt == 1 else {
