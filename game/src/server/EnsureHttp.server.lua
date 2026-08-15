@@ -9,6 +9,9 @@ end)
 if ok then
 	print("[Play2Build] HTTP enabled at runtime")
 else
-	warn("[Play2Build] could not enable HTTP from script: " .. tostring(err)
-		.. " - turn on File > Game Settings > Security > Allow HTTP Requests")
+	warn(
+		"[Play2Build] could not enable HTTP from script: "
+			.. tostring(err)
+			.. " - turn on File > Game Settings > Security > Allow HTTP Requests"
+	)
 end

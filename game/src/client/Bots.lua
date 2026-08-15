@@ -29,10 +29,16 @@ local function hopLoop(i)
 	local bot = bots[i]
 	local base = bot.Position
 	while busy[i] and bot.Parent do
-		local up = TweenService:Create(bot, TweenInfo.new(0.3, Enum.EasingStyle.Quad, Enum.EasingDirection.Out),
-			{ Position = base + Vector3.new(0, 1.2, 0) })
-		local down = TweenService:Create(bot, TweenInfo.new(0.3, Enum.EasingStyle.Quad, Enum.EasingDirection.In),
-			{ Position = base })
+		local up = TweenService:Create(
+			bot,
+			TweenInfo.new(0.3, Enum.EasingStyle.Quad, Enum.EasingDirection.Out),
+			{ Position = base + Vector3.new(0, 1.2, 0) }
+		)
+		local down = TweenService:Create(
+			bot,
+			TweenInfo.new(0.3, Enum.EasingStyle.Quad, Enum.EasingDirection.In),
+			{ Position = base }
+		)
 		up:Play()
 		up.Completed:Wait()
 		if busy[i] then
@@ -63,8 +69,13 @@ function Bots.release(i)
 		hopTasks[i] = nil
 		local bot = bots[i]
 		if bot then
-			TweenService:Create(bot, TweenInfo.new(0.3),
-				{ Position = bot.Position + Vector3.new(0, -1.2, 0) }):Play()
+			TweenService
+				:Create(
+					bot,
+					TweenInfo.new(0.3),
+					{ Position = bot.Position + Vector3.new(0, -1.2, 0) }
+				)
+				:Play()
 		end
 	end
 end

@@ -2,7 +2,6 @@
 
 local ReplicatedStorage = game:GetService("ReplicatedStorage")
 
-
 local Config = require(ReplicatedStorage.Play2Build.Config)
 local UI = require(script.Parent.UI)
 local Tycoon = require(script.Parent.TycoonState)
@@ -50,14 +49,21 @@ function HUD.build(parent)
 		TextSize = 28,
 		TextColor3 = COLORS.green,
 	})
-	muteButton = UI.button(bar, "🔊", UDim2.fromScale(0.88, 0.1), UDim2.fromScale(0.09, 0.8), function()
-		local muted = Talk.toggle()
-		muteButton.Text = muted and "🔇" or "🔊"
-	end, { color = COLORS.panelDark, textSize = 26, radius = 10 })
+	muteButton = UI.button(
+		bar,
+		"🔊",
+		UDim2.fromScale(0.88, 0.1),
+		UDim2.fromScale(0.09, 0.8),
+		function()
+			local muted = Talk.toggle()
+			muteButton.Text = muted and "🔇" or "🔊"
+		end,
+		{ color = COLORS.panelDark, textSize = 26, radius = 10 }
+	)
 
 	toastStack = UI.new("Frame", parent, {
 		Position = UDim2.fromScale(0.02, 0.5),
-		Size = UDim2.new(0, 460, 0, 260),
+		Size = UDim2.fromOffset(460, 260),
 		BackgroundTransparency = 1,
 		ZIndex = 40,
 	})
@@ -71,11 +77,11 @@ end
 local toastCount = 0
 
 function HUD.toast(text, color)
-	toastCount += 1
+	toastCount = toastCount + 1
 	local slot = toastCount
 	local t = UI.frame(toastStack, {
-		Position = UDim2.new(0, 0, 0, (slot - 1) * 74),
-		Size = UDim2.new(0, 440, 0, 64),
+		Position = UDim2.fromOffset(0, (slot - 1) * 74),
+		Size = UDim2.fromOffset(440, 64),
 		BackgroundColor3 = color or COLORS.panel,
 		BackgroundTransparency = 0.1,
 		ZIndex = 50,
@@ -93,7 +99,13 @@ function HUD.toast(text, color)
 	})
 	task.spawn(function()
 		task.wait(4)
-		t:TweenSize(UDim2.fromScale(0, 0), Enum.EasingDirection.In, Enum.EasingStyle.Quad, 0.3, true)
+		t:TweenSize(
+			UDim2.fromScale(0, 0),
+			Enum.EasingDirection.In,
+			Enum.EasingStyle.Quad,
+			0.3,
+			true
+		)
 		task.wait(0.35)
 		t:Destroy()
 	end)

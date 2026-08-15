@@ -23,7 +23,12 @@ local activeBot = nil
 local startJobRemote = nil
 
 local STAGE_FRACTION = {
-	queued = 0.1, planning = 0.2, writing = 0.5, checking = 0.7, pushing = 0.9, done = 1,
+	queued = 0.1,
+	planning = 0.2,
+	writing = 0.5,
+	checking = 0.7,
+	pushing = 0.9,
+	done = 1,
 }
 
 local function show(page)
@@ -92,14 +97,19 @@ local function buildHub()
 		TextColor3 = COLORS.dim,
 		TextWrapped = true,
 	})
-	UI.button(p, "🗣️  ASK THE WORKERS", UDim2.fromScale(0.3, 0.48), UDim2.fromScale(0.4, 0.12),
+	UI.button(
+		p,
+		"🗣️  ASK THE WORKERS",
+		UDim2.fromScale(0.3, 0.48),
+		UDim2.fromScale(0.4, 0.12),
 		function()
 			show(page("ideas"))
-		end, { color = COLORS.pink, textSize = 34 })
-	UI.button(p, "🛒  SHOP", UDim2.fromScale(0.38, 0.66), UDim2.fromScale(0.24, 0.09),
-		function()
-			show(page("shop"))
-		end, { color = COLORS.panel, textSize = 26 })
+		end,
+		{ color = COLORS.pink, textSize = 34 }
+	)
+	UI.button(p, "🛒  SHOP", UDim2.fromScale(0.38, 0.66), UDim2.fromScale(0.24, 0.09), function()
+		show(page("shop"))
+	end, { color = COLORS.panel, textSize = 26 })
 	pages.hub = p
 end
 
@@ -121,15 +131,20 @@ local function buildIdeas()
 		TextColor3 = COLORS.text,
 		TextXAlignment = Enum.TextXAlignment.Left,
 	})
-	UI.button(p, "⬅ BACK", UDim2.fromScale(0.83, 0.025), UDim2.fromScale(0.12, 0.08),
-		function()
-			show(page("hub"))
-		end, { color = COLORS.panelDark, textSize = 22 })
-	UI.button(p, "🎲 SURPRISE ME", UDim2.fromScale(0.05, 0.14), UDim2.fromScale(0.2, 0.07),
+	UI.button(p, "⬅ BACK", UDim2.fromScale(0.83, 0.025), UDim2.fromScale(0.12, 0.08), function()
+		show(page("hub"))
+	end, { color = COLORS.panelDark, textSize = 22 })
+	UI.button(
+		p,
+		"🎲 SURPRISE ME",
+		UDim2.fromScale(0.05, 0.14),
+		UDim2.fromScale(0.2, 0.07),
 		function()
 			local pick = data.ideas[math.random(1, #data.ideas)]
 			startPlanning(pick)
-		end, { color = COLORS.gold, textSize = 20 })
+		end,
+		{ color = COLORS.gold, textSize = 20 }
+	)
 
 	local gridParent = UI.new("Frame", p, {
 		Position = UDim2.fromScale(0.05, 0.23),
@@ -210,10 +225,9 @@ local function buildQuestions()
 		Size = UDim2.fromScale(0.8, 0.5),
 		BackgroundTransparency = 1,
 	})
-	UI.button(p, "⬅ BACK", UDim2.fromScale(0.83, 0.88), UDim2.fromScale(0.12, 0.07),
-		function()
-			show(page("ideas"))
-		end, { color = COLORS.panelDark, textSize = 20 })
+	UI.button(p, "⬅ BACK", UDim2.fromScale(0.83, 0.88), UDim2.fromScale(0.12, 0.07), function()
+		show(page("ideas"))
+	end, { color = COLORS.panelDark, textSize = 20 })
 
 	local function drawQuestion(question, index)
 		title.Text = question.text
@@ -226,15 +240,21 @@ local function buildQuestions()
 		end
 		local y = 0
 		for _, opt in ipairs(question.options) do
-			local btn = UI.button(optionsFrame, opt.emoji .. "  " .. opt.label,
-				UDim2.fromScale(0.1, y), UDim2.fromScale(0.8, 0.26), function()
+			local btn = UI.button(
+				optionsFrame,
+				opt.emoji .. "  " .. opt.label,
+				UDim2.fromScale(0.1, y),
+				UDim2.fromScale(0.8, 0.26),
+				function()
 					currentAnswers[question.id] = { id = question.id, label = opt.label }
 					if index < #data.questions then
 						drawQuestion(data.questions[index + 1], index + 1)
 					else
 						startBuild()
 					end
-				end, { color = COLORS.panel, textSize = 30 })
+				end,
+				{ color = COLORS.panel, textSize = 30 }
+			)
 			UI.text(btn, {
 				Text = opt.description,
 				Position = UDim2.fromScale(0.02, 0.62),
@@ -245,7 +265,7 @@ local function buildQuestions()
 				TextColor3 = COLORS.dim,
 				TextWrapped = true,
 			})
-			y += 0.27
+			y = y + 0.27
 		end
 	end
 	p.drawQuestion = drawQuestion
@@ -362,14 +382,19 @@ local function buildDone()
 		TextSize = 44,
 		TextColor3 = COLORS.gold,
 	})
-	UI.button(p, "🎁  MAKE ANOTHER ONE", UDim2.fromScale(0.3, 0.66), UDim2.fromScale(0.4, 0.1),
+	UI.button(
+		p,
+		"🎁  MAKE ANOTHER ONE",
+		UDim2.fromScale(0.3, 0.66),
+		UDim2.fromScale(0.4, 0.1),
 		function()
 			show(page("ideas"))
-		end, { color = COLORS.pink, textSize = 30 })
-	UI.button(p, "🏠 HOME", UDim2.fromScale(0.4, 0.8), UDim2.fromScale(0.2, 0.08),
-		function()
-			show(page("hub"))
-		end, { color = COLORS.panel, textSize = 22 })
+		end,
+		{ color = COLORS.pink, textSize = 30 }
+	)
+	UI.button(p, "🏠 HOME", UDim2.fromScale(0.4, 0.8), UDim2.fromScale(0.2, 0.08), function()
+		show(page("hub"))
+	end, { color = COLORS.panel, textSize = 22 })
 	p.urlBox = urlBox
 	p.cashLabel = cashLabel
 	pages.done = p
@@ -400,14 +425,12 @@ local function buildFailed()
 		TextColor3 = COLORS.dim,
 		TextWrapped = true,
 	})
-	UI.button(p, "🔁 TRY AGAIN", UDim2.fromScale(0.3, 0.55), UDim2.fromScale(0.4, 0.1),
-		function()
-			show(page("ideas"))
-		end, { color = COLORS.panel, textSize = 28 })
-	UI.button(p, "🏠 HOME", UDim2.fromScale(0.4, 0.7), UDim2.fromScale(0.2, 0.08),
-		function()
-			show(page("hub"))
-		end, { color = COLORS.panelDark, textSize = 22 })
+	UI.button(p, "🔁 TRY AGAIN", UDim2.fromScale(0.3, 0.55), UDim2.fromScale(0.4, 0.1), function()
+		show(page("ideas"))
+	end, { color = COLORS.panel, textSize = 28 })
+	UI.button(p, "🏠 HOME", UDim2.fromScale(0.4, 0.7), UDim2.fromScale(0.2, 0.08), function()
+		show(page("hub"))
+	end, { color = COLORS.panelDark, textSize = 22 })
 	p.detail = detail
 	pages.failed = p
 end
@@ -429,10 +452,9 @@ local function buildShop()
 		TextSize = 44,
 		TextColor3 = COLORS.text,
 	})
-	UI.button(p, "⬅ BACK", UDim2.fromScale(0.83, 0.07), UDim2.fromScale(0.12, 0.08),
-		function()
-			show(page("hub"))
-		end, { color = COLORS.panelDark, textSize = 22 })
+	UI.button(p, "⬅ BACK", UDim2.fromScale(0.83, 0.07), UDim2.fromScale(0.12, 0.08), function()
+		show(page("hub"))
+	end, { color = COLORS.panelDark, textSize = 22 })
 
 	local function shopCard(y, emoji, name, price, desc, owned, buyFn)
 		local card = UI.frame(p, {
@@ -470,9 +492,14 @@ local function buildShop()
 			TextXAlignment = Enum.TextXAlignment.Left,
 			TextYAlignment = Enum.TextYAlignment.Top,
 		})
-		local btn = UI.button(card, "💰 " .. tostring(price),
-			UDim2.fromScale(0.72, 0.2), UDim2.fromScale(0.25, 0.6), buyFn,
-			{ color = COLORS.green, textSize = 26 })
+		local btn = UI.button(
+			card,
+			"💰 " .. tostring(price),
+			UDim2.fromScale(0.72, 0.2),
+			UDim2.fromScale(0.25, 0.6),
+			buyFn,
+			{ color = COLORS.green, textSize = 26 }
+		)
 		if owned then
 			btn.Text = "OWNED"
 			btn.BackgroundColor3 = COLORS.panelDark
@@ -480,24 +507,38 @@ local function buildShop()
 		return btn
 	end
 
-	shopCard(0.2, "👷", "Hire a Worker", Config.Economy.WorkerPrice,
-		"One more worker = one more project at the same time.", false, function()
+	shopCard(
+		0.2,
+		"👷",
+		"Hire a Worker",
+		Config.Economy.WorkerPrice,
+		"One more worker = one more project at the same time.",
+		false,
+		function()
 			if Tycoon.hireWorker() then
 				HUD.toast("Worker hired! 👷", COLORS.green)
 				show(page("shop"))
 			else
 				HUD.toast("Not enough cash! Finish a project! 🛠️", COLORS.danger)
 			end
-		end)
-	shopCard(0.44, "💰", "Cash Machine", Config.Economy.CashMachinePrice,
-		"Finishing a project earns DOUBLE cash.", false, function()
+		end
+	)
+	shopCard(
+		0.44,
+		"💰",
+		"Cash Machine",
+		Config.Economy.CashMachinePrice,
+		"Finishing a project earns DOUBLE cash.",
+		false,
+		function()
 			if Tycoon.buyCashMachine() then
 				HUD.toast("Cash machine installed! 💰", COLORS.gold)
 				show(page("shop"))
 			else
 				HUD.toast("Not enough cash! Finish a project! 🛠️", COLORS.danger)
 			end
-		end)
+		end
+	)
 	pages.shop = p
 end
 
@@ -512,8 +553,11 @@ end
 local function updateProgress(snap)
 	local b = page("building")
 	local frac = STAGE_FRACTION[snap.stage] or 0.1
-	TweenService:Create(b.bar, TweenInfo.new(0.6, Enum.EasingStyle.Quad, Enum.EasingDirection.Out),
-		{ Size = UDim2.fromScale(frac, 1) }):Play()
+	TweenService:Create(
+		b.bar,
+		TweenInfo.new(0.6, Enum.EasingStyle.Quad, Enum.EasingDirection.Out),
+		{ Size = UDim2.fromScale(frac, 1) }
+	):Play()
 	if snap.message and snap.message ~= "" then
 		b.status.Text = snap.message
 	end
@@ -564,8 +608,11 @@ function TerminalUI.onJobUpdate(snap)
 		d.cashLabel.Text = "💰 +" .. tostring(reward) .. " cash!"
 		show(d)
 		HUD.toast("Repo is live! 🎉", COLORS.green)
-		Talk.say("Your " .. (snap.idea or currentIdea and currentIdea.name or "project")
-			.. " is live! Go check it out!")
+		Talk.say(
+			"Your "
+				.. (snap.idea or currentIdea and currentIdea.name or "project")
+				.. " is live! Go check it out!"
+		)
 		return
 	end
 	if snap.state == "failed" then

@@ -73,12 +73,22 @@ function UI.button(parent, text, position, size, onClick, opts)
 	UI.stroke(b, opts.stroke or COLORS.dim, opts.strokeThickness or 1)
 
 	b.MouseEnter:Connect(function()
-		b:TweenSize(UDim2.fromScale(b.Size.X.Scale * 1.03, b.Size.Y.Scale * 1.03),
-			Enum.EasingDirection.Out, Enum.EasingStyle.Quad, 0.12, true)
+		b:TweenSize(
+			UDim2.fromScale(b.Size.X.Scale * 1.03, b.Size.Y.Scale * 1.03),
+			Enum.EasingDirection.Out,
+			Enum.EasingStyle.Quad,
+			0.12,
+			true
+		)
 	end)
 	b.MouseLeave:Connect(function()
-		b:TweenSize(UDim2.fromScale(b.Size.X.Scale / 1.03, b.Size.Y.Scale / 1.03),
-			Enum.EasingDirection.Out, Enum.EasingStyle.Quad, 0.12, true)
+		b:TweenSize(
+			UDim2.fromScale(b.Size.X.Scale / 1.03, b.Size.Y.Scale / 1.03),
+			Enum.EasingDirection.Out,
+			Enum.EasingStyle.Quad,
+			0.12,
+			true
+		)
 	end)
 	if onClick then
 		b.Activated:Connect(onClick)

@@ -23,7 +23,7 @@ local function emit()
 end
 
 function Tycoon.addCash(amount)
-	Tycoon.cash += amount
+	Tycoon.cash = Tycoon.cash + amount
 	emit()
 end
 
@@ -43,7 +43,7 @@ function Tycoon.hireWorker()
 	if not Tycoon.spend(Config.Economy.WorkerPrice) then
 		return false
 	end
-	Tycoon.workers += 1
+	Tycoon.workers = Tycoon.workers + 1
 	emit()
 	return true
 end

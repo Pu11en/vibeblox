@@ -1,0 +1,6 @@
+std = "roblox"
+
+[lints]
+# selene 0.29's roblox std snapshot is older than the live API
+# (e.g. TextToSpeechService is missing) - don't flag GetService("...")
+incorrect_standard_library_use = "allow"

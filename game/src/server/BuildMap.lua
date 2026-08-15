@@ -49,7 +49,13 @@ function BuildMap.build()
 	part("Floor", map, Vector3.new(64, 1, 44), Vector3.new(0, -0.5, 0), NIGHT_BLUE)
 
 	-- Spawn pad + SpawnLocation so players ALWAYS appear on solid ground
-	local _spawnPad = part("SpawnPad", map, Vector3.new(8, 0.4, 8), Vector3.new(0, 0.4, 0), Color3.fromRGB(40, 44, 84))
+	local _spawnPad = part(
+		"SpawnPad",
+		map,
+		Vector3.new(8, 0.4, 8),
+		Vector3.new(0, 0.4, 0),
+		Color3.fromRGB(40, 44, 84)
+	)
 	neon(map, CFrame.new(0, 0.8, 0), CYAN, Vector3.new(7.4, 0.15, 7.4), "SpawnRing")
 	local spawnLoc = Instance.new("SpawnLocation")
 	spawnLoc.Name = "SpawnLocation"
@@ -66,27 +72,65 @@ function BuildMap.build()
 	-- checkered tiles
 	for x = -30, 30, 6 do
 		for z = -20, 20, 6 do
-			local tile = part("Tile", map, Vector3.new(5.6, 1.02, 5.6),
-				Vector3.new(x, 0, z), (x + z) % 12 == 0 and TILE_A or TILE_B)
+			local tile = part(
+				"Tile",
+				map,
+				Vector3.new(5.6, 1.02, 5.6),
+				Vector3.new(x, 0, z),
+				(x + z) % 12 == 0 and TILE_A or TILE_B
+			)
 			tile.CanCollide = false
 		end
 	end
 	-- glowing rim
 	for x = -32, 32, 4 do
-		neon(map, CFrame.new(x, 1, -22) * CFrame.Angles(0, 0, math.rad(90)), CYAN, Vector3.new(4, 0.3, 0.3))
-		neon(map, CFrame.new(x, 1, 22) * CFrame.Angles(0, 0, math.rad(90)), CYAN, Vector3.new(4, 0.3, 0.3))
+		neon(
+			map,
+			CFrame.new(x, 1, -22) * CFrame.Angles(0, 0, math.rad(90)),
+			CYAN,
+			Vector3.new(4, 0.3, 0.3)
+		)
+		neon(
+			map,
+			CFrame.new(x, 1, 22) * CFrame.Angles(0, 0, math.rad(90)),
+			CYAN,
+			Vector3.new(4, 0.3, 0.3)
+		)
 	end
 	for z = -20, 20, 4 do
-		neon(map, CFrame.new(-32, 1, z) * CFrame.Angles(0, math.rad(90), 0), CYAN, Vector3.new(4, 0.3, 0.3))
-		neon(map, CFrame.new(32, 1, z) * CFrame.Angles(0, math.rad(90), 0), CYAN, Vector3.new(4, 0.3, 0.3))
+		neon(
+			map,
+			CFrame.new(-32, 1, z) * CFrame.Angles(0, math.rad(90), 0),
+			CYAN,
+			Vector3.new(4, 0.3, 0.3)
+		)
+		neon(
+			map,
+			CFrame.new(32, 1, z) * CFrame.Angles(0, math.rad(90), 0),
+			CYAN,
+			Vector3.new(4, 0.3, 0.3)
+		)
 	end
 
 	-- The kiosk (decorative - the real UI is a screen overlay)
 	part("Kiosk", map, Vector3.new(6, 4.5, 3), Vector3.new(0, 2.25, -8), Color3.fromRGB(34, 36, 66))
-	part("KioskScreen", map, Vector3.new(4.6, 2.6, 0.2), Vector3.new(0, 3.2, -6.45), CYAN, Enum.Material.Neon)
+	part(
+		"KioskScreen",
+		map,
+		Vector3.new(4.6, 2.6, 0.2),
+		Vector3.new(0, 3.2, -6.45),
+		CYAN,
+		Enum.Material.Neon
+	)
 
 	-- WELCOME signboard - big readable surface, both sides, tagline below
-	local signboard = part("WelcomeSign", map, Vector3.new(24, 3.6, 0.4), Vector3.new(0, 6.6, -9.5), Color3.fromRGB(24, 26, 52))
+	local signboard = part(
+		"WelcomeSign",
+		map,
+		Vector3.new(24, 3.6, 0.4),
+		Vector3.new(0, 6.6, -9.5),
+		Color3.fromRGB(24, 26, 52)
+	)
 	neon(map, CFrame.new(0, 8.45, -9.5), PINK, Vector3.new(24.6, 0.3, 0.5), "SignRim")
 	for i, face in ipairs({ Enum.NormalId.Front, Enum.NormalId.Back }) do
 		local gui = Instance.new("SurfaceGui")
@@ -116,7 +160,13 @@ function BuildMap.build()
 	-- little flags
 	for i, dx in ipairs({ -2, 0, 2 }) do
 		part("Pole", map, Vector3.new(0.2, 2.4, 0.2), Vector3.new(dx, 4.4, -12), WHITE)
-		local flag = part("Flag", map, Vector3.new(1.4, 0.8, 0.12), Vector3.new(dx + 0.8, 5.6, -12), i == 2 and CYAN or PINK)
+		local flag = part(
+			"Flag",
+			map,
+			Vector3.new(1.4, 0.8, 0.12),
+			Vector3.new(dx + 0.8, 5.6, -12),
+			i == 2 and CYAN or PINK
+		)
 		flag.CanCollide = false
 	end
 
@@ -126,26 +176,59 @@ function BuildMap.build()
 	bots.Parent = map
 	for i = 1, 3 do
 		local z = -12 + (i - 1) * 5
-		part("Pad" .. i, map, Vector3.new(3.4, 0.3, 3.4), Vector3.new(-22, 0.3, z), Color3.fromRGB(30, 32, 60))
+		part(
+			"Pad" .. i,
+			map,
+			Vector3.new(3.4, 0.3, 3.4),
+			Vector3.new(-22, 0.3, z),
+			Color3.fromRGB(30, 32, 60)
+		)
 		neon(map, CFrame.new(-22, 0.65, z), CYAN, Vector3.new(3, 0.1, 3), "PadRing" .. i)
-		local bot = part("Bot" .. i, bots, Vector3.new(1.4, 1.4, 1.4), Vector3.new(-22, 1.5, z), WHITE)
+		local bot =
+			part("Bot" .. i, bots, Vector3.new(1.4, 1.4, 1.4), Vector3.new(-22, 1.5, z), WHITE)
 		bot.CanCollide = false
-		local eye = part("Eye" .. i, bot, Vector3.new(0.5, 0.5, 0.2), Vector3.new(-22, 1.6, z + 0.8), CYAN, Enum.Material.Neon)
+		local eye = part(
+			"Eye" .. i,
+			bot,
+			Vector3.new(0.5, 0.5, 0.2),
+			Vector3.new(-22, 1.6, z + 0.8),
+			CYAN,
+			Enum.Material.Neon
+		)
 		eye.CanCollide = false
-		local hat = part("Hat" .. i, bot, Vector3.new(0.9, 0.4, 0.9), Vector3.new(-22, 2.5, z), GOLD)
+		local hat =
+			part("Hat" .. i, bot, Vector3.new(0.9, 0.4, 0.9), Vector3.new(-22, 2.5, z), GOLD)
 		hat.CanCollide = false
 	end
 
 	-- The repo vault - flashes green when a build lands
 	part("Vault", map, Vector3.new(5, 3.4, 4), Vector3.new(24, 1.7, 0), Color3.fromRGB(36, 38, 72))
-	local vaultDoor = part("VaultDoor", map, Vector3.new(3.4, 2.6, 0.2), Vector3.new(24, 1.7, -2.2), GREEN, Enum.Material.Neon)
+	local vaultDoor = part(
+		"VaultDoor",
+		map,
+		Vector3.new(3.4, 2.6, 0.2),
+		Vector3.new(24, 1.7, -2.2),
+		GREEN,
+		Enum.Material.Neon
+	)
 	vaultDoor.CanCollide = false
 
 	-- A few neon columns for vibes
 	for i, spot in ipairs({ { -26, 16 }, { 26, 16 }, { -26, -16 }, { 26, -16 } }) do
-		part("Column", map, Vector3.new(1.4, 8, 1.4),
-			Vector3.new(spot[1], 4, spot[2]), Color3.fromRGB(30, 32, 60))
-		neon(map, CFrame.new(spot[1], 8, spot[2]), i % 2 == 0 and PINK or CYAN, Vector3.new(1.6, 0.3, 1.6), "Cap")
+		part(
+			"Column",
+			map,
+			Vector3.new(1.4, 8, 1.4),
+			Vector3.new(spot[1], 4, spot[2]),
+			Color3.fromRGB(30, 32, 60)
+		)
+		neon(
+			map,
+			CFrame.new(spot[1], 8, spot[2]),
+			i % 2 == 0 and PINK or CYAN,
+			Vector3.new(1.6, 0.3, 1.6),
+			"Cap"
+		)
 	end
 end
 

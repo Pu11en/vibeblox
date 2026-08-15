@@ -11,3 +11,4 @@ game/build/
 
 # local state
 backend/publish_state.json
+game/Packages/

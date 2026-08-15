@@ -28,7 +28,12 @@ function IdeaService.boot()
 		if ok3 and ok4 then
 			ideasData = ideasJson.ideas
 			qData = questionsJson.questions
-			if type(ideasData) == "table" and #ideasData > 0 and type(qData) == "table" and #qData > 0 then
+			if
+				type(ideasData) == "table"
+				and #ideasData > 0
+				and type(qData) == "table"
+				and #qData > 0
+			then
 				cache = { ideas = ideasData, questions = qData }
 				print("[Play2Build] got " .. #ideasData .. " ideas from the factory")
 				return

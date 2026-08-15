@@ -29,7 +29,7 @@ function JobService.start(player, idea, answers)
 	local running = 0
 	for _, j in ipairs(mine) do
 		if not j.finished then
-			running += 1
+			running = running + 1
 		end
 	end
 	if running >= Config.MaxWorkers then
@@ -51,8 +51,13 @@ function JobService.start(player, idea, answers)
 	})
 
 	local ok, res = pcall(function()
-		return HttpService:PostAsync(Config.BackendUrl .. "/api/start", body,
-			Enum.HttpContentType.ApplicationJson, false, HEADERS)
+		return HttpService:PostAsync(
+			Config.BackendUrl .. "/api/start",
+			body,
+			Enum.HttpContentType.ApplicationJson,
+			false,
+			HEADERS
+		)
 	end)
 	if not ok then
 		jobUpdate():FireClient(player, {
@@ -70,10 +75,12 @@ function JobService.start(player, idea, answers)
 	local jobId = data.jobId
 	if not jobId then
 		jobUpdate():FireClient(player, {
-			state = "nope", stage = "nope",
+			state = "nope",
+			stage = "nope",
 			message = "The factory said something weird. Try again.",
 			detail = tostring(res),
-			repoUrl = nil, idea = idea.name or "",
+			repoUrl = nil,
+			idea = idea.name or "",
 		})
 		return
 	end
@@ -87,7 +94,10 @@ function JobService.start(player, idea, answers)
 			task.wait(Config.PollSeconds)
 			local ok2, res2 = pcall(function()
 				return HttpService:GetAsync(
-					Config.BackendUrl .. "/api/status?job=" .. jobId, false, HEADERS)
+					Config.BackendUrl .. "/api/status?job=" .. jobId,
+					false,
+					HEADERS
+				)
 			end)
 			if ok2 then
 				local snap = HttpService:JSONDecode(res2)

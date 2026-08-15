@@ -33,11 +33,10 @@ if not map or not map:FindFirstChild("Floor") then
 	floor.Color = Color3.fromRGB(30, 32, 60)
 	floor.Parent = Workspace
 end
-print("[Play2Build] map ready, parts: "
-	.. tostring(if map then #map:GetDescendants() + 1 else 1))
+print("[Play2Build] map ready, parts: " .. tostring(if map then #map:GetDescendants() + 1 else 1))
 
 -- Always land players on the pad, no matter what Roblox thinks a spawn is
-local function onCharacter(player, character)
+local function onCharacter(_player, character)
 	task.spawn(function()
 		local hrp = character:WaitForChild("HumanoidRootPart", 10)
 		if hrp then
@@ -64,7 +63,7 @@ for _, p in ipairs(Players:GetPlayers()) do
 end
 
 -- Client asks for idea cards + questions (server holds the fetched copy)
-fetchData.OnServerInvoke = function(player)
+fetchData.OnServerInvoke = function(_player)
 	return IdeaService.data()
 end
 
