@@ -62,12 +62,12 @@ def ask(prompt, options, key_map):
 
 def pick_idea(ideas):
     print("\n" + "=" * 50)
-    print("PLAY2BUILD — pick an idea and the workers will build it for real")
+    print("PLAY2BUILD — pick an idea. The workers build it for real.")
     print("=" * 50)
     for i, idea in enumerate(ideas, 1):
         print(f"  [{i:>2}] {idea['emoji']} {idea['name']} — {idea['description']}")
-    print(f"  [{len(ideas) + 1:>2}] 🎲 Surprise me!")
-    print(f"  [ {0} ] ✍️  Type your own idea")
+    print(f"  [{len(ideas) + 1:>2}] Surprise me")
+    print(f"  [ {0} ] Type your own idea")
     while True:
         raw = input("> ").strip()
         if raw.isdigit():
@@ -94,13 +94,13 @@ def run(auto_idea=None, auto_answers=None, auto_name=None, find_idea=False):
         card = idea_finder.find("fresh", 5)
         if not card:
             return 1
-        idea = {"id": "custom", "emoji": "💡", "name": card.get("name", "Idea"),
+        idea = {"id": "custom", "emoji": "", "name": card.get("name", "Idea"),
                 "description": card.get("pitch", "")}
-        print(f"\n💡 Idea Finder picked: {idea['name']}")
+        print(f"\nIdea Finder picked: {idea['name']}")
     elif auto_idea:
         if auto_idea == "custom":
             name = auto_name or "Custom Project"
-            idea = {"id": "custom", "emoji": "✨", "name": name,
+            idea = {"id": "custom", "emoji": "", "name": name,
                     "description": f"A {name}, built from scratch by the workers."}
         else:
             idea = next((i for i in ideas if i["id"] == auto_idea), ideas[0])
@@ -113,7 +113,7 @@ def run(auto_idea=None, auto_answers=None, auto_name=None, find_idea=False):
             idx = "abc".index(key)
             opt = q["options"][idx]
             answers.append({"id": q["id"], "label": opt["label"]})
-            print(f"\n{q['text']}\n  -> {key.upper()}. {opt['emoji']} {opt['label']}")
+            print(f"\n{q['text']}\n  -> {key.upper()}. {opt['label']}")
     else:
         key_map = {"a": "a", "b": "b", "c": "c"}
         for i, q in enumerate(questions, 1):
@@ -122,7 +122,7 @@ def run(auto_idea=None, auto_answers=None, auto_name=None, find_idea=False):
             opt = q["options"]["abc".index(chosen)]
             answers.append({"id": q["id"], "label": opt["label"]})
 
-    print(f"\n🚀 Starting: {idea['emoji']} {idea['name']}")
+    print(f"\nStarting: {idea['name']}")
     job = post("/api/start", {"idea": idea, "answers": answers, "playerName": "cli"})
     job_id = job["jobId"]
 
@@ -139,12 +139,12 @@ def run(auto_idea=None, auto_answers=None, auto_name=None, find_idea=False):
             last_stage = stage
         if snap["state"] == "done":
             print("\n" + "=" * 50)
-            print(f"🎉 DONE! Your repo is live: {snap['repoUrl']}")
+            print(f"Done. Repo: {snap['repoUrl']}")
             print(f"   cost: ${snap['costUsd']:.4f} | took {snap['elapsedMs'] / 1000:.0f}s")
             print("=" * 50)
             return 0
         if snap["state"] == "failed":
-            print(f"\n😵 Workers hit a snag: {snap.get('detail') or snap.get('message')}")
+            print(f"\nBuild failed: {snap.get('detail') or snap.get('message')}")
             return 1
 
 

@@ -119,7 +119,7 @@ def main():
     if not card:
         return 1
     print("\n" + "=" * 52)
-    print(f"💡 IDEA CARD — {card.get('name')}  (score {card.get('score')}/10, ~${card.get('cost', 0):.4f})")
+    print(f"IDEA CARD — {card.get('name')}  (score {card.get('score')}/10, cost ~${card.get('cost', 0):.4f})")
     print(f"   pitch:      {card.get('pitch')}")
     print(f"   why money:  {card.get('why_money')}")
     print(f"   fastest:    {card.get('fastest_path')}")

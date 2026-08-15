@@ -181,7 +181,7 @@ def run_job(job):
     try:
         system, user = build_prompt(job)
         _set(job, state="running", stage="planning",
-             message="Workers are thinking\u2026",
+             message="Planning",
              detail=f"Planning your {job['idea'].get('name', 'project')}")
 
         if ENGINE == "mock":
@@ -213,7 +213,7 @@ def run_job(job):
                     last_err = e
                     if attempt == 1:
                         _set(job, state="running", stage="planning",
-                             message="Workers are thinking harder\u2026", detail="")
+                             message="Planning (retry)", detail="")
             if result is None:
                 raise RuntimeError(f"the brain could not answer: {last_err}")
             summary = str(result.get("summary", "We will build it for you."))[:300]
@@ -222,7 +222,7 @@ def run_job(job):
                 raise RuntimeError("the brain sent no files")
 
         _set(job, state="running", stage="writing",
-             message="Workers are writing your code\u2026", detail=summary,
+             message="Writing code", detail=summary,
              costUsd=round(cost, 4))
 
         if project_dir.exists():
@@ -238,11 +238,11 @@ def run_job(job):
             p.write_text(str(f.get("content") or ""))
 
         _set(job, state="running", stage="checking",
-             message="Workers are checking it works\u2026", detail="")
+             message="Checking code", detail="")
         errors = validate(project_dir)
         if errors and ENGINE != "mock":
             _set(job, state="running", stage="checking",
-                 message="Hmm, something broke. Workers are fixing it\u2026", detail="")
+                 message="Checking code (fixing)", detail="")
             try:
                 result2, cost2 = llm.json_call(
                     system, user, max_tokens=8000,
@@ -265,10 +265,10 @@ def run_job(job):
             raise RuntimeError("project did not pass checks: " + "; ".join(str(e)[:120] for e in errors[:3]))
 
         _set(job, state="running", stage="pushing",
-             message="Putting it on GitHub\u2026", detail="")
+             message="Pushing to GitHub", detail="")
         repo_url = push_to_github(project_dir, job, summary)
         _set(job, state="done", stage="done",
-             message="DONE! Your repo is live!", detail=repo_url, repoUrl=repo_url)
+             message="Done", detail=repo_url, repoUrl=repo_url)
     except Exception as e:
         traceback.print_exc()
-        _fail(job, "Something went wrong. Workers are sorry.", str(e)[:300])
+        _fail(job, "Build failed", str(e)[:300])

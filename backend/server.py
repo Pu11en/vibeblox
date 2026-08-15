@@ -124,7 +124,7 @@ class Handler(BaseHTTPRequestHandler):
             "player": str(body.get("playerName") or "player")[:40],
             "state": "queued",
             "stage": "queued",
-            "message": "Waiting for a worker\u2026",
+            "message": "Queued",
             "detail": "",
             "repoUrl": None,
             "costUsd": 0.0,
