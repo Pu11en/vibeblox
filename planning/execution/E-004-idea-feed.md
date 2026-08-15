@@ -1,13 +1,16 @@
-# E-004 — Idea feed (repo-idealab)
+# E-004 — Idea Finder (from GITBUTT pool)
 
-**Status:** wanted (Drew confirmed 2026-08-15) — behavior set by P-003
+**Status:** complete (MVP, proven 2026-08-15)
+**Depends on:** P-003
 
 ## Outcome
 
-`backend/ideas.py` gets its static list replaced by a feed from the
-repo-idealab channel so ideas are always fresh in both the CLI and the
-Roblox game (`/api/ideas` is the seam). P-003 decides curated vs automatic.
+`backend/idea_finder.py` — on-demand, money-scored idea cards from the
+GITBUTT repo pool (read-only sqlite). `cli.py --find-idea` runs finder +
+questions + build in one flow. Proven: "Open Worker" picked, built, pushed
+(10s, $0.0003). `--kind top` reuses gitbutt's ranked ideas.
 
 ## Next eligible
 
-E-005 — the gamified shell (Roblox game as the fancy front end).
+E-006 — Simulation & blueprint layer (diagram-design skill; hub + workspace
+visuals) — in progress.

@@ -31,11 +31,11 @@ real results.
 
 ## Map
 
-`2/3 planning tickets`
+`3/3 planning tickets`
 
 - ✓ [P-001 — Destination](decisions/P-001-destination.md) — depends on: none
 - ✓ [P-002 — Post-build](decisions/P-002-post-build.md) — depends on: P-001
-- ▶ [P-003 — The idea box](decisions/P-003-idea-box.md) — depends on: P-001
+- ✓ [P-003 — The idea box](decisions/P-003-idea-box.md) — depends on: P-001
 
 ## Confirmed decisions
 
@@ -43,13 +43,14 @@ real results.
   skill, produce real results, gamify into Roblox later.
 - [P-002](decisions/P-002-post-build.md): repo link only (deployment
   removed from the route, 2026-08-15).
-- (P-003 in progress)
+- [P-003](decisions/P-003-idea-box.md): on-demand, money-scored Idea Finder from the GITBUTT pool; not kid-friendly; nothing automatic.
 
 ## Execution
 
 - ✓ [E-001 — Harness loop (CLI)](execution/E-001-harness-loop.md)
 - ✓ [E-002 — Skill (harness plugin)](execution/E-002-skill.md)
-- ○ [E-004 — Idea feed (repo-idealab)](execution/E-004-idea-feed.md) — wanted; behavior from P-003
+- ✓ [E-004 — Idea Finder (GITBUTT pool)](execution/E-004-idea-feed.md) — proven end-to-end
+- ▶ [E-006 — Simulation & blueprint layer](execution/E-006-simulation-blueprint.md) — in progress
 - ○ [E-005 — Gamified shell (Roblox)](execution/E-005-gamified-shell.md) — confirmed wanted
 
 ## Approval
@@ -59,5 +60,5 @@ real results.
 
 ## Now
 
-- Current: P-003 — The idea box: where do ideas come from and how are they chosen?
-- Next: settle P-003, then continue deepening the plan
+- Current: E-006 — Simulation & blueprint layer (session UX)
+- Next: exercise the simulation with Drew; E-005 when real results accumulate

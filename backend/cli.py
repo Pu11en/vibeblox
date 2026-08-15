@@ -85,11 +85,19 @@ def pick_idea(ideas):
         print(f"  (type a number 1-{len(ideas) + 1}, 0 to type your own)")
 
 
-def run(auto_idea=None, auto_answers=None, auto_name=None):
+def run(auto_idea=None, auto_answers=None, auto_name=None, find_idea=False):
     ideas = get("/api/ideas")["ideas"]
     questions = get("/api/questions")["questions"]
 
-    if auto_idea:
+    if find_idea:
+        import idea_finder
+        card = idea_finder.find("fresh", 5)
+        if not card:
+            return 1
+        idea = {"id": "custom", "emoji": "💡", "name": card.get("name", "Idea"),
+                "description": card.get("pitch", "")}
+        print(f"\n💡 Idea Finder picked: {idea['name']}")
+    elif auto_idea:
         if auto_idea == "custom":
             name = auto_name or "Custom Project"
             idea = {"id": "custom", "emoji": "✨", "name": name,
@@ -146,9 +154,10 @@ def main():
     ap.add_argument("--auto-idea", help="idea id for non-interactive runs ('custom' + --auto-name for any idea)")
     ap.add_argument("--auto-name", help="name for --auto-idea custom")
     ap.add_argument("--auto-answers", nargs="+", help="a/b/c answers (one per question)")
+    ap.add_argument("--find-idea", action="store_true", help="run the Idea Finder first, then build its pick")
     args = ap.parse_args()
     try:
-        return run(args.auto_idea, args.auto_answers, args.auto_name)
+        return run(args.auto_idea, args.auto_answers, args.auto_name, args.find_idea)
     except urllib.error.URLError as e:
         print(f"\n❌ Can't reach the factory at {BASE} — is backend/run.sh running? ({e})")
         return 1

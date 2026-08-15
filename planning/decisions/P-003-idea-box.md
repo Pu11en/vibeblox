@@ -1,39 +1,35 @@
 # P-003 — The idea box: where do ideas come from and how are they chosen?
 
-**Status:** current (planning)
+**Status:** complete (confirmed by Drew, 2026-08-15)
 **Depends on:** P-001, P-002
 
-## Decision
+## Confirmed decision
 
-How idea cards arrive in the loop (CLI + future Roblox game) and who
-chooses them. Feeds execution ticket E-004 (idea feed from the
-repo-idealab channel — Drew confirmed 2026-08-15 that we DO want this).
+**On-demand Idea Finder, money-scored, not kid-friendly.** The idea source is
+the GITBUTT repo pool (the rebranded repo-idealab; DB at
+`~/main-projects/GITBUTT/data/repos.sqlite3`). Finding an idea is an explicit
+on-demand action (natural language or a short command — nothing automatic).
+Each find run scores candidates for **money potential + fastest go-to-market**
+with DeepSeek and returns an idea card: pitch, why it makes money, fastest
+path, content angle, starting-point repo. The card is the head start: humans
+articulate plans better from something real than from nothing. The game can
+later gamify grabbing an idea and starting work on it.
 
-## Context
+Drew's words (2026-08-15): "you review the channel's repos and figure out if
+the good ideas will be able to make money... research the best way to go to
+market or the fastest way to start making money with it"; "I don't want it to
+be fully automatic... it would be on demand"; "no it's not going to be kid
+friendly."
 
-- Today: 12 built-in kid-friendly cards + "type your own" + surprise me.
-- repo-idealab channel posts GitHub repos daily; Drew wants the game to
-  become that channel's front end — "there's always ideas coming."
-- Research (2026-08-15, codejunkie99/graph-engineering): a knowledge-graph
-  approach (entities + relationships + provenance) could organize the repo
-  feed into ideas. Concepts only — the package itself is Claude material
-  and is NOT installed (standing preference: no Claude configs).
-- Standing quality bar: "good repos, not junk" — the idea box should steer
-  toward quality.
+## Effect on the map
 
-## Viable options
-
-- A. **Agent-curated feed** — I review the channel's repos (when asked or
-  weekly) and turn the good ones into new kid-friendly idea cards; the
-  built-ins + custom ideas stay. Quality first, effort per batch.
-- B. **Fully automatic feed** — every channel repo becomes an idea card
-  automatically. Always fresh, zero curation, quality varies.
-- C. **Hybrid** — automatic feed plus a curated "channel picks" section.
-
-## Recommendation
-
-TBD after Drew's answer.
+- E-004 becomes the Idea Finder (built: `backend/idea_finder.py` +
+  `cli.py --find-idea`, proven end-to-end with a real repo).
+- Quality bar re-affirmed: real products, not quick junk ("10-60 second
+  repos" framing rejected — speed is fine, quality is the point).
+- Verification/junk-gates: later, not now (Drew: "we'll do that later").
 
 ## Completion check
 
-P-003 confirmed; E-004 updated with the chosen feed behavior.
+On-demand finder exists, scores for money + go-to-market, feeds the loop —
+proven with a live build.
