@@ -1,8 +1,8 @@
 # NEXT
 
 - Planning folder: /home/drewp/main-projects/roblox/play2build/planning/
-- Lifecycle: awaiting approval
-- Current action: human final review of the finished plan (Drew approves)
-- Files to load: PLAN.md, decisions/P-001-destination.md, decisions/P-002-post-build.md
-- Required outcome: Drew approves the plan for build
-- Completion test: PLAN.md status = approved for build; harness begins using the loop
+- Lifecycle: planning
+- Current action: settle P-003 — The idea box (ask Drew, record answer, update E-004)
+- Files to load: PLAN.md, decisions/P-003-idea-box.md
+- Required session outcome: P-003 confirmed and written into PLAN.md + E-004
+- Completion test: P-003 status = complete; E-004 describes the chosen feed behavior

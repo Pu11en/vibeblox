@@ -1,6 +1,6 @@
 # Plan: Play2Build — harness-first loop, gamified later
 
-**Status:** awaiting approval
+**Status:** planning
 
 ## Continuation
 
@@ -23,40 +23,41 @@ real results.
 
 ## Boundaries
 
-- In: the loop (CLI + skill + factory), ideas, quality, later: deploy,
-  feed, gamified shell.
-- Out: the published-place infrastructure saga (separate P1), and the
-  Wayfinder planning folder (closed, separate).
+- In: the loop (CLI + skill + factory), ideas (built-in + custom + feed),
+  quality, later: gamified shell.
+- Out: deployment (E-003 removed by Drew 2026-08-15), the published-place
+  infrastructure saga (separate P1), the Wayfinder planning folder (closed,
+  separate).
 
 ## Map
 
-`2/2 planning tickets`
+`2/3 planning tickets`
 
 - ✓ [P-001 — Destination](decisions/P-001-destination.md) — depends on: none
 - ✓ [P-002 — Post-build](decisions/P-002-post-build.md) — depends on: P-001
+- ▶ [P-003 — The idea box](decisions/P-003-idea-box.md) — depends on: P-001
 
 ## Confirmed decisions
 
 - [P-001](decisions/P-001-destination.md): harness-first — loop as CLI +
   skill, produce real results, gamify into Roblox later.
-- [P-002](decisions/P-002-post-build.md): repo link only for now;
-  deployment added when web-app ideas appear.
+- [P-002](decisions/P-002-post-build.md): repo link only (deployment
+  removed from the route, 2026-08-15).
+- (P-003 in progress)
 
 ## Execution
 
 - ✓ [E-001 — Harness loop (CLI)](execution/E-001-harness-loop.md)
 - ✓ [E-002 — Skill (harness plugin)](execution/E-002-skill.md)
-- ○ [E-003 — Deploy web ideas](execution/E-003-deploy-web-ideas.md) — deferred
-- ○ [E-004 — Idea feed (repo-idealab)](execution/E-004-idea-feed.md) — deferred
-- ○ [E-005 — Gamified shell (Roblox)](execution/E-005-gamified-shell.md) — deferred
+- ○ [E-004 — Idea feed (repo-idealab)](execution/E-004-idea-feed.md) — wanted; behavior from P-003
+- ○ [E-005 — Gamified shell (Roblox)](execution/E-005-gamified-shell.md) — confirmed wanted
 
 ## Approval
 
-- Visual review: ready
+- Visual review: not ready (planning continues)
 - Build handoff: not authorized
 
 ## Now
 
-- Current: human final review of the plan
-- Next: on approval — use the loop (E-001/E-002 are done; iterate with real
-  use, then E-003+ in order)
+- Current: P-003 — The idea box: where do ideas come from and how are they chosen?
+- Next: settle P-003, then continue deepening the plan
