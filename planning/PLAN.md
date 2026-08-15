@@ -10,11 +10,16 @@
 
 ## Destination
 
-To be decided — the shape of the game we plan to build (private polished game / public game / channel-fed game).
+A usable Play2Build loop that runs in the harness first — pick an idea,
+answer A/B/C questions, get a precise plan, receive a real repo (later:
+deployed with a link). The Roblox game becomes the gamified shell on top,
+built only after the loop produces real results.
 
 ## Success
 
-- To be decided with the destination (how we'll know the plan is right and the build is done).
+- Drew runs the loop in the harness and gets a real repo from a plan he
+  made with a few A/B/C answers (per session, verified). The Roblox
+  gamified layer is a later phase, not a prerequisite.
 
 ## Boundaries
 
