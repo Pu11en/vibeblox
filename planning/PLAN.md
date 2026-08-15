@@ -31,12 +31,13 @@ real results.
 
 ## Map
 
-`3/4 planning tickets`
+`4/5 planning tickets`
 
 - ✓ [P-001 — Destination](decisions/P-001-destination.md) — depends on: none
 - ✓ [P-002 — Post-build](decisions/P-002-post-build.md) — depends on: P-001
 - ✓ [P-003 — The idea box](decisions/P-003-idea-box.md) — depends on: P-001
-- ▶ [P-004 — Theme & MVP design (the whiteboard)](decisions/P-004-theme-mvp-design.md) — depends on: P-001
+- ✓ [P-004 — Theme & MVP design (the whiteboard)](decisions/P-004-theme-mvp-design.md) — depends on: P-001
+- ▶ [P-005 — The session flow & question set](decisions/P-005-session-flow.md) — depends on: P-004
 
 ## Confirmed decisions
 
@@ -61,5 +62,5 @@ real results.
 
 ## Now
 
-- Current: P-004 — Theme & MVP design (the whiteboard)
-- Next: settle P-004, then exercise the simulation
+- Current: P-005 — The session flow & question set
+- Next: settle the question set, then exercise the flow for real

@@ -24,16 +24,38 @@ so far by Drew (2026-08-15):
   media), using the existing `faceless-explainer` skill family as the
   engine.
 
-## Viable options (MVP scene scope)
+## Confirmed decision (Drew, 2026-08-15, option C + follow-up)
 
-- A. **Whiteboard only** — one player's board: idea blocks float in, grab
-  one, answer questions, finished builds appear as blocks. Hub/shop
-  deferred until the flow needs them.
-- B. **Whiteboard + hub** — include the shared hub (shop/tools) in the MVP
-  simulation now.
-- C. Other flow arrangement.
+**The session plugin is the sandbox; the flow comes first, the game last.**
+No fixed scene yet — the MVP is the session flow itself, text-based, and we
+validate it by using it to make real repos. Visuals are minimal (clear
+question + answer presentation now; plan visualization later). When the flow
+produces working repos first-time reliably, THEN gamify it into Roblox.
+
+- Theme ideas kept: whiteboard + floating blocks (diagram-design visual
+  language) — for the eventual game, not the MVP.
+- Philosophy: fun + real work; novel thing → test/brainstorm/be creative
+  with usefulness and efficiency; "fun enough that I don't realize I'm
+  building valuable software."
+- Money-first: ideas exist to make money; automations (graph engineering)
+  connect multiple builds per idea (outreach, video pipeline, landing
+  page); content repurposing is a default build type (faceless-explainer
+  family).
+- No decoration: describe only what's necessary to do the job.
+
+## The flow draft (session, text-based)
+
+1. Enter — "the whiteboard" (one functional line).
+2. Get an idea — Idea Finder (on demand) / card / custom / surprise.
+3. Plan — A/B/C questions (set TBD) → precise plain-language plan summary.
+4. Build — factory → real repo.
+5. Result — repo link + cost + time; block "added to the board".
+6. Next — another build for the same idea (the graph) or a new idea.
+
+Validation loop: every run logs time/cost/first-try-success; we tune
+questions, prompts, and flow from real use.
 
 ## Completion check
 
-Theme + MVP scene confirmed and written into E-005/E-006 and the play2build
-skill.
+Flow draft exists; question set settled (next); simulation narration uses
+the flow.
