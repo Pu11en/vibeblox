@@ -1,19 +1,15 @@
 # E-006 — Simulation & blueprint layer (session UX)
 
-**Status:** in progress
-**Depends on:** E-002 (skill), diagram-design skill (installed)
+**Status:** in progress — narration mode confirmed (Drew, 2026-08-15, option C)
+**Depends on:** E-002 (skill), diagram-design skill (installed, parked)
 
 ## Outcome
 
-When Drew "pretends to play" in the session: the plugin narrates the game
-scene in detail (hub, workspace, workers, vault — what the player sees at
-this moment), treats his inputs as in-game inputs, and renders the world as
-visuals:
-
-- HTML blueprints via the `diagram-design` skill (bird's-eye view of the
-  hub + a player's workspace; backend process flow; the plan in progress).
-- Rich written narration as fallback ("an AI writing it all out").
-- Each input/output pair mirrors what the real game would show.
+When Drew "pretends to play" in the session, the plugin **narrates the game
+scene in detail** — what the player sees at this moment (hub, workspace,
+workers, vault) — and treats his inputs as in-game inputs. Rich written
+narration is the mode; HTML blueprints via `diagram-design` are deferred
+(Drew: "narration only for now, visuals later").
 
 ## Next eligible
 
