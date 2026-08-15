@@ -1,0 +1,28 @@
+# Idea cards shown in the game. Kid-friendly, caveman-simple.
+# Each: id (slug), name (short), emoji, description (one plain sentence).
+IDEAS = [
+    {"id": "snake-game", "name": "Snake Game", "emoji": "🐍",
+     "description": "A classic snake game. Eat food, get long, don't hit yourself."},
+    {"id": "cookie-clicker", "name": "Cookie Clicker", "emoji": "🍪",
+     "description": "Click cookies. Get more cookies. Numbers go up."},
+    {"id": "quiz-bot", "name": "Quiz Bot", "emoji": "❓",
+     "description": "A robot that asks you questions and says if you got it right."},
+    {"id": "mad-libs", "name": "Mad Libs", "emoji": "📝",
+     "description": "Type silly words. Get a silly story back."},
+    {"id": "rock-paper-scissors", "name": "Rock Paper Scissors", "emoji": "✊",
+     "description": "Play rock, paper, scissors against the computer."},
+    {"id": "cat-facts", "name": "Cat Facts", "emoji": "🐱",
+     "description": "Press a button. Get a cat fact. That's it. That's the whole thing."},
+    {"id": "pet-rock", "name": "Pet Rock", "emoji": "🪨",
+     "description": "A pet rock. Feed it, play with it, put it to sleep."},
+    {"id": "dice-roller", "name": "Dice Roller", "emoji": "🎲",
+     "description": "Roll dice. See numbers. Random fun."},
+    {"id": "to-do-list", "name": "To-Do List", "emoji": "✅",
+     "description": "Keep a list of things to do. Cross them off. Feel great."},
+    {"id": "pixel-art", "name": "Pixel Art Maker", "emoji": "🎨",
+     "description": "Make little pictures out of colored squares."},
+    {"id": "number-guesser", "name": "Number Guesser", "emoji": "🎯",
+     "description": "Computer picks a secret number. You guess it."},
+    {"id": "countdown-timer", "name": "Countdown Timer", "emoji": "⏰",
+     "description": "Set a timer and watch it count down. Tick tock."},
+]

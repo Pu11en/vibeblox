@@ -1,0 +1,40 @@
+{
+  "name": "Play2Build",
+  "tree": {
+    "$className": "DataModel",
+    "ServerScriptService": {
+      "$className": "ServerScriptService",
+      "Play2Build": {
+        "$path": "src/server"
+      }
+    },
+    "ReplicatedStorage": {
+      "$className": "ReplicatedStorage",
+      "Play2Build": {
+        "$path": "src/shared"
+      }
+    },
+    "StarterPlayer": {
+      "$className": "StarterPlayer",
+      "StarterPlayerScripts": {
+        "$className": "StarterPlayerScripts",
+        "Play2Build": {
+          "$path": "src/client"
+        }
+      }
+    },
+    "Workspace": {
+      "$className": "Workspace"
+    },
+    "Lighting": {
+      "$className": "Lighting",
+      "$properties": {
+        "Ambient": [0.55, 0.55, 0.65],
+        "OutdoorAmbient": [0.6, 0.6, 0.7],
+        "Brightness": 1.6,
+        "ClockTime": 14.5,
+        "FogEnd": 400
+      }
+    }
+  }
+}

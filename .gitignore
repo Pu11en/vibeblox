@@ -1,0 +1,13 @@
+# secrets - never commit
+backend/.env
+
+# python
+__pycache__/
+*.pyc
+backend/jobs/
+
+# builds (rojo serve is the source of truth)
+game/build/
+
+# local state
+backend/publish_state.json
