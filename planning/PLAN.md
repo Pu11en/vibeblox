@@ -54,6 +54,8 @@ real results.
 - ✓ [E-004 — Idea Finder (GITBUTT pool)](execution/E-004-idea-feed.md) — proven end-to-end
 - ▶ [E-006 — Simulation & blueprint layer](execution/E-006-simulation-blueprint.md) — in progress
 - ○ [E-005 — Gamified shell (Roblox)](execution/E-005-gamified-shell.md) — confirmed wanted
+- ○ [E-007 — Runtime verification](execution/E-007-runtime-verification.md) — proposed next
+- ○ [E-008 — Node/feature-graph architecture](execution/E-008-node-graph-architecture.md) — solves the size limit
 
 ## Approval
 
