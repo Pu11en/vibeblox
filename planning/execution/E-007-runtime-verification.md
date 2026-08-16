@@ -1,6 +1,6 @@
 # E-007 — Runtime verification (the "works first time" gate)
 
-**Status:** pending (proposed next build)
+**Status:** complete (2026-08-15)
 **Depends on:** E-001
 
 ## Outcome
@@ -16,8 +16,11 @@ checks:
    file and it runs in the sandbox.
 4. **Human acceptance**: Drew runs/opens the repo — the final gate.
 
-Calibration step: test the verifier against known-good and known-broken
-builds so we trust what it catches.
+Calibration done: unit-tested good/crash/infinite-loop/server cases,
+shell-injection refusal, env scrub (keys never reach generated code), and a
+live proof — Invoice Generator's first draft crashed at runtime, the machine
+auto-fixed it, and it shipped (20s, $0.0008). Also fixed a CLI bug where the
+run-command print had escaped the done branch (bailed early on running jobs).
 
 ## Next eligible
 
