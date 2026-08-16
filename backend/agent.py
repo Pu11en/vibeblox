@@ -114,6 +114,100 @@ def validate(project_dir):
     return errors
 
 
+# ---------------------------------------------------------------- runtime check
+
+SAFE_RUNNERS = {"python3", "python", "node"}
+FORBIDDEN = set(";&|<>$`")
+
+
+def sanitize_run(run):
+    """Turn the brain's 'run' string into a safe argv list, or None."""
+    import shlex
+    if not run:
+        return None
+    try:
+        parts = shlex.split(run)
+    except ValueError:
+        return None
+    if not parts or parts[0] not in SAFE_RUNNERS:
+        return None
+    if any(ch in run for ch in FORBIDDEN):
+        return None
+    return parts
+
+
+def guess_run(project_dir):
+    """Fallback entry point when the brain gives no usable run command."""
+    for name in ("main.py", "app.py", "server.py", "cli.py", "run.py"):
+        if (project_dir / name).exists():
+            return ["python3", name]
+    py_files = list(project_dir.glob("*.py"))
+    if py_files:
+        return ["python3", py_files[0].name]
+    return None
+
+
+def is_server_cmd(argv):
+    joined = " ".join(argv)
+    return any(k in joined for k in
+               ("flask", "fastapi", "uvicorn", "http.server", "serve", "runserver"))
+
+
+SERVER_MARKERS = ("HTTPServer", "serve_forever", "Flask(", "app.run(",
+                  "FastAPI", "uvicorn", "http.server", "BaseHTTPRequestHandler")
+
+
+def is_server_project(project_dir):
+    """A server never exits - detect it from the code, not the run command."""
+    for f in project_dir.rglob("*.py"):
+        try:
+            text = f.read_text(errors="ignore")[:4000]
+        except OSError:
+            continue
+        if any(m in text for m in SERVER_MARKERS):
+            return True
+    return False
+
+
+def run_project(project_dir, run_cmd):
+    """Actually run the project. Returns (ok, note). Environment is scrubbed:
+    generated code must never see backend keys or the host shell env."""
+    argv = sanitize_run(run_cmd) or guess_run(project_dir)
+    if not argv:
+        return True, "no runnable entry point found - shipped without a run check"
+    clean_env = {
+        "PATH": os.environ.get("PATH", "/usr/bin:/bin"),
+        "HOME": str(project_dir),
+        "LANG": "C.UTF-8",
+        "TMPDIR": "/tmp",
+        "PYTHONDONTWRITEBYTECODE": "1",
+        "PYTHONUNBUFFERED": "1",
+    }
+    timeout = 25
+    try:
+        if is_server_cmd(argv) or is_server_project(project_dir):
+            proc = subprocess.Popen(argv, cwd=project_dir, env=clean_env,
+                                    stdout=subprocess.PIPE, stderr=subprocess.PIPE,
+                                    text=True)
+            try:
+                out, err = proc.communicate(timeout=6)
+                return False, f"server exited early: {err.strip()[:300] or out.strip()[:300]}"
+            except subprocess.TimeoutExpired:
+                proc.terminate()
+                return True, f"server stayed up ({' '.join(argv)})"
+        r = subprocess.run(argv, cwd=project_dir, env=clean_env,
+                           capture_output=True, text=True, timeout=timeout,
+                           input="y\ny\nn\nq\nquit\nexit\n")
+        if r.returncode == 0:
+            return True, f"ran ok ({' '.join(argv)})"
+        note = (r.stderr or r.stdout).strip()[-400:]
+        return False, f"run failed ({' '.join(argv)}): {note or 'exit %d' % r.returncode}"
+    except subprocess.TimeoutExpired:
+        return False, f"timed out after {timeout}s - possible infinite loop ({' '.join(argv)})"
+    except FileNotFoundError:
+        return True, f"runner not available ({argv[0]}) - skipped run check"
+
+
 # ---------------------------------------------------------------- git / github
 
 def _git(cwd, *args, timeout=120):
@@ -239,14 +333,19 @@ def run_job(job):
 
         _set(job, state="running", stage="checking",
              message="Checking code", detail="")
-        errors = validate(project_dir)
-        if errors and ENGINE != "mock":
+        run_cmd = (result or {}).get("run") if ENGINE != "mock" else "python3 main.py"
+        job["runCommand"] = str(run_cmd or "")
+        problems = validate(project_dir)
+        run_ok, run_note = run_project(project_dir, run_cmd)
+        if not run_ok:
+            problems.append(run_note)
+        if problems and ENGINE != "mock":
             _set(job, state="running", stage="checking",
                  message="Checking code (fixing)", detail="")
             try:
                 result2, cost2 = llm.json_call(
                     system, user, max_tokens=8000,
-                    extra={"the first attempt failed these checks": errors,
+                    extra={"the first attempt failed these checks": problems,
                            "instruction": "send the FIXED full file list again"})
                 files2 = result2.get("files")
                 if isinstance(files2, list) and files2:
@@ -258,11 +357,18 @@ def run_job(job):
                         p.parent.mkdir(parents=True, exist_ok=True)
                         p.write_text(str(f.get("content") or ""))
                     job["costUsd"] = round(job.get("costUsd", 0) + cost2, 4)
-                    errors = validate(project_dir)
+                    problems = validate(project_dir)
+                    run_ok2, run_note2 = run_project(
+                        project_dir, result2.get("run") or run_cmd)
+                    if not run_ok2:
+                        problems.append(run_note2)
+                    job["runCommand"] = str(result2.get("run") or run_cmd or "")
             except Exception:
                 traceback.print_exc()
-        if errors:
-            raise RuntimeError("project did not pass checks: " + "; ".join(str(e)[:120] for e in errors[:3]))
+        if problems:
+            raise RuntimeError("project did not pass checks: "
+                               + "; ".join(str(e)[:120] for e in problems[:3]))
+        print(f"[p2b] runtime check passed: {run_note}", flush=True)
 
         _set(job, state="running", stage="pushing",
              message="Pushing to GitHub", detail="")

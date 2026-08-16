@@ -140,6 +140,8 @@ def run(auto_idea=None, auto_answers=None, auto_name=None, find_idea=False):
         if snap["state"] == "done":
             print("\n" + "=" * 50)
             print(f"Done. Repo: {snap['repoUrl']}")
+        if snap.get("runCommand"):
+            print(f"Run: {snap['runCommand']}")
             print(f"   cost: ${snap['costUsd']:.4f} | took {snap['elapsedMs'] / 1000:.0f}s")
             print("=" * 50)
             return 0

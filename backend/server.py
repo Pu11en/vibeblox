@@ -68,6 +68,7 @@ def job_snapshot(job_id):
             "repoUrl": j.get("repoUrl"),
             "costUsd": j.get("costUsd", 0.0),
             "elapsedMs": elapsed,
+            "runCommand": j.get("runCommand", ""),
             "idea": j.get("idea", {}).get("name", ""),
         }
 
