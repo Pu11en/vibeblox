@@ -14,3 +14,4 @@ backend/publish_state.json
 game/Packages/
 ideafinder/.venv/
 ideafinder/**/__pycache__/
+backend/board.json

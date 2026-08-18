@@ -144,6 +144,8 @@ def run(auto_idea=None, auto_answers=None, auto_name=None, find_idea=False):
             answers.append({"id": q["id"], "text": q["text"], "label": opt["label"]})
 
     print(f"\nStarting: {idea['name']}")
+    import board
+    board_key = board.add_idea(idea)
     job = post("/api/start", {"idea": idea, "answers": answers, "playerName": "cli"})
     job_id = job["jobId"]
 
@@ -165,9 +167,23 @@ def run(auto_idea=None, auto_answers=None, auto_name=None, find_idea=False):
                 print(f"Run: {snap['runCommand']}")
             print(f"   cost: ${snap['costUsd']:.4f} | took {snap['elapsedMs'] / 1000:.0f}s")
             print("=" * 50)
+            import board
+            board.add_block(board_key, {
+                "name": idea["name"], "status": "done",
+                "repoUrl": snap.get("repoUrl"), "cost": snap.get("costUsd", 0),
+                "seconds": int((snap.get("elapsedMs") or 0) / 1000),
+                "answers": len(answers),
+            })
             return 0
         if snap["state"] == "failed":
             print(f"\nBuild failed: {snap.get('detail') or snap.get('message')}")
+            import board
+            board.add_block(board_key, {
+                "name": idea["name"], "status": "failed",
+                "cost": snap.get("costUsd", 0),
+                "seconds": int((snap.get("elapsedMs") or 0) / 1000),
+                "answers": len(answers),
+            })
             return 1
 
 
@@ -178,8 +194,13 @@ def main():
     ap.add_argument("--auto-name", help="name for --auto-idea custom")
     ap.add_argument("--auto-answers", nargs="+", help="a/b/c answers (one per question)")
     ap.add_argument("--find-idea", action="store_true", help="run the Idea Finder first, then build its pick")
+    ap.add_argument("--board", action="store_true", help="show the board (ideas + builds)")
     args = ap.parse_args()
     try:
+        if args.board:
+            import board
+            print(board.show())
+            return 0
         return run(args.auto_idea, args.auto_answers, args.auto_name, args.find_idea)
     except urllib.error.URLError as e:
         print(f"\n❌ Can't reach the factory at {BASE} — is backend/run.sh running? ({e})")
