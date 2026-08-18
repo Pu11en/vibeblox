@@ -1,14 +1,17 @@
-# E-004 — Idea Finder (from GITBUTT pool)
+# E-004 — Idea phase (gitbutt is the engine)
 
-**Status:** complete (MVP, proven 2026-08-15)
+**Status:** complete (2026-08-15)
 **Depends on:** P-003
 
 ## Outcome
 
-`backend/idea_finder.py` — on-demand, money-scored idea cards from the
-GITBUTT repo pool (read-only sqlite). `cli.py --find-idea` runs finder +
-questions + build in one flow. Proven: "Open Worker" picked, built, pushed
-(10s, $0.0003). `--kind top` reuses gitbutt's ranked ideas.
+The idea phase uses gitbutt's own MCP tools (status / digest /
+search_repos / build_ideas / top_ideas / rank_ideas) — on demand, nothing
+automatic. Proven end-to-end: gitbutt's top idea (Local Grammar Assistant,
+score 87.6) built through the loop -> real repo (11s, $0.0004).
+`backend/idea_finder.py` is demoted to a fallback (read-only DB access)
+for when gitbutt's tools are unavailable; `cli.py --find-idea` remains as
+the fallback path.
 
 ## Next eligible
 
