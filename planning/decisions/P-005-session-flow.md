@@ -10,19 +10,16 @@ used at the planning step. The flow draft lives in P-004; this ticket
 settles the open pieces: the question set, and anything the flow draft
 misses for MVP.
 
-## Viable options (question set)
+## Confirmed decision (Drew, 2026-08-15)
 
-- A. **Keep the 3 current questions** (size / language / fancy) — fastest,
-  already proven with real builds. Business info comes from the Idea
-  Finder card, not the questions.
-- B. **Money-first set** — add/replace with "who is this for?" / "how does
-  it make money?" — aligns questions with the goal, slower per run.
-- C. **Per-idea questions** — the brain proposes the questions per idea —
-  most flexible, least consistent.
+**No fixed question count.** The brain proposes 2-6 plain questions per
+idea (tailored: audience, platform, tracking style, scheduling,
+integrations...), each with 2-4 tappable options. The player can stop
+early ("build" / "done"). Static 3-question set remains only as a
+fallback when the brain is unreachable.
 
-## Recommendation
-
-TBD after Drew's answer.
+Proven: Habit Tracker Pro -> 5 tailored questions -> verified build ->
+real repo (16s, $0.0007).
 
 ## Completion check
 

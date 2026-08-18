@@ -77,21 +77,47 @@ Reply with ONLY one JSON object, no prose before or after. Shape:
 
 def build_prompt(job):
     idea = job["idea"]
-    answers = {}
+    lines = [f"Idea: {idea.get('name', 'a project')} — {idea.get('description', '')}"]
     for a in job["answers"]:
-        if isinstance(a, dict) and a.get("id"):
-            answers[a["id"]] = a.get("label") or a.get("choice") or ""
-    lines = [
-        f"Idea: {idea.get('name', 'a project')} — {idea.get('description', '')}",
-    ]
-    if answers.get("size"):
-        lines.append(f"Size: {answers['size'].lower()} (tiny=1 file-ish, medium=a few files, big=bigger)")
-    if answers.get("language"):
-        lines.append(f"Language: {answers['language'].lower()} (if 'workers pick', choose the best)")
-    if answers.get("fancy"):
-        lines.append(f"Look: {answers['fancy'].lower()} (simple=clean, nice=styled, fancy=polished)")
+        if isinstance(a, dict) and (a.get("label") or a.get("choice")):
+            q = a.get("text") or a.get("id") or "question"
+            lines.append(f"Planning answer — {q}: {a.get('label') or a.get('choice')}")
     user = "\n".join(lines)
     return SYSTEM_PROMPT, user
+
+
+
+# ---------------------------------------------------------------- planning questions
+
+QUESTIONS_SYSTEM = """You are the planning brain of a build machine. Given an
+idea, propose 2 to 6 plain questions that pin down exactly what to build so it
+can be built well in one pass. Requirements:
+- Each question: short, plain, elementary words. No emojis, no decoration.
+- Each question has 2 to 4 options; each option has a short label and a one-line
+  description. Options must be tappable (a letter), concrete, mutually distinct.
+- Ask what actually changes the build: scope, language, platform, integrations,
+  inputs/outputs, who it is for, what must work first. Do not pad with generic
+  questions when fewer are needed; do not stop early when more are needed.
+Reply with ONLY a JSON object:
+{"questions": [{"id": "q1", "text": "...", "options": [
+  {"id": "o1", "label": "...", "description": "..."}]}]}"""
+
+
+def generate_questions(idea):
+    """Brain-proposed planning questions for an idea (2-6). Falls back to the
+    static set if the brain fails."""
+    from questions import QUESTIONS
+    try:
+        result, _ = llm.json_call(
+            QUESTIONS_SYSTEM,
+            f"Idea: {idea.get('name')} — {idea.get('description', '')}",
+            max_tokens=1500)
+        qs = result.get("questions")
+        if isinstance(qs, list) and 1 <= len(qs) <= 8:
+            return qs
+    except Exception as e:
+        print(f"[p2b] question generation failed ({e}) - using static set", flush=True)
+    return QUESTIONS
 
 
 # ---------------------------------------------------------------- checks

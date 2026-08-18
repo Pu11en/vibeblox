@@ -48,16 +48,20 @@ def post(path, payload):
         return json.loads(r.read())
 
 
-def ask(prompt, options, key_map):
-    """Print options as A/B/C, read a line, return the chosen key."""
+def ask(prompt, options):
+    """Print options as A/B/C/D, read a line, return the option index.
+    'build' / 'done' / 'enough' / 'stop' ends the questions early (None)."""
+    keys = "abcd"[:len(options)]
     print("\n" + prompt)
     for key, label, desc in options:
-        print(f"  {key}. {label} — {desc}")
+        print(f"  {key.upper()}. {label} — {desc}")
     while True:
         answer = input("> ").strip().lower()
-        if answer in key_map:
-            return key_map[answer]
-        print(f"  (type one of: {', '.join(sorted(key_map))})")
+        if answer in ("build", "done", "enough", "stop"):
+            return None
+        if answer in keys:
+            return keys.index(answer)
+        print(f"  (type one of: {', '.join(k.upper() for k in keys)}, or 'build' to stop)")
 
 
 def pick_idea(ideas):
@@ -65,7 +69,7 @@ def pick_idea(ideas):
     print("PLAY2BUILD — pick an idea. The workers build it for real.")
     print("=" * 50)
     for i, idea in enumerate(ideas, 1):
-        print(f"  [{i:>2}] {idea['emoji']} {idea['name']} — {idea['description']}")
+        print(f"  [{i:>2}] {idea['name']} — {idea['description']}")
     print(f"  [{len(ideas) + 1:>2}] Surprise me")
     print(f"  [ {0} ] Type your own idea")
     while True:
@@ -107,20 +111,37 @@ def run(auto_idea=None, auto_answers=None, auto_name=None, find_idea=False):
     else:
         idea = pick_idea(ideas)
 
+    # brain-proposed questions for this idea (static set as fallback)
+    try:
+        req = urllib.request.Request(
+            BASE + "/api/questions/for-idea",
+            data=json.dumps({"idea": idea}).encode(), method="POST")
+        req.add_header("X-P2B-Secret", SECRET)
+        req.add_header("Content-Type", "application/json")
+        with urllib.request.urlopen(req, timeout=30) as r:
+            qdata = json.loads(r.read()).get("questions")
+        if isinstance(qdata, list) and qdata:
+            questions = qdata
+    except Exception:
+        pass  # static questions
+
     answers = []
     if auto_answers:
-        for q, key in zip(questions, auto_answers):
-            idx = "abc".index(key)
-            opt = q["options"][idx]
-            answers.append({"id": q["id"], "label": opt["label"]})
+        for i, q in enumerate(questions):
+            key = auto_answers[i] if i < len(auto_answers) else "a"
+            idx = "abcd".index(key)
+            opt = q["options"][min(idx, len(q["options"]) - 1)]
+            answers.append({"id": q["id"], "text": q["text"], "label": opt["label"]})
             print(f"\n{q['text']}\n  -> {key.upper()}. {opt['label']}")
     else:
-        key_map = {"a": "a", "b": "b", "c": "c"}
         for i, q in enumerate(questions, 1):
-            opts = [(k, o["label"], o["description"]) for k, o in zip("abc", q["options"])]
-            chosen = ask(f"Question {i} of {len(questions)}: {q['text']}", opts, key_map)
-            opt = q["options"]["abc".index(chosen)]
-            answers.append({"id": q["id"], "label": opt["label"]})
+            opts = [("abcd"[j], o["label"], o["description"]) for j, o in enumerate(q["options"])]
+            idx = ask(f"Question {i} of {len(questions)}: {q['text']}", opts)
+            if idx is None:
+                print("  (enough answers - building now)")
+                break
+            opt = q["options"][idx]
+            answers.append({"id": q["id"], "text": q["text"], "label": opt["label"]})
 
     print(f"\nStarting: {idea['name']}")
     job = post("/api/start", {"idea": idea, "answers": answers, "playerName": "cli"})

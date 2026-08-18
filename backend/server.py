@@ -95,6 +95,8 @@ class Handler(BaseHTTPRequestHandler):
             return self._send(200, {"ideas": IDEAS})
         if path == "/api/questions":
             return self._send(200, {"questions": QUESTIONS})
+
+
         if path == "/api/status":
             qs = urllib.parse.parse_qs(self.path.split("?", 1)[1])
             snap = job_snapshot(qs.get("job", [""])[0])
@@ -107,6 +109,17 @@ class Handler(BaseHTTPRequestHandler):
         if self.headers.get("X-P2B-Secret") != SECRET:
             return self._send(401, {"error": "bad secret"})
         path = self.path.split("?")[0]
+        if path == "/api/questions/for-idea":
+            length = int(self.headers.get("Content-Length", 0) or 0)
+            try:
+                body = json.loads(self.rfile.read(length) or b"{}")
+            except Exception:
+                return self._send(400, {"error": "bad json"})
+            idea = body.get("idea")
+            if not isinstance(idea, dict):
+                return self._send(400, {"error": "missing idea"})
+            return self._send(200, {"questions": agent.generate_questions(idea)})
+
         if path != "/api/start":
             return self._send(404, {"error": "no such route"})
         length = int(self.headers.get("Content-Length", 0) or 0)
