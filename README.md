@@ -1,4 +1,6 @@
-# Play2Build — the game where playing IS building
+# VibeBlox — plan-first build machine
+
+> Repo: https://github.com/Pu11en/vibeblox (public) · Local: `~/main-projects/roblox/play2build`
 
 You pick an idea card, answer three easy A/B/C questions with big buttons,
 and **real workers** (an AI brain on a real backend) write a real, working
