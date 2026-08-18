@@ -5,13 +5,12 @@
 
 ## Outcome
 
-The idea phase uses gitbutt's own MCP tools (status / digest /
-search_repos / build_ideas / top_ideas / rank_ideas) — on demand, nothing
-automatic. Proven end-to-end: gitbutt's top idea (Local Grammar Assistant,
-score 87.6) built through the loop -> real repo (11s, $0.0004).
-`backend/idea_finder.py` is demoted to a fallback (read-only DB access)
-for when gitbutt's tools are unavailable; `cli.py --find-idea` remains as
-the fallback path.
+The idea engine is now IN-project: `ideafinder/` (adapted copy of the
+GITBUTT engine; package name kept; original stays as the MCP plugin).
+Idea sources in order: gitbutt MCP tools -> ideafinder CLI (`uv run
+gitbutt scrape|summarize|generate|rank`) -> `backend/idea_finder.py`
+(read-only fallback). Proven end-to-end: gitbutt's top idea (Local
+Grammar Assistant, 87.6) built -> real repo (11s, $0.0004).
 
 ## Next eligible
 
