@@ -2,7 +2,7 @@
 local ReplicatedStorage = game:GetService("ReplicatedStorage")
 local TweenService = game:GetService("TweenService")
 
-local Config = require(ReplicatedStorage.Play2Build.Config)
+local Config = require(ReplicatedStorage.Vibeblox.Config)
 local UI = require(script.Parent.UI)
 local Tycoon = require(script.Parent.TycoonState)
 local HUD = require(script.Parent.HUD)
@@ -79,7 +79,7 @@ local function buildHub()
 		BackgroundTransparency = 1,
 	})
 	UI.text(p, {
-		Text = "PLAY2BUILD",
+		Text = "VIBEBLOX",
 		Position = UDim2.fromScale(0, 0.08),
 		Size = UDim2.fromScale(1, 0.2),
 		BackgroundTransparency = 1,

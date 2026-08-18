@@ -3,7 +3,7 @@
 local HttpService = game:GetService("HttpService")
 local ReplicatedStorage = game:GetService("ReplicatedStorage")
 
-local Config = require(ReplicatedStorage.Play2Build.Config)
+local Config = require(ReplicatedStorage.Vibeblox.Config)
 
 local IdeaService = {}
 
@@ -35,12 +35,12 @@ function IdeaService.boot()
 				and #qData > 0
 			then
 				cache = { ideas = ideasData, questions = qData }
-				print("[Play2Build] got " .. #ideasData .. " ideas from the factory")
+				print("[Vibeblox] got " .. #ideasData .. " ideas from the factory")
 				return
 			end
 		end
 	end
-	print("[Play2Build] factory unreachable - using built-in idea cards")
+	print("[Vibeblox] factory unreachable - using built-in idea cards")
 	cache = { ideas = Config.FallbackIdeas, questions = Config.FallbackQuestions }
 end
 

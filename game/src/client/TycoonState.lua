@@ -2,7 +2,7 @@
 -- Money is the fun part - the real reward is the repo.
 local ReplicatedStorage = game:GetService("ReplicatedStorage")
 
-local Config = require(ReplicatedStorage.Play2Build.Config)
+local Config = require(ReplicatedStorage.Vibeblox.Config)
 
 local Tycoon = {
 	cash = Config.Economy.StartCash,

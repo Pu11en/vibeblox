@@ -3,7 +3,7 @@ local ReplicatedStorage = game:GetService("ReplicatedStorage")
 local Players = game:GetService("Players")
 local Workspace = game:GetService("Workspace")
 
-local Remotes = require(ReplicatedStorage.Play2Build.Remotes)
+local Remotes = require(ReplicatedStorage.Vibeblox.Remotes)
 local IdeaService = require(script.Parent.IdeaService)
 local JobService = require(script.Parent.JobService)
 local BuildMap = require(script.Parent.BuildMap)
@@ -20,11 +20,11 @@ IdeaService.boot()
 -- and ALWAYS guarantee a floor under the spawn so nobody falls.
 local ok, err = pcall(BuildMap.build)
 if not ok then
-	warn("[Play2Build] map build failed: " .. tostring(err))
+	warn("[Vibeblox] map build failed: " .. tostring(err))
 end
 local map = Workspace:FindFirstChild("P2B_Map")
 if not map or not map:FindFirstChild("Floor") then
-	warn("[Play2Build] map missing - building emergency floor")
+	warn("[Vibeblox] map missing - building emergency floor")
 	local floor = Instance.new("Part")
 	floor.Name = "Floor"
 	floor.Anchored = true
@@ -33,7 +33,7 @@ if not map or not map:FindFirstChild("Floor") then
 	floor.Color = Color3.fromRGB(30, 32, 60)
 	floor.Parent = Workspace
 end
-print("[Play2Build] map ready, parts: " .. tostring(if map then #map:GetDescendants() + 1 else 1))
+print("[Vibeblox] map ready, parts: " .. tostring(if map then #map:GetDescendants() + 1 else 1))
 
 -- Always land players on the pad, no matter what Roblox thinks a spawn is
 local function onCharacter(_player, character)
@@ -73,4 +73,4 @@ startJob.OnServerEvent:Connect(function(player, idea, answers)
 end)
 
 BuildMap.build()
-print("[Play2Build] factory connected to the game")
+print("[Vibeblox] factory connected to the game")

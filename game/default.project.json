@@ -1,16 +1,16 @@
 {
-  "name": "Play2Build",
+  "name": "Vibeblox",
   "tree": {
     "$className": "DataModel",
     "ServerScriptService": {
       "$className": "ServerScriptService",
-      "Play2Build": {
+      "Vibeblox": {
         "$path": "src/server"
       }
     },
     "ReplicatedStorage": {
       "$className": "ReplicatedStorage",
-      "Play2Build": {
+      "Vibeblox": {
         "$path": "src/shared"
       }
     },
@@ -18,7 +18,7 @@
       "$className": "StarterPlayer",
       "StarterPlayerScripts": {
         "$className": "StarterPlayerScripts",
-        "Play2Build": {
+        "Vibeblox": {
           "$path": "src/client"
         }
       }

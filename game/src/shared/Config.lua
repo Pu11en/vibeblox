@@ -1,4 +1,4 @@
--- Play2Build shared config. THE TWO THINGS TO CHANGE:
+-- Vibeblox shared config. THE TWO THINGS TO CHANGE:
 --   BackendUrl -> the tunnel URL (or http://127.0.0.1:8000 while testing in Studio)
 --   Secret     -> must match P2B_SECRET in backend/.env
 

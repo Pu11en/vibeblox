@@ -1,6 +1,6 @@
 # VibeBlox — plan-first build machine
 
-> Repo: https://github.com/Pu11en/vibeblox (public) · Local: `~/main-projects/roblox/play2build`
+> Repo: https://github.com/Pu11en/vibeblox (public) · Local: `~/main-projects/vibeblox`
 
 You pick an idea card, answer three easy A/B/C questions with big buttons,
 and **real workers** (an AI brain on a real backend) write a real, working
@@ -33,7 +33,7 @@ Studio (Plugins tab → Rojo → Connect to `localhost:34872`).
 **Every session:**
 
 ```bash
-cd ~/main-projects/roblox/play2build
+cd ~/main-projects/vibeblox
 ./dev.sh          # starts factory + tunnel + live-sync server (safe to re-run)
 ```
 
@@ -59,7 +59,7 @@ The experience exists and is **released**: universe `10708566177`,
 place `133497593239683`, game link https://www.roblox.com/games/133497593239683
 
 ```bash
-cd ~/main-projects/roblox/play2build/backend
+cd ~/main-projects/vibeblox/backend
 ./tunnel.sh                          # print the https://xxx.trycloudflare.com URL
 ./publish.sh https://xxx.trycloudflare.com   # patches Config, builds, uploads
 ```

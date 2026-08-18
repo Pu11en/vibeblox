@@ -2,7 +2,7 @@
 local Players = game:GetService("Players")
 local ReplicatedStorage = game:GetService("ReplicatedStorage")
 
-local Remotes = require(ReplicatedStorage.Play2Build.Remotes)
+local Remotes = require(ReplicatedStorage.Vibeblox.Remotes)
 local HUD = require(script.Parent.HUD)
 local TerminalUI = require(script.Parent.TerminalUI)
 

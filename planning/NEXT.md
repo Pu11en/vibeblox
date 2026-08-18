@@ -1,6 +1,6 @@
 # NEXT
 
-- Planning folder: /home/drewp/main-projects/roblox/play2build/planning/
+- Planning folder: /home/drewp/main-projects/vibeblox/planning/
 - Lifecycle: planning
 - Current action: settle P-003 — The idea box (ask Drew, record answer, update E-004)
 - Files to load: PLAN.md, decisions/P-003-idea-box.md

@@ -40,7 +40,7 @@ build everything for you") is achieved.
 
 ## How to resume (Drew's side)
 
-1. WSL: `cd ~/main-projects/roblox/play2build && ./dev.sh`
+1. WSL: `cd ~/main-projects/vibeblox && ./dev.sh`
 2. Studio: Plugins → Rojo → Connect (localhost:34872)
 3. F5 to play, Esc+F5 to see changes.
 
@@ -53,7 +53,7 @@ Rotate the GitHub token someday: it was pasted in chat early on.
 
 ## Copy-paste prompt for the next session
 
-> Continue Play2Build in ~/main-projects/roblox/play2build (README.md +
+> Continue Play2Build in ~/main-projects/vibeblox (README.md +
 > HANDOFF.md). The dev loop works: ./dev.sh brings up factory + tunnel +
 > rojo serve; Drew's Studio is connected via the Rojo plugin; I edit Luau
 > here and he sees it live. P1: the published link

@@ -2,7 +2,7 @@
 
 local ReplicatedStorage = game:GetService("ReplicatedStorage")
 
-local Config = require(ReplicatedStorage.Play2Build.Config)
+local Config = require(ReplicatedStorage.Vibeblox.Config)
 local UI = require(script.Parent.UI)
 local Tycoon = require(script.Parent.TycoonState)
 local Talk = require(script.Parent.Talk)
@@ -22,7 +22,7 @@ function HUD.build(parent)
 		BackgroundTransparency = 0.15,
 	})
 	UI.text(bar, {
-		Text = "PLAY2BUILD",
+		Text = "VIBEBLOX",
 		Position = UDim2.fromScale(0.03, 0),
 		Size = UDim2.fromScale(0.25, 1),
 		BackgroundTransparency = 1,

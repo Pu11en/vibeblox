@@ -3,8 +3,8 @@ local HttpService = game:GetService("HttpService")
 local Players = game:GetService("Players")
 local ReplicatedStorage = game:GetService("ReplicatedStorage")
 
-local Config = require(ReplicatedStorage.Play2Build.Config)
-local Remotes = require(ReplicatedStorage.Play2Build.Remotes)
+local Config = require(ReplicatedStorage.Vibeblox.Config)
+local Remotes = require(ReplicatedStorage.Vibeblox.Remotes)
 
 local JobService = {}
 

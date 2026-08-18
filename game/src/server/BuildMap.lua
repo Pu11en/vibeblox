@@ -142,7 +142,7 @@ function BuildMap.build()
 		label.Size = UDim2.fromScale(0.94, 0.7)
 		label.Position = UDim2.fromScale(0.03, 0.05)
 		label.BackgroundTransparency = 1
-		label.Text = "👋 WELCOME TO PLAY2BUILD!"
+		label.Text = "👋 WELCOME TO VIBEBLOX!"
 		label.TextColor3 = Color3.fromRGB(255, 255, 255)
 		label.Font = Enum.Font.GothamBlack
 		label.TextScaled = true
