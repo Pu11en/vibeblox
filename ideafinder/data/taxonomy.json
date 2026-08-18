@@ -1,0 +1,182 @@
+[
+  {
+    "name": "self-hosted",
+    "definition": "Software run on your own infrastructure instead of third-party services.",
+    "related": [
+      "dashboard",
+      "monitoring",
+      "notes",
+      "productivity"
+    ]
+  },
+  {
+    "name": "ai",
+    "definition": "Artificial intelligence applications or models performing intelligent tasks.",
+    "related": [
+      "agents",
+      "automation",
+      "claude",
+      "framework"
+    ]
+  },
+  {
+    "name": "tool",
+    "definition": "Software utility to accomplish specific tasks.",
+    "related": [
+      "self-hosted",
+      "utility",
+      "ai",
+      "cli"
+    ]
+  },
+  {
+    "name": "claude",
+    "definition": "Anthropic's AI assistant; term refers to Claude-related projects.",
+    "related": [
+      "ai",
+      "skill",
+      "skills",
+      "automation"
+    ]
+  },
+  {
+    "name": "automation",
+    "definition": "Processes that operate automatically without human intervention.",
+    "related": [
+      "ai",
+      "self-hosted",
+      "cli",
+      "framework"
+    ]
+  },
+  {
+    "name": "cli",
+    "definition": "Command-line interface for interacting with software via text commands.",
+    "related": [
+      "tool",
+      "utility",
+      "automation",
+      "ai"
+    ]
+  },
+  {
+    "name": "productivity",
+    "definition": "Tools enhancing efficiency and workflow completion.",
+    "related": [
+      "self-hosted",
+      "notes",
+      "ai",
+      "tool"
+    ]
+  },
+  {
+    "name": "utility",
+    "definition": "Practical software for system maintenance or common tasks.",
+    "related": [
+      "tool",
+      "cli",
+      "self-hosted",
+      "productivity"
+    ]
+  },
+  {
+    "name": "library",
+    "definition": "Reusable code collections for developers.",
+    "related": [
+      "tool",
+      "self-hosted",
+      "ai",
+      "web"
+    ]
+  },
+  {
+    "name": "monitoring",
+    "definition": "Systems tracking performance, health, or activity.",
+    "related": [
+      "self-hosted",
+      "dashboard",
+      "cli",
+      "claude"
+    ]
+  },
+  {
+    "name": "skills",
+    "definition": "Capabilities or plugins extending an AI assistant's functionality.",
+    "related": [
+      "ai",
+      "claude",
+      "automation",
+      "ui"
+    ]
+  },
+  {
+    "name": "agents",
+    "definition": "Autonomous entities executing tasks on behalf of users.",
+    "related": [
+      "ai",
+      "framework",
+      "self-hosted",
+      "ui"
+    ]
+  },
+  {
+    "name": "dashboard",
+    "definition": "Visual interface displaying data and key metrics.",
+    "related": [
+      "self-hosted",
+      "monitoring",
+      "productivity",
+      "ui"
+    ]
+  },
+  {
+    "name": "ui",
+    "definition": "User interface components or designs for apps.",
+    "related": [
+      "ai",
+      "dashboard",
+      "agents",
+      "library"
+    ]
+  },
+  {
+    "name": "notes",
+    "definition": "Apps for capturing, organizing, and managing notes.",
+    "related": [
+      "self-hosted",
+      "productivity",
+      "ai",
+      "tool"
+    ]
+  },
+  {
+    "name": "web",
+    "definition": "Applications designed for web browsers.",
+    "related": [
+      "self-hosted",
+      "library",
+      "cli",
+      "framework"
+    ]
+  },
+  {
+    "name": "skill",
+    "definition": "A specific ability or plugin for AI assistants.",
+    "related": [
+      "claude",
+      "ai",
+      "ui",
+      "agents"
+    ]
+  },
+  {
+    "name": "framework",
+    "definition": "Foundational structure for building software applications.",
+    "related": [
+      "ai",
+      "agents",
+      "automation",
+      "web"
+    ]
+  }
+]

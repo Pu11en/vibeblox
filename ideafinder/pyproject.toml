@@ -1,0 +1,29 @@
+[build-system]
+requires = ["hatchling>=1.27,<2"]
+build-backend = "hatchling.build"
+
+[project]
+name = "gitbutt"
+version = "0.1.0"
+description = "ZCode plugin: @GithubAwesome repos become product ideas, driven by natural language"
+requires-python = ">=3.10"
+dependencies = [
+  "yt-dlp>=2026.7.4,<2027",
+  "httpx>=0.28,<1",
+  "mcp>=1.2,<2",
+]
+
+[project.optional-dependencies]
+dev = [
+  "pytest>=9,<10",
+  "ruff>=0.12,<1",
+]
+
+[project.scripts]
+gitbutt = "gitbutt.cli:main"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/gitbutt"]
+
+[tool.ruff]
+line-length = 100

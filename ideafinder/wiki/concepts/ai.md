@@ -1,0 +1,283 @@
+---
+title: ai
+created: 2026-08-01
+updated: 2026-08-01
+type: concept
+tags: [ai]
+sources: [generated from data/repos.sqlite3]
+---
+
+# ai
+
+Artificial intelligence applications or models performing intelligent tasks.
+
+**264 repos**
+
+- **0xGF/avatar-3d** - teammate try your latest feature without pushing code anywhere. It's written in TypeScript, and you can even host your own tunnel server. Ever wished your selfi
+- **0xGF/boneyard** - a CLI tool and an OpenAI compatible HTTP server. No API keys, no cloud, no per token costs, runs entirely on your neural engine. You already own the hardware. T
+- **AIGeeksGroup/AnyDepth** - It basically turns your CLI agent into a senior front-end engineer. We all know the pain of using AI coding tools. You spend half your day babysitting the termi
+- **AMAP-ML/Tree-GRPO** - preservation and geometric accuracy. Introducing Blogger, a fast, lightweight static site generator built in Rust, designed for developers who want a smooth blo
+- **Alibaba-NLP/DeepResearch** - and flows for fine-trained orchestration. Crew AI also provides an enterprise suite called AMP offering observability, analytics, and security for production sc
+- **Alibaba-Quark/LiveAvatar** - operators. Trellis.2 Microsoft researches AI for turning a single 2D image into a fully textured 3D model in seconds. Powered by a 4 billion parameter transform
+- **Amery2010/peinture** - optimization system that adapts your AI prompts to work seamlessly across different AI providers. Unlike simple prompt inprompt out tools, each optimizer agent 
+- **AnInsomniacy/motrix-next** - to simulate a genuinely evolving emotional state for AI, shifting its internal state based on interactions over time. Highly poetic, deeply experimental. If you
+- **Audio8-AI/Audio8_TTS** - Results can be rendered for a terminal, JSON, or compact model input. Audio 8 TTS packs multilingual speech generation and zero-shot voice cloning into a 0.6 bi
+- **Augani/openreel-video** - need to see this. Quen just dropped Quen 3 TTS, and it's fully open source. It does 3-second voice cloning, but the feature is voice design. You type a prompt l
+- **Bogdanovich77/DeekSeek-OCR---Dockerized-API** - canonical node per memory, no data duplication, and a biologically inspired graph that links everything together. Next up, AI Trader. The open source arena wher
+- **Bria-AI/FIBO** - tooling. Wireframe in your code and turn ideas into working interfaces instantly. Wireframe UI speeds up the design-to-code workflow and keeps everything in you
+- **ByteDance-Seed/TraceAnything** - Next up, Open Agent Builder, a visual workflow builder for creating AI agent pipelines. Powered by Firecrawl, it lets you design and run multi-step AI workflows
+- **CaviraOSS/OpenMemory** - battle each other in real time, learn from losses, reinforce winners, and adapt strategy based on live P&L. Binance, Hyperlquid, Asterex, plugins, switch market
+- **ChatbotXIO/ChatbotX** - shaders, metal rendered views, competitors typically show a blank box where those should be. It runs an async capture pipeline that pauses itself during touches
+- **ChenglinPoly/infiAgent** - generated on the fly by a streaming video diffusion model. It remembers your environment, so houses, trees, and streets stay consistent no matter where you go. 
+- **CogitatorTech/infera** - geometric completeness and photo realism, giving you immersive realtime 3D exploration without the need for expensive 3D annotations. Next up is Graphite, a vis
+- **ComposioHQ/open-chatgpt-atlas** - asks one to six clarifying questions if needed, and then runs your original request, all in one smooth flow. The result, better outputs on the first try, no fru
+- **DGoettlich/history-llms** - capabilities. Lightron supports full 4D parallelism, tensor parallelism, pipeline parallelism, data parallelism, and context parallelism, all in under 1,000 lin
+- **DecartAI/Lucy-Edit-ComfyUI** - searchbased reinforcement learning method designed for LLM agents. Traditional RL approaches for language models often rely on chain-based rollouts which can be
+- **Dexmal/dexbotic** - tracking boxes. All powered by modern computer vision. Perfect for traffic analysis. smart city projects or anyone who wants to visualize road flow with AI prec
+- **Doby-Xu/WithAnyone** - trajectory. Meaning you can literally track how every pixel moves through time and space. Built by Bite Dance, this PyTorch model estimates trajectory fields in
+- **Doriandarko/gemini-writer** - Think Alien, Blade Runner, and Signalis. Features include CRT terminals with authentic curved screens, glowing amber text, scan lines, boot animations, and glit
+- **Doriandarko/sora-mcp** - prompt stream, a sequence of evolving text inputs, to control how each short clip transitions into the next. That means you can literally script a story scene b
+- **Dubibubii/usage-limit-reducer** - rules distilled from Strunk and White, Orwell, and Pinker, combined with four years of field-observed LLM anti-patterns. Install via CLI, and your AI adopts a d
+- **EthanAlgoX/LLM-TradeBot** - background services you didn't install or forgot about. LLM Tradebot. Before asking how to trade, it asks if it should trade at all. This is a multi-agent AI tr
+- **Fictionarry/GeoSVR** - knowledge base is ready to integrate with the next generation of AI tools. Now, let's talk about GOSVR, short for geometric sparse voxal reconstruction. This op
+- **Fission-AI/OpenSpec** - This project doesn't trade real money. Instead, it simulates how multiple investing philosophies might interact under one intelligent framework. Imagine a digit
+- **Francium-Tech/scanify** - optimization system that adapts your AI prompts to work seamlessly across different AI providers. Unlike simple prompt inprompt out tools, each optimizer agent 
+- **FunAudioLLM/Fun-Audio-Chat** - ROM, including the C library, and still delivers QuickJS level performance. It supports a lean ES5 style JavaScript with a stricter mode that blocks inefficient
+- **GLips/Figma-Context-MCP** - your domain files, PDFs, Markdown, DOCX, and Easy Data Set does the heavy lifting. It splits text intelligently, extracts key ideas, and even generates question
+- **GVCLab/PersonaLive** - the best path. Every decision, every piece of evidence is recorded in a transparent, auditable trail. No more digging through chat history or lost context. Auto
+- **H-EmbodVis/TurboVLA** - Mojang content ships, so you supply your own copy. Turbo VLA removes the large language model from the center of a robot control pipeline. It encodes vision and
+- **HKUDS/AI-Trader** - AI remembers all of it. What if JSON didn't burn tokens like crazy and you could feed way more structured data to your LLM for the same price? Yeah, like litera
+- **HKUDS/AnyTool** - composed setup that instantly spins up a full local AI stack. Perfect for building and testing AI agents without relying on cloud services. It bundles NAD for l
+- **HKUDS/DeepTutor** - vertical levels per cell and smooth gradients, you get that seamless natural aesthetic you love. Add beautiful filled area graphs, gauges, and time series with 
+- **HKUDS/LightReasoner** - creating Ditto1M, a massive data set of 1 million expertly edited video examples, producing coherent, high-quality video edits from simple natural language comm
+- **HKUDS/nanobot** - Laura scripts, all of it. 720p, 8 seconds, perfect audio sync. If you've ever copy pasted a table from a PDF, you know the pain. Garbled text, lost formatting, 
+- **Hunyuan-PromptEnhancer/PromptEnhancer** - stores, letting multiple AI processes run in parallel without blocking the main loop. Next up, Prompt Enhancer. A clever upgrade for textto image AI models. Ima
+- **Intellindust-AI-Lab/DEIMv2** - end talks to a Sinatra backend for audio recording, while speechtoext is handled by faster whisper. A wakeword system with Vosque triggers the LLM and the whole
+- **Jiayi-Pan/TinyZero** - design files and your coding agents like cursor. With Framelink, your AI doesn't just see pixels. It reads real layout, styles, and hierarchy data directly from
+- **JohnRiceML/clawport-ui** - generators that just morph pixels, this is an open-source generative frame model designed specifically for spatial intelligence. Give it a single photo or text 
+- **JustVugg/nanoeuler** - every click generates, so you pick up the language by watching. Nano Euler is a GPT-2 class model written from scratch in C and CUDA with no PyTorch and no auto
+- **Kenton-GMI/sakura-crossing** - across every accepted input while a browser demo handles STL files locally. Soccer Crossing turns a real 3JS world into something that reads like a hand-painted
+- **Kevin-thu/StoryMem** - gets you. Meet Fun Audio Chat, a large audio language model designed for natural low-latency voice interactions. It uses dual resolution speech representations,
+- **Marine-RL/MarineGym** - bet, one win, BC game, and more. analyzing historical game data and using AI to generate real-time crash predictions. The free version gives you full access to 
+- **McGill-NLP/the-markovian-thinker** - aspect ratio, and random seeds for reproducibility. Next up, we have the Marovian thinker, a method for scaling inference in large language models. Traditional 
+- **MervinPraison/PraisonAI** - without losing context or stepping on each other. Instead of vibe coding from memory, this system converts PRDS into epics, epics into issues, and issues into p
+- **MoonshotAI/Kimi-K3** - The repository for Kimi K3, a large multimodal AI model with 2.8 trillion parameters and 104 billion active, from Moonshot AI.
+- **MoonshotAI/PerceptionBench** - warn that differing evaluators make those comparisons approximate. Perception bench tests whether multimodal models can actually see before asking them to reaso
+- **MotiaDev/motia** - local uploads, whisper-based transcription, LLM powered translation and segmentation, and even voice cloning through cozy voice or your own custom voice. Meet C
+- **NVIDIA/personaplex** - let you slouch. Posture watches you through your webcam using Apple's Vision AI. And when you start hunching, it blurs your entire screen progressively until yo
+- **NVlabs/LongLive** - inside your terminal. It uses GPU accelerated shaders via WGPU, real-time FFT audio analysis, and ANIE color support to create mesmerizing visuals that move wit
+- **NVlabs/QeRL** - name, and click note titles to open or edit them on the fly. All your changes instantly synced back to the source file. Speed in coding is great, but security c
+- **NVlabs/rcm** - video, so you get highquality extended content without manual editing. Next up is RCM, the framework for few-step highquality video generation. RCM scales conti
+- **NeptuneHub/AudioMuse-AI** - companies, and deals through a proper schema discovery layer, not scraped screens. Job Ops is DevOps for your job search. One dashboard instead of 10 browser ta
+- **NoFxAiOS/nofx** - Ox gives you precise node control, custom connectors, color pickers, manual edge routing, even grid snap, drag, and alignment guides. Every tweak you make visua
+- **Olow304/memvid** - Here's one for all the AI coders and prompt engineers out there. Introducing Guide Injest. This tool does something beautifully simple but gamechanging. It turn
+- **OpenPipe/ART** - open- source bridge that connects any LLM to any MCP server and gives your AI agents real tool access. With MCP use, you can build custom MCP agents that browse
+- **Pewejekubam/ContextEngine** - you can adjust snow intensity, flake size, fall speed, and horizontal drift either via CLI options or a config file. EMSG is a Mac OS CLI tool for sending, read
+- **PipeNetwork/kimi-k3-mlx** - The author measured a 3.22 ms GPU frame on an RTX 5070 Ti at 1440p. Kimiko 3 MLX ports MoonShots 2.78 trillion parameter model to Apple Silicon, and the finding
+- **Pokee-AI/PokeeResearchOSS** - Not just a scratch pad, but a full graph-based issue system that chains tasks together like well beads. Instead of dumping half-baked plans in Markdown, your ag
+- **PrathamLearnsToCode/paper2code** - file you drop into your project root. It forces the AI to use concise, human-like phrasing, and eliminates filler words like delve into, crucial, and in conclus
+- **QoderAI/better-harness** - monitor for high DPI overrides, and direct downloads aren't notarized. Better harness reviews the process around a coding agent, not just the patch it produced.
+- **QwenLM/Qwen-Image-Layered** - Ever wish your code could manage itself, but smarter? Meet Conductor, a Gemini CLI extension that brings contextdriven development to your projects. It doesn't 
+- **QwenLM/Qwen3-Omni** - Code or Google Gemini CLI, builds a local MCP server, and even runs complex pipelines like Alpha Genome, all with minimal setup. Imagine an AI that can understa
+- **QwenLM/Qwen3-TTS** - It's a Python-based simulation where you have to optimize a low-level kernel to run in as few cycles as possible. The catch? Claude Opus 4.5 can already hit abo
+- **QwenLM/Qwen3Guard** - Introducing Code Machine CLI, the autonomous multi-agent platform that runs on your local machine and turns specifications into production ready code. 90% of co
+- **Railly/agentfiles** - a CLI tool and an OpenAI compatible HTTP server. No API keys, no cloud, no per token costs, runs entirely on your neural engine. You already own the hardware. T
+- **Robbyant/lingbot-vla** - the actual text. Runs locally. No cloud processing, no subscription. Lingbot VLA is a vision language action model trained on 20,000 hours of real robot data. I
+- **SamsungSAILMontreal/TinyRecursiveModels** - and domains. What's cool is that they didn't just stop at data. They also released FFDNet, a pair of open-source models that detecting text inputs, checkboxes, 
+- **SawyerHood/dev-browser** - Tally is a local rule engine that lets AI agents classify your bank transactions for you. It works with tools like Claude Code, Codeex, or even a local model. Y
+- **Tencent-Hunyuan/HY-WorldPlay** - all preconfigured for autonomous coding. ACFS isn't just coding assistance. It's a full flywheel where AI agents plan with long-term memory and safety layers. C
+- **The-Pocket/PocketFlow** - natural language-based creation of tools, workflows, and retrieval systems. The framework includes an integrated vector database for agentic rag and supports a 
+- **TinyAGI/fractals** - Powered by a Neo4j graph database, an async Python fast API backend, and a React 19 front end, it is designed to ingest massive data sets and connect the dots t
+- **VibiumDev/vibium** - built for the developers and AI agents. Forget waiting minutes for your static site to rebuild. With Markdown site, you write in Markdown locally and sync live 
+- **VladUZH/qwen-scribe** - domain, and Chinese and Python overlap below random chance. Quen Scribe turns an Apple Silicon into a private transcription and system-wide dictation machine. W
+- **WoJiSama/skill-based-architecture** - keep fixing the same styling mistake, autonomously proposes a permanent rule. Skill-based architecture is a meta skill designed to organize your other skills. F
+- **ZJUI-AI4H/Hulu-Med** - Trained on over 1.19 million prompts and responses to ensure AI interactions stay safe and responsible. It comes in three sizes, 0.6B, 4B, and 8B, and features 
+- **a2aproject/A2A** - learns, a security engineer that catches real vulnerabilities, a front-end architect that knows your UI patterns, all working together automatically. Agent to a
+- **abhishekkrthakur/NyRAG** - spider trap links to waste crawler resources. Need ngrok, but self-hosted and fast? Meet Nrelay, an open-source reverse tunnel built in Rust. Nrelay lets you ex
+- **accomplish-ai/openwork** - turning the browser into a Unix style CLI. Instead of dumping the whole page, you can pipe the website directly into tools like GP or JQ. You can filter the out
+- **ag-ui-protocol/ag-ui** - building powerful AI applications. It extends the Versel AI SDK with features developers actually need like state management, real-time debugging, and structure
+- **agentica-org/pepper** - speech output languages and it's already setting state-of-the-art benchmarks on 32 multimodal tasks. Meet Pepper. Traditional chat bots wait for you to ask. Pep
+- **ahujasid/blender-mcp** - prompts and a groundtruth reward. Run reinforcement learning and let the model discover tactics. Applied to tasks like countdown and number multiplication, Tiny
+- **aiming-lab/SimpleMem** - write code that feels as Python while keeping the performance of C. This is the way to give your AI agent infinite memory. Meet Simple Mem, an open source frame
+- **akdeb/ElatoAI** - teammate try your latest feature without pushing code anywhere. It's written in TypeScript, and you can even host your own tunnel server. Ever wished your selfi
+- **ali-vilab/Wan-Move** - built for the developers and AI agents. Forget waiting minutes for your static site to rebuild. With Markdown site, you write in Markdown locally and sync live 
+- **andrewyng/openworker** - JavaScript with overlay fallbacks for unsupported browsers. Open Worker is a local-first desktop AI co-worker that finishes tasks across your files, terminal, a
+- **anthropic-experimental/sandbox-runtime** - Next up is DeepVerify, a framework for evidence-based scientific claim verification. It combines state-of-the-art language models with search and reasoning tool
+- **ash80/diffusion-gpt** - AI coding. Instead of relying on vague chat memory or ad hoc prompts, OpenSpec gives you a lightweight workflow where humans and AI agree on what to build befor
+- **asheshgoplani/agent-deck** - rows affected, errors. Run explain on any captured query from the TUI. Running multiple AI agents is chaos. Claude code in one terminal, Gemini in another, Aide
+- **asimovinc/asimov-v0** - fix behavior, it updates its own prompts and logic. You can share those improvements with other users, so the agent gets smarter from collective teaching. Asimo
+- **automazeio/ccpm** - to the entire Playright API, and the ability to collaborate with your agent in real time. Vibe Canban is a control panel for your AI coding agents. As AI agents
+- **baaivision/Emu3.5** - file quietly ballooning into a JSON monster. Claude stores every chat from every project in one file, and after weeks of coding, that thing can hit 10, 15, even
+- **bc-dunia/qwen3-TTS-studio** - You install a few dev tools and suddenly your disc is full. Term scans everything. Homebrew, npm, pnpm, yarn, pip, and shows you what's hogging space. It's a te
+- **benjitaylor/agentation** - on chain and wondering why it's expensive and slow. Signia took a different approach, just put the structure on chain. It's a compiler that reads real-world stu
+- **bitbonsai/mcp-obsidian** - diorization and word error rates and structured data sets that are ready to train AI powered music generation models. Next up is MCP Obsidian, a universal AI br
+- **blader/humanizer** - elements. Whether it's a sidebar, a specific icon, or a modal, you click once and it copies a perfect clean cutout of that element right to your clipboard. Huma
+- **bolna-ai/bolna** - does, compresses it using AI, and injects relevant context into future sessions, so your agent never forgets what it learned. You can explore memory in real tim
+- **browser-use/agent-sdk** - one thing that'll move the needle. Then it doesn't just suggest a fix, it plans it, implements it in a new git branch, runs quality checks, and opens a pull req
+- **browser-use/web-ui** - concise progress summaries through its Lake View module. Web UI builds on the foundation of browser use, extending its goal of making websites directly accessib
+- **bubblelabai/BubbleLab** - Agno goes far beyond simple API calls. It provides a full stack for agent engineering. The framework lets you build agents, multi-agent teams, and workflows wit
+- **bytedance/Video-As-Prompt** - And the best part? It's completely open source. Model weights, code, training data, demo, everything. What if controlling video generation was as simple as show
+- **bytedance/trae-agent** - be understandable, adaptable, and easy to extend across multiple programming languages. Pocketflow now even supports TypeScript, Java, Go, Rust, C++, and PHP, m
+- **code-yeongyu/oh-my-opencode** - deployments become far simpler to manage. Oh my Open Code is coding on steroids for AI agents. This open- source project turns your LLM agents into a full devel
+- **coderamp-labs/gitingest** - packing objects, navigating obstacles, or manipulating tools, all through video-based controllable generation. Meet Fast API MCP, a slick new bridge between you
+- **covibes/zeroshot** - It basically turns your CLI agent into a senior front-end engineer. We all know the pain of using AI coding tools. You spend half your day babysitting the termi
+- **cpaczek/any-buddy** - Hermes agent is powerful, but has always been a terminal first experience. Hermes web UI gives it a browser interface. Pure Python and vanilla JS. Three panel l
+- **cvlab-kaist/VideoMaMa** - dashboard for tracking your Claude code sessions. The TUI shows which sessions are active or idle, and you can jump into any session with a key press. Press H a
+- **davidfowl/tally** - AI open source projects are growing faster than ever on GitHub. So today we're launching a brand new series called Trending AI projects. In this series, we'll t
+- **deepseek-ai/DeepSeek-OCR** - Welcome back to GitHub Awesome, where we bring you the trending open-source projects from GitHub. Today, we're counting down 18 repositories that are blowing up
+- **deepseek-ai/Engram** - Welcome back to the channel. Today, we're diving into GitHub trending today number 18, where I've rounded up 29 of the hottest open source projects that are mak
+- **diet103/claude-code-infrastructure-showcase** - happen. Inspired by React Flow, it's a reactive, high-performance editor that feels snappy even with complex graphs. Drag, drop, and connect nodes with custom t
+- **duoan/TorchCode** - when players log in for the next one. The MikroTik WinBox interface has looked the same since most current developers were in middle school. Micro Dash is a sel
+- **dyad-sh/dyad** - building real world MCP applications, complete with enterprise authentication, deployment tools, testing utilities, and even open API and fast API generation bu
+- **eli-labz/Agent-Execution-Partnership** - classes or variables, and animated effects respect reduced motion settings. Agent execution partnership is a control plane that sits between an AI agent's decis
+- **enricoros/big-AGI** - composed setup that instantly spins up a full local AI stack. Perfect for building and testing AI agents without relying on cloud services. It bundles NAD for l
+- **experientiallabs/world-model-optimizer** - full-screen mode supports keyboard control or auto play. World model optimizer turns the OpenTelemetry traces your agent already emits into a routing policy. It
+- **fufankeji/DeepSeek-OCR-Web** - internal networks, interfaces, and flags infra services like DNS and gateways automatically. Need a fast way to turn prompts into AI videos? Meet the Sora 2 API
+- **garrytan/gbrain** - Even captures isolated SwiftUI elements like widgets with perfect transparency using image renderer. Y Combinator CEO Gary Tan open-sourced his personal AI know
+- **google/langextract** - small local models or optimizing production level systems, this open- source tool takes prompt engineering from guesswork to science. It offers four ways to use
+- **grafana/ai-sdk** - The maintainers report roughly 35-ms checks. Grafana AI SDK gives Go backends the interaction model many teams already use with Vercel's TypeScript AI SDK. It c
+- **hangwin/mcp-chrome** - automatically allocates ports and even detects Laura adapters. Fast, reliable, and entirely local. Shimmy gives you the full OpenAI API experience without the c
+- **hardikpandya/stop-slop** - allowing you to browse file trees, view diffs with full syntax highlighting, and leave comments without ever touching your mouse. Built in Rust, it's snappy, su
+- **hate0s/sora2-watermark-remover** - both worlds, the multiv- view and 3D oriented paradigms. It directly produces 3D Gaussian representations while maintaining stunning visual fidelity and perfect
+- **heyhuynhgiabuu/proxypal** - citations. You can autogenerate notes, summaries, and even mind maps from your files. Proxypal is an open source desktop app that lets you use your existing AI 
+- **hiroppy/tmux-agent-sidebar** - running locally on one port. Blob storage, Key Vault, Cosmos DB, Azure functions, all of it. Works with your existing Azure SDKs, Terraform, and Pulumi setups. 
+- **huggingface/smolagents** - Next up is Playright MCP, a model context protocol server that brings browser automation to language models. Instead of relying on screenshots or visual recogni
+- **humanlayer/12-factor-agents** - that captures your tone, your context, and your reasoning. run it locally for full privacy or scale it up across a decentralized network to interact with other 
+- **humanplane/homunculus** - on chain and wondering why it's expensive and slow. Signia took a different approach, just put the structure on chain. It's a compiler that reads real-world stu
+- **iflytek/astron-agent** - team in real time. It integrates with over 80 services from OpenAI and Slack to Notion and GitHub and can run in the cloud or fully self-hosted with local AI mo
+- **imbue-ai/bouncer** - Even captures isolated SwiftUI elements like widgets with perfect transparency using image renderer. Y Combinator CEO Gary Tan open-sourced his personal AI know
+- **inclusionAI/cuLA** - species. Dragon, octopus, capybara, and a mysterious chunk. Legendary rarity available if you're patient. Linear attention is one of the most promising directio
+- **intelligencedev/PromptForge** - using a multi-dimensional Newton's method. It includes a simple symbolic algebra system for calculating derivatives, a short math summary. Prompt Forge is a vis
+- **itanishqshelar/SmartRAG** - your webcam, a 3D render, even your desktop wallpaper. Screen diffusion uses stream diffusion and stable diffusion turbo to instantly reimagine it in real time.
+- **jamiepine/voicebox** - tasks. NetBar is a tiny menu bar app that shows your actual download and upload speeds in real time. Just sits there. Click once for full diagnostics, signal st
+- **jgravelle/jcodemunch-mcp** - but they need somewhere to actually run it. Open Terminal gives your AI a real sandboxed operating system via Docker. Instead of just writing text, your LLM get
+- **jlowin/fastmcp** - desktop app. Built with Tori 2, Opcode brings you a beautiful cross-platform interface to control everything. From project sessions and cost tracking to version
+- **jmiao24/Paper2Agent** - who wants to understand how LLMs actually work under the hood. [Music] What if every research paper could build its own AI agent ready to explain, demonstrate, 
+- **julep-ai/julep** - Today we're diving deep into 25 open-source AI agent projects on GitHub. From intelligent memory layers to multi-agent orchestration platforms. Let's get starte
+- **jun6ry/sora2-api** - internal networks, interfaces, and flags infra services like DNS and gateways automatically. Need a fast way to turn prompts into AI videos? Meet the Sora 2 API
+- **k2-fsa/OmniVoice** - untrusted workloads. Default deny MITM proxy. Every outbound request is blocked unless you explicitly allow the domain. No accidental uploads. No data leakage. 
+- **karpathy/autoresearch** - but they need somewhere to actually run it. Open Terminal gives your AI a real sandboxed operating system via Docker. Instead of just writing text, your LLM get
+- **karpathy/nanochat** - The monthly GitHub roundup is here. After yesterday's video, a bunch of you said, "Why not do this monthly?" Well, say less. Today kicks off GitHub trending mon
+- **kayba-ai/agentic-context-engine** - search universal chat history rendered in full markdown with code highlighting. Jump back to original conversation links and keep everything private. No API key
+- **kebo-ai/kebo** - generates grounded answers strictly based on your content. Kibo, a beautiful multi-language budgeting app. Track every expense, income, and transfer effortlessl
+- **kevinrgu/autoagent** - Hey everyone, welcome back. This is GitHub trending weekly episode 29. We've got 35 projects to get through, so let's go. You dropped a Claude.md in your projec
+- **kortix-ai/suna** - deployments become far simpler to manage. Oh my Open Code is coding on steroids for AI agents. This open- source project turns your LLM agents into a full devel
+- **krillinai/KrillinAI** - a specialized tokenizer converts continuous OLCV data into hierarchical discrete tokens. Then, a large auto reggressive transformer learns these sequences, enab
+- **kvcache-ai/AgentENV** - profiling expose shader compilation stalls that static benchmarks missed. Agent ENV is the sandbox platform behind Kimi K3's agentic RL training, built on firec
+- **kyutai-labs/hibiki-zero** - Technical SEO, EEAT content quality, schema markup, AI search optimization for Google's generative engine. Hibiki zero is a 3B parameter real-time speech transl
+- **kyutai-labs/pocket-tts** - a ticket with a full snapshot of exactly what the server was doing at that split second. This is how you turn your RTL SDR dongle into a signal intelligence sta
+- **lastmile-ai/mcp-agent** - generating one token at a time like traditional auto reggressive models, diffusion GPT learns to denoise entire sequences in parallel, turning corrupted text ba
+- **leonvanzyl/autocoder** - ship code. This is the training program seasoned developers need when switching to Go. Go Kata is a collection of daily coding challenges designed to drill idio
+- **letta-ai/letta-code** - that monitors build outputs from Rust, Python, Go, and more. See file sizes, modification times, and language types in a clean table, all without leaving your t
+- **linshenkx/prompt-optimizer** - systems. Video diffusion is finally becoming practical, and it's all thanks to Frame Pack. This open- source project brings a breakthrough in next frame predict
+- **lintsinghua/XCodeReviewer** - 400K, a massive data set designed for texted image editing. With roughly 400,000 text imageedit triplets, it gives AI models the examples they need to learn how
+- **liveblocks/liveblocks** - together praise and AI agents AG2 formerly autogen and crew AI into a single unified workflow. The focus here is simplicity, customization, and real human agent
+- **livetennisapi/livetennisapi-mcp** - maintainers report 5,650 tests and no unsafe library code. Live tennis API MCP gives Claude, Cursor, and other MCP clients direct access to current tennis data 
+- **lllyasviel/FramePack** - that captures your tone, your context, and your reasoning. run it locally for full privacy or scale it up across a decentralized network to interact with other 
+- **m0n0x41d/quint-code** - runs full automation. When it's exploring, it switches to step-by-step mode. Mistral Vibe, Mistl's open-source CLI coding assistant. This isn't a chat app prete
+- **markrai/whatsthat** - automatic PostgreSQL provisioning, GitHub integration, and even a built-in web terminal, so you can interact directly with your environment. Think of it as your
+- **microsoft/TRELLIS.2** - fake optimized for live streaming using your webcam feed. Persona Live captures subtle expressions, eye movements, and emotions and animates a still image with 
+- **microsoft/magentic-ui** - zeroot reward system that eliminates the need for handcrafted reward functions. Just define your task in a prompt and ruler acting as a judge scores agent behav
+- **microsoft/mcp-for-beginners** - It's fully local, ensuring privacy, and supports over 20 tools, including screenshot capture, network monitoring, bookmark management, and intelligent tab analy
+- **midday-ai/ai-sdk-tools** - stores, letting multiple AI processes run in parallel without blocking the main loop. Next up, Prompt Enhancer. A clever upgrade for textto image AI models. Ima
+- **midudev/autoskills** - and custom skills needed for them to collaborate. Handles inter-agent data passing, error handling, and orchestration automatically. Your AI writes the code, yo
+- **mikehasa/agentacct** - usage limits, while a TUI handles themes and configuration. Agent XT gives coding agent sessions an audit trail instead of another vague token chart. It reads C
+- **mikiarlo3/ai-copywriter** - verified versus agent reported work without asking for provider keys. AI copywriter is a plain markdown agent skill that writes marketing copy and strips the AI
+- **millionco/debug-agent** - annoys you. A local AI analyzes it and suggests three reasons why. Pick one and similar posts disappear permanently. The filter gets smarter every time you use 
+- **mindverse/Second-Me** - Today, we're diving into the top 18 trending AI projects on GitHub. All ready for you to clone and experiment with right now. These repos will supercharge your 
+- **mistralai/mistral-vibe** - runs full automation. When it's exploring, it switches to step-by-step mode. Mistral Vibe, Mistl's open-source CLI coding assistant. This isn't a chat app prete
+- **mit-han-lab/streaming-vlm** - modules work together across multiple turns guided by evolving memory and integrated tools like Python coder, Google search, and Wikipedia forming a self-optimi
+- **mnemosyne-artificial-intelligence/doppelganger** - codes for mobile handoff and browser notifications. Home screen hero is a self-hosted dashboard for Plex servers with drag and drop widgets. combines Tuli strea
+- **moeru-ai/airi** - log into portals, click buttons, type passwords, even handle 2FA, all on its own virtual machine. Unlike browseronly bots or RPA scripts, Bitebot has its own co
+- **morganwilliscloud/billai-bass** - with Windows cross compilation through MinGW. Billy AI base turns a big mouth Billy base into a real-time voice assistant running on a Raspberry Pi 5. Live audi
+- **mshumer/sora-extend** - server connections, supports OpenAI's swarm orchestration, and integrates seamlessly with tools like Claude Desktop, Gmail, or Murmo Notebooks. Next up is Sora 
+- **msitarzewski/agency-agents** - automatic precision handling. And the killer feature, self-learning AI agents that evolve based on real trading results, plus a professional dashboard to monito
+- **muratcankoylan/Agent-Skills-for-Context-Engineering** - every lip movement, micro expression, and head tilt, all synced perfectly to your voice. Powered by a 14 billion parameter model and ultraast four-step distilla
+- **muratcankoylan/The-Rosetta-Prompt** - Pzled's classic style, it keeps the familiar menus, accelerators, word wrap toggle, status bar, font picker, and time insertion. Printing is intentionally omitt
+- **n8n-io/self-hosted-ai-starter-kit** - Today we're diving deep into 25 open-source AI agent projects on GitHub. From intelligent memory layers to multi-agent orchestration platforms. Let's get starte
+- **nanobrowser/nanobrowser** - aspect ratio, and random seeds for reproducibility. Next up, we have the Marovian thinker, a method for scaling inference in large language models. Traditional 
+- **nearai/ironclaw** - Outbound only connector, no firewall changes needed. Control generation jobs via webhooks, scheduled runs, or Telegram Discord. Approve or reject jobs remotely.
+- **neuphonic/neutts-air** - built with Nex.js JS, Tailwind CSS, and Ingest for background jobs, plus FinHub for market data and better off for secure signins. You get everything you'd expe
+- **nicklashansen/dreamer4** - It's a Rustbased CLI that manages all your variables in one place. Instead of juggling files, you just run nv rundev and it injects the exact keys you need for 
+- **nicobailon/visual-explainer** - Technical SEO, EEAT content quality, schema markup, AI search optimization for Google's generative engine. Hibiki zero is a 3B parameter real-time speech transl
+- **numman-ali/openskills** - MCP Agent Mail is exactly that, an email-like coordination layer built as an HTTP-only fast MCP server. Agents get memorable identities, an inbox, outbox, searc
+- **obra/superpowers** - AIs battle it out on Wall Street? No humans allowed. That's AI trader, and it's wild. This project has 8,200 stars on GitHub and throws AI agents into the NASDA
+- **open-and-async/mcp** - to your normal SSH config, keys, and agent. Open an async MCP turns remote work practices into callable tools for your coding assistant. Feed it a decision and 
+- **open-tinker/OpenTinker** - extreme poses. Vibium, think of it as selenium for AI. It lets AI agents like Claude Code or Cursor control a browser naturally without writing a single line of
+- **openai/symphony** - skills best practices repository. It's a masterclass in writing professional grade agent skills that maintain a lean context window. It teaches you how to struc
+- **ozankasikci/agent-sessions** - glass effects, giving you the ability to drag, resize, and adjust zoom levels, perfect for highlighting details in screenshots, photos, or diagrams. Everything 
+- **palmier-io/palmier-pro** - A Mac-native video editor that integrates coding agents directly into the editing timeline, aimed at creators who want AI-assisted automation within their video
+- **paperclipai/paperclip** - skills best practices repository. It's a masterclass in writing professional grade agent skills that maintain a lean context window. It teaches you how to struc
+- **parcadei/Continuous-Claude-v2** - all preconfigured for autonomous coding. ACFS isn't just coding assistance. It's a full flywheel where AI agents plan with long-term memory and safety layers. C
+- **petergyang/no-ai-slop** - automatically. It also respects reduced motion settings and pauses off-screen. No AI slop is a writing skill for Codex, Claude Code, and other agent setups that
+- **peteromallet/desloppify** - thread summaries, smart replies, and inbox search, all cached locally. Smart inbox with auto categorization, snooze, schedule send, undo send, and follow-up rem
+- **pguso/ai-agents-from-scratch** - not just a plugin, it's emotional damage therapy for developers. Because if you're going to suffer from bugs, you might as well do it with style base and memes.
+- **potpie-ai/potpie** - together praise and AI agents AG2 formerly autogen and crew AI into a single unified workflow. The focus here is simplicity, customization, and real human agent
+- **qaml-ai/camelAI** - so readers won't show a green check without pinning it. Camel AI runs each coding conversation as its own Cloudflare durable object, giving the workspace persis
+- **ratel-ai/ratel** - deep tracing may need administrator approval. Ratel tackles tool overload by hiding most capabilities until an agent actually needs them. It indexes tool schema
+- **remorses/critique** - let you slouch. Posture watches you through your webcam using Apple's Vision AI. And when you start hunching, it blurs your entire screen progressively until yo
+- **remorses/playwriter** - agents and real world tools. It's a universal tool use system designed to make agent automation actually reliable in production. Solving problems like tool over
+- **reysu/ai-life-skills** - codebase is one of the worst feelings in software. How is a cursor plugin that adds a {slash} how command to your workspace? Ask, "How does the message virtuali
+- **robonuggets/seedance-skill** - keep fixing the same styling mistake, autonomously proposes a permanent rule. Skill-based architecture is a meta skill designed to organize your other skills. F
+- **ronak-create/FableCut** - the fields that can genuinely be null. Runtime stays plain Bun. Most AI video tools hide the edit behind an API, so you get a rendered file and no way in. Fable
+- **ronitsingh10/FineTune** - Welcome back to the channel. This is GitHub trending weekly. Today, we're covering 30 of the hottest open source projects trending on GitHub right now. Let's ge
+- **rookiestar28/ComfyUI-OpenClaw** - table formatting. Ask your coding agent for an architecture overview, diff review, or plan audit, and it generates a self-contained HTML page with real typograp
+- **ruc-datalab/DeepAnalyze** - pixels and words together. No adapters, no separate heads, just pure unified world modeling. With reinforcement learning for reasoning and discrete diffusion ad
+- **ruzin/stenoai** - single stream results won't match browser speed tests. Steno is a desktop meeting notepad that records, transcribes, summarizes, and searches conversations usin
+- **samuelfaj/distill** - with request replay and HAR export for debugging. Routes through Cloudflare workers. If your AI coding agent reads 10,000 lines of test output, you're paying fo
+- **scipenai/tylax** - hardware-software combo. It's designed by hardware nerds who love CNC and tactile control boards, and it packs real haptic feedback into every button and encode
+- **sequilade/tokentab** - Each session logs what warming cost and what it avoided. Token tab turns the session logs your coding agents already leave behind into a local usage statement. 
+- **shenmintao/Raw-Alchemy** - planning side by side or doing groceries across the store, Nourish updates instantly so everyone knows who grabbed what. Up next, for photographers who crave pr
+- **shiyu-coder/Kronos** - tools. All organized into 63 focused single-purpose plugins built specifically for cloud code. Each plugin is lightweight, isolated, and composable, so you only
+- **showlab/Code2Video** - developers and organizations adopting AI workflows. Now this one's seriously cool. Code to video is a codecentric framework for generating educational videos fr
+- **showlab/Paper2Video** - languages daily. Next up, meet Mimic Kit. This open- source framework is your one-stop motion imitation lab packed with algorithms like Deep Mimic, AMP, ASSE, a
+- **shumaiOne/shumai** - RTX 4070, fluent English with nothing behind it. Shumai is a self-hosted media review platform that keeps creative assets, feedback, and versioning under your c
+- **sii-research/tau-0-vla** - dynamic resolution targets 60 frames per second. Tau Zero VLA splits long horizon robot work into two levels. One policy decides the next subtask, then a genera
+- **simonw/rodney** - drafts missing ones, and connects them automatically. Skills are version packages with contracts, references, rubrics, and helpers. Agents evolve from execution
+- **simstudioai/sim** - Today, I've cured 16 awesome open-source AI agent projects. If you're building your own AI agent or just love experimenting with cutting edge automation, these 
+- **simular-ai/Agent-S** - without losing context or stepping on each other. Instead of vibe coding from memory, this system converts PRDS into epics, epics into issues, and issues into p
+- **slvDev/esp32-ai** - recursive changes with validation before applying them. The last language model anyone squeezed onto a chip like this held 260,000 parameters because everything
+- **sst/opencode** - What happens when you turn a trading floor into a team of AI agents? Trading Agents is a multi-agent LLM framework that simulates the structure of a real tradin
+- **stablyai/orca** - Orca is an agent development environment (ADE) for managing parallel agents.
+- **steveyegge/beads** - hype. Da Surf, your AI powered research workspace that pulls files, PDFs, YouTube videos, and the entire web straight into your stream of thought. No more juggl
+- **sunsetsacoustic/StemLab** - terminal. With just one command, you can scan your system for junk files, caches, logs, and more. Preview what's found with clear file sizes. Select exactly wha
+- **symbolica-ai/arcgentica** - Instant comprehension tool with multi-language AST parsing. Builds call graphs, import graphs, reference chains, shows exact architectural topology. Health scor
+- **tadata-org/fastapi_mcp** - packing objects, navigating obstacles, or manipulating tools, all through video-based controllable generation. Meet Fast API MCP, a slick new bridge between you
+- **tekaratzas/RustGPT** - own local Alama models. No lockin, no hidden limits, no data leaving your device. It's fast, private, and frictionless. The dream setup for indie devs and AI ti
+- **tencent-ailab/SongPrep** - real hardware. The results are impressive. Robots using Visual Mimic can lift and push boxes, dribble and kick footballs, and even handle outdoor environments, 
+- **thu-coai/Glyph** - Ever wanted linear attention that doesn't compromise performance, even on million token contexts? Kimmy Linear is that architecture. At its core is Kimmy Delta 
+- **tjnull/Ludus-FastMCP** - object's articulated structure, including its 3D parts, kinematic hierarchy, and motion constraints. The model is ultra fast, recovering a fully articulated 3D 
+- **tphakala/birdnet-go** - each one covering only its own narrow slice of formats. This wraps FFmpeg, ImageMagick, Pandoc, LibreOffice, and a dozen other engines behind one upload box, ba
+- **tripleyak/SkillForge** - into beautiful HTML transcripts with deep dives for every step, plus one command publishing to GitHub gists. Skillforge is an open- source meta-kill framework f
+- **trycua/cua** - It's fully local, ensuring privacy, and supports over 20 tools, including screenshot capture, network monitoring, bookmark management, and intelligent tab analy
+- **twostraws/SwiftUI-Agent-Skill** - Agent Litics and it instantly generates beautiful activity heat maps, token usage stats, and tool call frequencies directly from your local SQLite databases. If
+- **ufira-ai/Vibma** - 200-line coding agent written in Rust. Every 8 hours a GitHub action wakes it up. It reads its own source code, checks community issues, finds bugs, implements 
+- **unitreerobotics/unifolm-world-model-action** - or skipping steps. Drop beads into any repo and suddenly your coding agent stops forgetting, starts planning and works like a real teammate with structured reas
+- **vercel-labs/add-skill** - Yep, it gives you a complete visual X-ray of your network connection directly in your terminal. This is effectively npm for your AI agent. Meet Add Skill from V
+- **vercel-labs/agent-browser** - Mac screenshot tool with editor that instantly adds beautiful gradients, backgrounds, and rounded corners to your captures. It has built-in annotation tools, ha
+- **vercel-labs/coding-agent-template** - Introducing the coding agent template. Your ready to deploy foundation for building AI powered coding assistants. This template supports multiple agent backends
+- **virattt/ai-hedge-fund** - compressing millions of text chunks into a single searchable MP4 file, all while keeping sub 100 millisecond retrieval speeds. Instead of querying massive vecto
+- **virattt/dexter** - huge files, or change metadata? All there. Built with modern web tech and handles even massive PDFs effortlessly. Ever wished your financial research assistant 
+- **vita-epfl/Stable-Video-Infinity** - Introduces full-featured table support with spreadsheet-like capabilities. Drag to reorder rows and columns, resize cells. The editor's enhanced drag and drop s
+- **vudovn/antigravity-kit** - It's a Python-based simulation where you have to optimize a low-level kernel to run in as few cycles as possible. The catch? Claude Opus 4.5 can already hit abo
+- **wangshy31/OneRec-Think** - project is going to feel like magic. IDA Cybersheds Cybersh's entire JavaScript engine right inside IDA Pro's cute interface, letting you decode, exor, hash, an
+- **winfunc/opcode** - Today, we're diving into the top 15 trending AI projects in the developer community right now. From cutting edge machine learning frameworks to AI coding assist
+- **workany-ai/workany** - or iMessage. Instead of opening a browser, you just text your server, "Hey, did I pay that bill or summarize this PDF?" Because it stores everything in local fi
+- **wshobson/agents** - live in the command line. It's runs natively in your terminal and gives you total freedom. Any provider, any model, any editor. The interface, a sleek, responsi
+- **wzzheng/DVGT** - streaks, busiest coding days, and even how fast you code over time. Instead of boring charts, GitStory visualizes your tech stack beautifully. DVGT short for dr
+- **xai-org/x-algorithm** - family. It's literally an agent as a loop. Ask a language model what to do, run the tools it picks, then repeat. No black boxes, no magic abstractions, just beh
+- **xiaolai/insidebar-ai** - Today we're diving into GitHub trending today number two. That's right, 18 fresh open source projects you need to check out. From developer tools to AI utilitie
+- **xikhar/persona** - flat render time from 10,000 to 100 million points self-run on one machine. Persona gives desktop voice conversations a visual character without recording your 
+- **xprivo/ai-chat** - powered email organizer that watches your Gmail in real time via pub web hooks, classifies emails with GPT4 as they arrive, and applies labels in your Gmail int
+- **yoanbernabeu/grepai** - talk to the map while you fly through it. And the AI acts as a realtime guide answering questions about the terrain you're exploring. GP AI, the missing link be
+- **ysharma3501/LuxTTS** - rewritten for web GPU to give you real-time waves, reflections, refractions, dynamic light costics, and interactive physics, all accelerated on your GPU. The sa
+- **ysharma3501/NovaSR** - replaces all that junk with a simple depth transformer that cuts parameter counts by nearly 90%. It uses a single path fusion strategy to instantly turn any 2D 
+- **yuri-xyz/chroma** - AI agent framework built in Go, designed for developers who want flexible and extensible AI agents. This framework lets you build intelligent agents with memory
+- **yzhao062/agent-style** - their NPM or Python packages. One CLI command symlinks the official skills for your installed libraries into .claude/skills, perfectly synced to your exact vers
+- **zai-org/GLM-OCR** - Laura scripts, all of it. 720p, 8 seconds, perfect audio sync. If you've ever copy pasted a table from a PDF, you know the pain. Garbled text, lost formatting, 
+- **zai-org/SCAIL** - built for Agentic AI tools, simulators, even complex board games. Everything runs through a simple unified interface. Check out Scale, the AI framework bringing
+- **zuckermanai/zuckerman** - that voice for new speech. No is a sandbox for running AI agents and untrusted code on your machine without them trashing your file system or phoning home to we
+
+## Related
+
+[[agents]] [[automation]] [[claude]] [[framework]]

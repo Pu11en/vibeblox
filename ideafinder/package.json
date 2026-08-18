@@ -1,0 +1,9 @@
+{
+  "name": "gitbutt",
+  "private": true,
+  "description": "Task runner wrapper: the project itself is Python (uv + hatchling)",
+  "scripts": {
+    "lint": "uv run ruff check src/",
+    "build": "uv build"
+  }
+}

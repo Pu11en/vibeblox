@@ -12,4 +12,5 @@ game/build/
 # local state
 backend/publish_state.json
 game/Packages/
-ideafinder/
+ideafinder/.venv/
+ideafinder/**/__pycache__/

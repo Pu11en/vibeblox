@@ -1,0 +1,305 @@
+---
+title: self-hosted
+created: 2026-08-01
+updated: 2026-08-01
+type: concept
+tags: [self-hosted]
+sources: [generated from data/repos.sqlite3]
+---
+
+# self-hosted
+
+Software run on your own infrastructure instead of third-party services.
+
+**286 repos**
+
+- **0xERR0R/blocky** - open source. You actually own your workout history. If you love Pi Hole but hate clicking through web interfaces to manage it, you need to check out Blocky. It'
+- **AnmolSaini16/mapcn** - Welcome back to the channel. It's time for another episode of GitHub Trending Today. We've got 30 amazing projects that are trending today. Let's get started. N
+- **Athou/commafeed** - exporting and printing in multiple formats like PDF and markdown, and you can access your notes offline from any device. Oak, a simple homepage designed specifi
+- **BansheeTech/HomeDockOS** - editing, a notion style interface, SL commands, nested documents, collections, permissions, and version history. Markdown compatible with import export, but you
+- **Belphemur/obsidian-headless-sync-docker** - Fast previews and thumbnails generated via SQLite and FFmpeg. No cloud sync, no external APIs. Spotify's recommendation engine is genuinely good, but it require
+- **Chevron7Locked/lidify** - Today's video is packed with 31 trending self-hosted projects from developer tools to media servers and productivity platforms you can run entirely on your own 
+- **Cirx08/WeddingShare** - Paper console is a self-hosted offline thermal printer appliance. Turn a physical rotary dial, press a button, and it prints your daily news, weather, RSS feeds
+- **CodeWithCJ/SparkyFitness** - no third-party reading your transactions. Most commercial fitness apps make money by locking your health logs behind a paywall and selling your data. Sparky Fit
+- **Dispatcharr/Dispatcharr** - map. Runs entirely locally, zero telemetry, and produces a visualization that is equal parts fascinating and unsettling. Dispatch are is an open-source IPTV pro
+- **DuarteSantos8/openGym** - Fanout runs through Redis, NATS, Kafka, or five others. OpenGym is a self-hosted workout tracker that keeps routines, training logs, and body weight history on 
+- **FOSSBilling/FOSSBilling** - required. Everything is built to protect your privacy. Foss billing, an open-source billing and client management system designed for online service businesses.
+- **Freika/dawarich** - Welcome back to GitHub Awesome. We scoured GitHub and tracked down 34 self-hosted open source projects trending right now. All links in the description below. L
+- **Gimanh/taskview-community** - Welcome back to GitHub Awesome. Today, we're looking at 35 self-hosted projects on GitHub. Let's get into it. Task View is a self-hosted task manager built spec
+- **HabiRabbu/Musicseerr** - Manager is a self-hosted web UI to manage your entire reverse proxy without touching YAML. Visually add HTTP, TCP, or UDP routes, configure middlewares, monitor
+- **HemmeligOrg/Hemmelig.app** - testers, run AB or multivariate experiments, and segment users however you want. Building for web, mobile, or back-end? Flagsmith has 15 SDKs, so you can plug i
+- **HiEventsDev/Hi.Events** - month's stash. This isn't another spreadsheet replacement, it's a full-blown finance platform. Hide events, the open-source event ticketing platform that finall
+- **JMS1717/8mb.local** - everything. Cataloging, circulation, digital content, ebooks, audio books, and even a public-f facing catalog. All with multilingual support. Automatic metadata
+- **Jstudner/jcorp-nomad** - to edit together. This handles real-time collaborative editing properly and organizes everything into permission spaces and groups instead of one flat page tree
+- **Kyonew/DVinyl** - to a 140 times lower storage costs than Elasticsearch. Diviio is a self-hosted catalog for the physical media that somehow keeps multiplying on your shelves. Sc
+- **LeslieLeung/glean** - on your own infrastructure. No middlemen, no limits, no surprise restrictions. Run unlimited tunnels, serve as much bandwidth as your server can handle, and use
+- **LoredCast/filewizard** - Then it recalculates an off-axis projection matrix, giving the illusion of true 3D depth. Next up, File Wizard, a self-hosted browser-based tool that brings tog
+- **Lumen-Labs/brainapi2.git** - tied to one machine. The official Soulseek client is Windows only and has to stay running on whatever machine you're at. This runs as a daemon or Docker contain
+- **Mail-0/Zero** - touching the cloud. Deploy in your own VPC or data center and keep your data fully under control. Spin up AI agents with multi-step reasoning and tool orchestra
+- **MightyMoud/sidekick** - optimized thumbnails, and works perfectly on mobile and desktop. You can add descriptions, split your gallery into sections to tell a story. Imagine fly.io, but
+- **MoldyTaint/Cinephage** - Today, we're diving into 26 trending self-hosted projects from media managers to automation tools and everything in between. Let's get started. Cinnaphage, an a
+- **MorganKryze/cairn** - up to 90%, a figure worth validating yourself. Karen gives the people using your self-hosted services a directory, not another admin dashboard. You write a welc
+- **Nahuel990/ministack** - compatible apps. Your entire digital library in one place with no Amazon account required to access it. For anyone who's been meaning to get their books off Kin
+- **Nezreka/SoulSync** - Welcome back to the channel. I've collected 30 trending self-hosted projects on GitHub. From media automation and monitoring tools to AI chat apps. Let's jump i
+- **Notifuse/notifuse** - autoenriches it with metadata from IGDB, Screen Scraper, and Moby. You get achievements from retro achievements support for 400 platforms. You can play games di
+- **Nystik-gh/ignis** - no database lock-in, just clean, fast notes you self-host and own. Obsidian on a borrowed laptop means remote desktop or paying for their sync service. Ignis ru
+- **Oak-and-Sprout/sprout-track** - it. It even stores images and media locally, all wrapped in a clean multi-user web interface. Better Shift, the modern way to manage work shifts. Create multipl
+- **Panonim/dynacat** - Desomnia is a declarative, network-aware sleep manager that handles it automatically. It monitors active user sessions and open SMB shares. Sends the host to sl
+- **Portabase/portabase** - Everyone backs up their Postgres database. Almost nobody verifies those backups restore correctly until the moment they desperately need one. Databases handles 
+- **Pouzor/homelable** - vLLM. Role-based access control, token budgets, rate limiting, and multi-deployment load balancing with automatic failover. Most AI proxies log conversations by
+- **QuipNetwork/quip-node-manager** - Hermes HUD brings a full consciousness monitor to your web browser. It reads directly from your agent's local data directory, giving you real-time visibility in
+- **RackulaLives/Rackula** - how well you're doing. Love chess, but want to play it straight from your terminal? Meet Chess Tuili, the simple terminal based chess game that lets you play tw
+- **RookieEnough/Orion-Store** - That's UIUX Pro Max. It's basically a massive searchable database of the best UI styles, color palettes, font pairings, and UX rules, all tuned for modern frame
+- **RyjoxTechnologies/Octopoda-OS** - restore specific files with a single click. Octopoda OS is an open-source memory operating system for AI agents. Two lines of Python gives your agent persistent
+- **SIGNIAINDEX/SIGNIA** - family. It's literally an agent as a loop. Ask a language model what to do, run the tools it picks, then repeat. No black boxes, no magic abstractions, just beh
+- **SamR1/FitTrackee** - month's stash. This isn't another spreadsheet replacement, it's a full-blown finance platform. Hide events, the open-source event ticketing platform that finall
+- **SapphoSys/chiri** - TikTok, Reddit, Blue Sky, Discord, Mastodon, and WordPress. Full-screen UI, tip-tap rich text editor, seamless cross-posting, built-in AI with VO3 for video and
+- **SecurityCrux/secrux** - open source. You actually own your workout history. If you love Pi Hole but hate clicking through web interfaces to manage it, you need to check out Blocky. It'
+- **SimonBlancoE/discographic** - digital library. Pointed at your CBZ, CBR, or EPUB folders, and it automatically grabs covers, tags, and metadata from Google Books, Comic Vine, and MyAnimeList
+- **SimplePhotoGallery/core** - but you can't prove why? Meet Lagidant. Lagidant continuously pings your network targets every 15 seconds and tracks latency and packet loss, the stuff that act
+- **SinTan1729/chhoto-url** - teams who want control, insight, and intelligence over their data. Fox centralizes your files across multiple storage backends. And with its extensible architec
+- **SquareWaveSystems/squarebox** - reverse geocoding service. Originally built to power the Ryte location tracker. Written in Java, ingests raw OpenStreetMap PBF data, and spins up a blazing fast
+- **Studio-Saelix/sencho** - server hardware while your laptop just renders pixels. Sencho manages a whole fleet of Docker hosts without giving you Kubernetes to learn first. The usual choi
+- **Sync-in/server** - compatible apps. Your entire digital library in one place with no Amazon account required to access it. For anyone who's been meaning to get their books off Kin
+- **TM9657/flow-like** - you're ready to build. Meteoroid, the open-source pricing and billing engine built for modern SaaS. If you're moving to usage-based billing or product-led growt
+- **TandoorRecipes/recipes** - history on steroids. A background browser extension performs automatic full-text indexing of the actual rendered content of every website you visit. Global hotk
+- **Taskosaur/Taskosaur** - scheduling, move matches between courts, and adjust start times in real time. Public facing dashboards are available and can be branded with your own logo, maki
+- **TheBigRoomXXL/tinyfeed** - and Filament. Beautifully structured interface focused on clarity. Out-of-the-box integration with Ollama and OpenClaw for completely local private AI features.
+- **TheWicklowWolf/Lidify** - Comes preloaded with state-of-the-art models, light GBM to complex deep learning architectures, ready to forecast stock movements out of the box. Lidarrfy is a 
+- **Tiendil/feeds.fun** - layouts, light and dark themes, keyboard shortcuts for almost everything, and full mobile and desktop responsiveness. Power users will appreciate support for th
+- **Vitosicz/Heorot** - standards, including the legally required embedded XML files. Custom font support, Docker deployment, and no monthly subscription. Collaborating on markdown fil
+- **Volmarg/personal-management-system** - management platform that integrates conversational AI directly into your workflow. Instead of clicking through menus or filling out forms, you can create tasks,
+- **WastelandSYS/systempi** - already generated. Your training history on your own server, analyzed however you want. Your miles, your insights, no subscription required. Self-hosted notes a
+- **Yooooomi/your_spotify** - context. You point it at your repo and instead of just dumping a generic error log, it analyzes the logic to find real vulnerabilities like SQL injections or ha
+- **Zackriya-Solutions/meeting-minutes** - Today, we're diving into 22 self-hosted projects on GitHub that you can spin up on your own server, laptop, or even a Raspberry Pi. Let's go. If your inbox is s
+- **aaPanel/BillionMail** - replays, so you can actually see how users interact with your app without compromising their privacy. [Music] Next up, we've got Billion Mail, the open-source e
+- **abhinavxd/libredesk** - ID and stores the original long URL in the commit message. When someone hits the short link, the service fetches the corresponding patch file from GitHub, extra
+- **adomi-io/listing-lab** - over 100 channels like Slack or Telegram. Logify is perfect for catching security breaches, debugging crashes, or even automatically restarting or stopping cont
+- **aha-hyeong/kumiho** - sync across phone, laptop, and tablet running on your own infrastructure for free. Same sync, zero subscription. Kumiko is a self-hosted reader for comics, mang
+- **ahmetb/Iris** - With 1,103 human-annotated drama scripts, over 8,800 evaluations, and a live interactive leaderboard comparing eight state-of-the-art models. Iris, a clean webc
+- **ailinone/collective-intelligence** - sites, so keep an allow list handy. Aline is an OpenAI compatible gateway that answers a request with several models instead of one, arbitrates between them, an
+- **aizhimou/pigeon-pod** - just one command or a Docker container. Whether you're managing one VPS or a fleet of servers, Kamari keeps things minimal and efficient, so you can focus on wh
+- **akitaonrails/FrankMD** - operating system running on anything. Raspberry Pi 0 to workstations, Linux to Mac OS to Windows, ARM to x86. The killer feature is Prism window manager, bringi
+- **alam00000/bentopdf** - internal company manuals or PDFs. It handles all sources. Combine sources, spot outdated docs, fill gaps, and create one single source of truth. No manual labor
+- **alez007/modelship** - gets a clap embedding, the Lyon model trained on millions of audio text pairs. Claude is built in with 25 tools. Semantic search, Bandcamp purchase recommendati
+- **amicalhq/amical** - OCR handles 109 languages with ease. Zero, the open-source Gmail alternative that puts you in control. Self-host your email, integrate Gmail or Outlook, and fin
+- **amir20/dozzle** - generate detailed reports for invoices and manage multiple organizations without hitting a payw wall. It deploys instantly with Docker and finally lets you cloc
+- **andes90/collabmd** - standards, including the legally required embedded XML files. Custom font support, Docker deployment, and no monthly subscription. Collaborating on markdown fil
+- **andrii-kryvoviaz/slink** - that lets you track markets in real time without leaving the command line. It visualizes cryptocurrency, stocks, and ETFs using ASKY charts and dynamic coloring
+- **ankitvgupta/mail-app** - Default page size is 1080 by 1440. Git Reverse answers the question every developer has asked looking at an impressive open-source project. What prompt would ac
+- **anthony-chaudhary/fak** - and LangFuse, so self-hosting is the safer fit for sensitive records. Fact, the fused agent kernel, wraps an existing coding agent with operational controls wit
+- **arianrhodsandlot/retroassembly** - that you deploy on your own infrastructure. File storage, syncing, team collaboration, fine-grained access controls, multi-user support, modern interface, full 
+- **asciimoo/hister** - Welcome back to GitHub Awesome. In this video, we are counting down 35 self-hosted projects on GitHub. Check the description below for links to every repository
+- **asciimoo/omnom** - Blinko, the AI powered note-taking tool built for capturing ideas the moment they hit. Blinko uses AI powered rag search so you can find any note just by asking
+- **ashfn/islechat** - Kurmon, a lightweight certificate transparency monitoring tool that discovers new subdomains in real time. Point it at your targets and CRM will alert you insta
+- **automattic/harper** - You can drive the same back-end from its desktop app, dashboard, or CLI. Harper is an offline English grammar checker that keeps your drafts on your machine ins
+- **banastas/comics.banast.as** - black box. Flow like plugs in LLMs, machine learning models, and traditional logic like they're just another building block. Manyfold, your open-source hub for 
+- **beclab/Olares** - in one line with Docker, clean UI, dark mode, and mobile friendly. Relatical, a modern CRM built with Laravel and Filament. Perfect for teams that outgrew sprea
+- **bert-mccutchen/oak** - exporting and printing in multiple formats like PDF and markdown, and you can access your notes offline from any device. Oak, a simple homepage designed specifi
+- **booklore-app/booklore** - covered. We're talking low memory usage and a single binary under 20 megabytes that runs on almost any OS or architecture. Pages load in about a second, even wi
+- **budgetbee/budgetbee** - Even for anime and TV shows with ridiculously complex file names. Modern multi-container architecture with isolated distributed transcoding. Vault TLS is a self
+- **byrongamatos/slopsmith** - Tired of paying enterprise per user fees for Notion or Confluence? DocMost is the self-hosted escape hatch. The editor is the standout. Buttery smooth real-time
+- **bytebot-ai/bytebot** - Today, we're diving into the world of self-hosted tools, apps that give you full control, zero cloud dependency, and total privacy. From analytics to AI desktop
+- **cachethq/cachet** - one-click deployments, all from a dashboard that looks just as good as the paid ones. It handles multi-erver setups and runs on your own hardware. Seriously, st
+- **calagopus/panel** - share, zero bloat. View 3 and Tailwind front-end, TypeScript and Node.js back-end powered by MariaDB. Drag and drop uploads, sharing via unique short codes, use
+- **calibrain/shelfmark** - on the price. When they agree, you're set. When they disagree, you see all candidates with context and make the final call. AI verification catches mistakes lik
+- **caronc/apprise** - Retro Assembly is a self-hosted retro game cabinet that runs in the browser. Spin it up with Docker, point it at your ROMs, and it handles the rest. Emulators s
+- **cassandra/home-information** - browser-based toolbox using a tiny 28 megabyte Docker image. Because everything executes client-side on your own machine, you get complete data privacy with zer
+- **chaitin/SafeLine** - local LLMs into a slick API that extracts structured data from documents with accuracy. You just spin up the Docker container and start blasting images at it. I
+- **choyiny/saasmail** - Welcome back to GitHub Awesome. In this video, we are counting down 35 self-hosted projects on GitHub. Check the description below for links to every repository
+- **chr0nzz/traefik-manager** - TikTok, Reddit, Blue Sky, Discord, Mastodon, and WordPress. Full-screen UI, tip-tap rich text editor, seamless cross-posting, built-in AI with VO3 for video and
+- **chrisgreg/fyi** - headphones, and mics, and audio priority bar does the rest, switching to the highest priority device as soon as it connects. It's got separate modes for speaker
+- **chrisvel/tududi** - What is up developers? Welcome back to GitHub awesome. Today we're looking at 35 self-hosted projects on GitHub. Let's get into it. Todoist and Things are polis
+- **cigoria/simpleShare** - building a real-time inventory of every connected device. Unknown device joins your Wi-Fi or a trusted device suspiciously changes state? Instant alert. Self sy
+- **clemcer/loggifly** - time. You can set up alerts for pretty much everything that matters, from bandwidth spikes to offline systems. Media Manager, a self-hosted media management sys
+- **cloudflare/agentic-inbox** - JavaScript package for building it into your own workflow. Agentic Inbox is Cloudflare's reference email client. Email routing delivers Each mailbox gets its ow
+- **clucraft/PriceGhost** - researches recent conversation around any topic across Reddit and X from the past month and turns what it finds into copypaste ready prompts or concise summarie
+- **coder/code-server** - Fam Stack turns a Mac Studio sitting in your living room into your family's private cloud. No subscription required. Kids photos, voice memos, and documents usu
+- **cogwheel0/conduit** - map. Runs entirely locally, zero telemetry, and produces a visualization that is equal parts fascinating and unsettling. Dispatch are is an open-source IPTV pro
+- **connorgallopo/Tracearr** - editing, a notion style interface, SL commands, nested documents, collections, permissions, and version history. Markdown compatible with import export, but you
+- **crawlseo/crawlseo** - commercial hosted service isn't allowed before 2029. Crawl SEO combines Google Search Console, a site crawler, and core web vitals in one self-hosted dashboard.
+- **crocodilestick/Calibre-Web-Automated** - operating system running on anything. Raspberry Pi 0 to workstations, Linux to Mac OS to Windows, ARM to x86. The killer feature is Prism window manager, bringi
+- **danielbrendel/hortusfox-web** - running on a $20 ESP32 S3 microcontroller packed into a USB thumb drive form factor. Plug it into any battery bank. It broadcasts its own Wi-Fi hotspot with a c
+- **dannycandle/bookbag** - for AI agents. Spin up agent pods through a web console, each with its own isolated Git work tree and sandbox. Drop tickets into a built-in Kanban board, assign
+- **databasus/databasus** - Desomnia is a declarative, network-aware sleep manager that handles it automatically. It monitors active user sessions and open SMB shares. Sends the host to sl
+- **dedicatedcode/paikka** - and Filament. Beautifully structured interface focused on clarity. Out-of-the-box integration with Ollama and OpenClaw for completely local private AI features.
+- **denho/faved** - search and date filters. Manage multiple caretakers with roles and simple pinbased security, and plan everything with calendar events, appointments, and reminde
+- **diwenne/openreply** - while a standalone Android build can stay entirely on one phone. Open Reply is a self-hosted comment to DM tool for Instagram. Someone comments your keyword on 
+- **docmost/docmost** - Manager is a self-hosted web UI to manage your entire reverse proxy without touching YAML. Visually add HTTP, TCP, or UDP routes, configure middlewares, monitor
+- **dongdongbh/Mindwtr** - automation, no password, and it queues under Meta's 750 per hour cap. Mind Twitter is a local-first task app built around the getting things done loop, rather t
+- **easychen/ask4me** - aggregator that pulls everything into one dashboard. Steam, Amazon, EA, Xbox Game Pass, and local folders. Smart dduplication shows games bought on multiple pla
+- **ebongard/renfield** - while the community runner records a local incident summary. Renfield is a self-hosted assistant designed to live around the house, not inside one browser tab. 
+- **eduardofuncao/pam** - on your servers from one interface and add or remove favorites instantly. Stats dashboard shows total favorite counts by user and media type. Unified search acr
+- **eitchtee/WYGIWYH** - With zero-knowledge client-side encryption, your secrets are locked with AES-256-GCM before they ever leave your browser. The server? It never sees your data or
+- **elkimek/get-based** - maintainers report roughly 4.1 times less work than a tuned warm cache stack. Get Based is a local-first health dashboard that brings lab results, DNA context, 
+- **ellite/Wallos** - generate detailed reports for invoices and manage multiple organizations without hitting a payw wall. It deploys instantly with Docker and finally lets you cloc
+- **enrique-paulino/workout-tracker** - auto-grading and feedback on every attempt. For anyone serious about going deeper than the API surface, this is the practice environment worth grinding through.
+- **error311/FileRise** - log daily check-ins, and monitor progress with interactive charts. Want a personal coach? Sparky AI helps you log food, exercise, and body stats, even from phot
+- **ethereal-squirrel/devourer-reader-server** - Full admin dashboard to approve or reject before photos go live. Pyre code is a self-hosted platform with 68 hands-on implementation problems ranging from real 
+- **evroon/bracket** - your home inventory efficiently. Ever wonder who's actually using your media server and if they're sharing accounts? Tra has the answer. Tra is a self-hosted st
+- **exaroth/liveboat-github-runner** - most of them are someone's cloud subscription that can change terms, get breached, or shut down. Journav is a self-hosted private journaling app. Write your dai
+- **fabiodalez-dev/Pinakes** - permissions make file management a breeze. Need collaboration? Optional only office integration lets you edit DOCX files right in your browser. Mount it anywher
+- **famstack-dev/famstack** - actually conducts the interview, not just schedules or transcribes it. Building a good interview usually means writing every question yourself and reviewing eve
+- **foldergram/foldergram** - server scanning your family photos for ad targeting. Most note-taking apps store your thoughts. Atomic connects them. It takes your markdown notes, automaticall
+- **fosrl/pangolin** - compression and retention policies so your data stays safe without constant babysitting. You can set fine grain schedules, monitor backup health, and protect yo
+- **fscorrupt/Posterizarr** - documents. Upvote RSS, a self-hosted platform for generating rich, customizable RSS feeds from popular social aggregation sites. It supports Reddit, Hacker News
+- **gabehf/Koito** - worrying about metadata. You get total control over your file storage and consensus nodes with a single Docker command. This is like running a tiny ops team fro
+- **getarcaneapp/arcane** - out of the box. And if you want custom buttons, the new Little Link button builder lets you design them visually. In fact, we use Little Link ourselves for our 
+- **gethopp/hopp** - direction, double-page spreads, bookmarks, and long view. Hop is a remote pair programming app built around low-latency screen sharing with a back-end you can h
+- **getmydia/mydia** - your calls in real time, transcribes everything, and instantly generates clean AI powered summaries. All powered by open-source models running locally. No subsc
+- **gitroomhq/postiz-app** - digital library. Pointed at your CBZ, CBR, or EPUB folders, and it automatically grabs covers, tags, and metadata from Google Books, Comic Vine, and MyAnimeList
+- **gmrandazzo/CheapSecurity** - containers may still send you back to Portainer or the CLI. Cheap Security is a single camera CCTV app for a Raspberry Pi and a USB webcam. Flask dashboard, MJP
+- **go-vikunja/vikunja** - Welcome back to GitHub Awesome channel. Today, we're diving into 25 incredible self-hosted projects on GitHub that you can run yourself. Let's get started. Ref 
+- **gobackup/gobackup** - download SVGs, and finally share links without worrying about them breaking behind a payw wall. If you're still writing 200line bash scripts to dump your Postgr
+- **grimmory-tools/grimmory** - Welcome back to GitHub Awesome. Today, I've got 32 trending self-hosted projects from GitHub. Let's get into it. Managing three separate calendars across Google
+- **grishy/any-sync-bundle** - is a self-hosted read it later that saves full articles, highlights, and even Kindle notes to your database. Read anywhere, offline, no subscription. It ships w
+- **helicalinsight/helicalinsight** - latency, which will still depend on your network. Helical Insight is a self-hosted BI platform that combines dashboards, printable reports, and embedded analyti
+- **helixml/helix** - covered. We're talking low memory usage and a single binary under 20 megabytes that runs on almost any OS or architecture. Pages load in about a second, even wi
+- **hemant6488/podcast-server** - everything. Cataloging, circulation, digital content, ebooks, audio books, and even a public-f facing catalog. All with multilingual support. Automatic metadata
+- **henrygd/beszel** - you a beautiful intuitive web interface to manage Docker without living in the terminal. With Arcane, you can start, stop, restart, and inspect containers, mana
+- **homarr-labs/homarr** - browser-based toolbox using a tiny 28 megabyte Docker image. Because everything executes client-side on your own machine, you get complete data privacy with zer
+- **iflytek/skillhub** - management. For anyone running Plex for a household or friend group, this is the curation layer the app never shipped with. Planning a trip across multiple Goog
+- **iib0011/omni-tools** - typing, no account, no setup, no sync nagging you. Offline-first means it works instantly with no connection, and your notes live on your device. SaaS platforms
+- **investbrainapp/investbrain** - Jellyfin, so it plugs straight into your existing media server. Under the hood, Fasian uses the MPV player for highquality playback, plus a web player backend f
+- **ironicbadger/linkme** - knowledge library. Jargon takes your sources and breaks them down into index card- sized key ideas, automatically summarizing, extracting, linking related conce
+- **ironsh/iron-proxy** - context into a system prompt so it actually knows what the meeting is about. Handles billing automatically. Retrieves post-meeting notes afterward. Your AI show
+- **iuliandita/digarr** - login page to the whole internet or making your mom set up a VPN just to watch a show. This sits in front of your reverse proxy and only lets registered devices
+- **jeffvli/feishin** - Cloudflare R2, Google Drive, or your local file system. Tired of MyFitnessPal locking features behind a paywall? Sparky Fitness is the self-hosted alternative. 
+- **journiv/journiv-app** - It's a modern real-time monitoring dashboard for the Pi. Live telemetry on CPU, memory, and network, plus hardware health diagnostics like temperature and throt
+- **kalamdb/KalamDB** - everything to CSV. Atlas CMMS calls itself Jira for technicians, and that's the honest pitch. Work orders instead of tickets, machines instead of code. Commerci
+- **karakeep-app/karakeep** - that lets you track markets in real time without leaving the command line. It visualizes cryptocurrency, stocks, and ETFs using ASKY charts and dynamic coloring
+- **katspaugh/ichinichi** - that you deploy on your own infrastructure. File storage, syncing, team collaboration, fine-grained access controls, multi-user support, modern interface, full 
+- **kbroose/stash** - one-click deployments, all from a dashboard that looks just as good as the paid ones. It handles multi-erver setups and runs on your own hardware. Seriously, st
+- **kirill-markin/expense-budget-tracker** - browsers, while search and translated labels keep the page approachable. Expense budget tracker keeps personal finance records in a Postgres app you can run you
+- **komari-monitor/komari** - images, videos, and 50 plus file formats into your local knowledge base. Then instantly search, chat, and get cited answers in natural language. It supports loc
+- **kurrier-org/kurrier** - Today, we're diving into 22 self-hosted projects on GitHub that you can spin up on your own server, laptop, or even a Raspberry Pi. Let's go. If your inbox is s
+- **langfuse/langfuse** - detection, so expect trees and headlights to trigger it. LangFuse is an LLM observability platform. Trace every model call, retrieval step, and agent action, th
+- **layercodedev/sled** - test-driven development, automated hooks that lint and type check every file the AI writes. If you want to stop fighting with context windows, and start shippin
+- **leandrobattochio/trackarr** - developer assistant. Your data stays strictly on your machine. If you're on multiple private trackers, you know the pain. Log in to each one, eyeball your ratio
+- **letsseal/letsseal** - better for shipping quickly than building a fully custom editor. Let's Seal signs any file, so anyone can prove it hasn't changed when it existed and which cert
+- **lfnovo/open-notebook** - engineering docs simple and independent. It packages a clean web interface as a single go binary with zero external database dependencies. It stores all your co
+- **lihor-hub/news-dashboard** - long-term memory keep local context available. News dashboard turns a pile of technical feeds into a self-hosted inbox with an actual triage workflow. Articles 
+- **linkwarden/linkwarden** - entirely on your own server. Rocksmith 2014 is great for learning guitar, but dealing with loading screens, file conversion, and custom DLC is painful. SlopSmit
+- **lklynet/aurral** - builds monthly rewinds, interest overtime graphs, and deep artist analytics right on your server. It's Listenrains compatible, deploys instantly with Docker. St
+- **lklynet/hypermind** - seven block types, links, media, YouTube, text, social maps, and spacers. All fully customizable. The 999 grid editor gives you total control. Drag, resize, rep
+- **louislam/dockge** - enabled if the dashboard is reachable beyond your trusted network. Docky turns Docker Compose stacks into a focused self-hosted dashboard without taking ownersh
+- **louisnelza/stayview** - when players log in for the next one. The MikroTik WinBox interface has looked the same since most current developers were in middle school. Micro Dash is a sel
+- **loyalpartner/selfsync** - building a real-time inventory of every connected device. Unknown device joins your Wi-Fi or a trusted device suspiciously changes state? Instant alert. Self sy
+- **lupinemachines/lupine** - It even features a built-in SFTP file editor and a basic container manager right in your browser. Your AI coding agent treats every file as equally important an
+- **lyqht/mini-qr** - cloud, but are intimidated by Docker containers and Linux command lines, TP is the answer. It turns your Raspberry Pi or old computer into a plug-and-play serve
+- **m4r1k/Eneru** - entirely on PocketBase and LiveKit, it runs inside a single lightweight back-end container. An unplanned power outage doesn't just cut your lights, it's a fast 
+- **mad0x20wizard/Desomnia** - GPU-over-IP bridge that attaches a GPU on a remote machine to a CPU-only machine over your network. So, your server can run inference or training on a graphics 
+- **madalinpopa/gocost-web** - builds monthly rewinds, interest overtime graphs, and deep artist analytics right on your server. It's Listenrains compatible, deploys instantly with Docker. St
+- **majcheradam/ocrbase** - download SVGs, and finally share links without worrying about them breaking behind a payw wall. If you're still writing 200line bash scripts to dump your Postgr
+- **manyfold3d/manyfold** - black box. Flow like plugs in LLMs, machine learning models, and traditional logic like they're just another building block. Manyfold, your open-source hub for 
+- **markrai/scrumboy** - for AI agents. Spin up agent pods through a web console, each with its own isolated Git work tree and sandbox. Drop tickets into a built-in Kanban board, assign
+- **mauriceboe/NOMAD** - management. For anyone running Plex for a household or friend group, this is the curation layer the app never shipped with. Planning a trip across multiple Goog
+- **maxdorninger/MediaManager** - time. You can set up alerts for pretty much everything that matters, from bandwidth spikes to offline systems. Media Manager, a self-hosted media management sys
+- **mayswind/ezbookkeeping** - Welcome back to the channel. Today I've curated 27 trending self-hosted open-source projects on GitHub. Let's jump straight into the first project. Still using 
+- **melodee-project/melodee** - can only be decrypted on your smartphone app. Even the server relaying the videos cannot access them. It's built in Rust for security and performance. Melody, a
+- **meteroid-oss/meteroid** - boom, Fit Tracky turns them into clean maps, stats, and visualizations you actually want to see. Track speed, distance, and filter workouts across time, locatio
+- **mhumayunsaeed/Corvus** - schema, and the same identical query returns each user only their own rows. Corvus is a self-hostable Discord alternative for communities that want chat, voice,
+- **mmcdole/kino** - Docker deployment for self-hosting built with React and NodeJS. Octelium is a self-hosted unified secure access platform on Kubernetes. functions as remote acce
+- **murtaza-nasir/speakr** - typing, no account, no setup, no sync nagging you. Offline-first means it works instantly with no connection, and your notes live on your device. SaaS platforms
+- **mvfc/backvault** - Plex, Jellyfin, and MB, and integrates with tools like Tuli and Radar to automatically trigger updates when new media arrives. This is Back Vault, a lightweight
+- **myfear/open-pace** - If you host a website, you know you need a firewall, but standard WFTs rely on regular expressions, which are messy, slow, and constantly block real users by mi
+- **ndroo/freeciv.andrewmcgrath.info** - configuration. Walrus is a single compiled binary, built-in local LLM inference, persistent SQLite memory, and multi-channel support for terminal, Discord, and 
+- **nesquena/hermes-webui** - untrusted workloads. Default deny MITM proxy. Every outbound request is blocked unless you explicitly allow the domain. No accidental uploads. No data leakage. 
+- **netalertx/NetAlertX** - drop, hierarchical folders, and custom metadata tagging. Firebase alternatives usually mean managing separate microservices for database, auth, APIs, and real-t
+- **nicotsx/zerobyte** - management and archiving platform. Popra lets you store and organize your documents with zero hassle. Whether it's that old gift receipt or important contract, 
+- **norish-recipes/norish** - Next up, for all Mac users who love efficiency, meet Jarvis AI Assistant. A 100% open-source, fully local voicepowered AI assistant that lets you hold one key, 
+- **nyblnet/bento** - live inside a normal site without rebuilding the renderer. Bento is a PowerPoint alternative where the presentation and its editor live inside one HTML file. Op
+- **oblien/openship** - cloud tier it says handles hair and fur better than the local one. Open Ship is a self-hosted deployment platform that takes a repository from build to routing 
+- **obsessiondb/rudel** - Versa Labs is self-hosted. Deploy it on your own infrastructure, connect it as a private GitHub app, and it reviews pull requests automatically, catches bugs, a
+- **octelium/octelium** - Docker deployment for self-hosting built with React and NodeJS. Octelium is a self-hosted unified secure access platform on Kubernetes. functions as remote acce
+- **olalie/tapmap** - original page. A bookmark manager that actually preserves what you're bookmarking. Fine-tuning LLMs locally has always meant either waiting a long time or buyin
+- **oomol-lab/open-connector** - day, so you're not staring at a blank daily report trying to remember what you actually did. Every app you open, every site you visit, even window titles, get c
+- **opendatalab/MinerU** - touching the cloud. Deploy in your own VPC or data center and keep your data fully under control. Spin up AI agents with multi-step reasoning and tool orchestra
+- **openphotos-ca/openphotos** - and SQLite app that logs exercises, tracks reps, and monitors personal records from a clean, mobile-friendly interface. Deploy it with Docker, and your training
+- **openwalrus/walrus** - Versa Labs is self-hosted. Deploy it on your own infrastructure, connect it as a private GitHub app, and it reviews pull requests automatically, catches bugs, a
+- **operacle/checkcle** - Taylor Swift is actual torture. You need to self-host your Spotify. It's basically a personal data warehouse for your music habits that runs right on your own s
+- **orangecoding/fredy** - browser interface for any IMAP server with folders, search, address book, and a plugin system for extensions. Battle-tested at massive scale, it's the webmail c
+- **outline/outline** - aggregator that pulls everything into one dashboard. Steam, Amazon, EA, Xbox Game Pass, and local folders. Smart dduplication shows games bought on multiple pla
+- **pantelx/bettershift** - it. It even stores images and media locally, all wrapped in a clean multi-user web interface. Better Shift, the modern way to manage work shifts. Create multipl
+- **paperless-ngx/paperless-ngx** - tied to one machine. The official Soulseek client is Windows only and has to stay running on whatever machine you're at. This runs as a daemon or Docker contain
+- **papermerge/papermerge-core** - timeline. Plant care apps are packed with ads or lock features behind subscriptions. Hortis Fox is the free open-source alternative. Self-host it on your home N
+- **papra-hq/papra** - vLLM. Role-based access control, token budgets, rate limiting, and multi-deployment load balancing with automatic failover. Most AI proxies log conversations by
+- **parker-server/parker** - users, API keys, backups, logs, and server settings. Parker is a self-hosted server for comic files you already have, and it treats your folders as the source o
+- **perber/leafwiki** - What is up developers? Welcome back to GitHub awesome. Today we're looking at 35 self-hosted projects on GitHub. Let's get into it. Todoist and Things are polis
+- **phil9922/backup-maker** - encryption, sync, sharing, and model analysis optional. Backup Maker protects one computer by copying folders to several local destinations at once with nothing
+- **pierridotite/stonks-dashboard** - autoenriches it with metadata from IGDB, Screen Scraper, and Moby. You get achievements from retro achievements support for 400 platforms. You can play games di
+- **pikoci/pikoci** - most of them are someone's cloud subscription that can change terms, get breached, or shut down. Journav is a self-hosted private journaling app. Write your dai
+- **pinkfuwa/llumen** - graphic novels separately. See your collection like never before with dashboards that track value and trends over time. Find your comics instantly with smart se
+- **piratuks/invoice-builder** - Frank MD is a self-hosted markdown editor for blog writing. Rails app with no database works directly with markdown files on your file system. Includes AI helpe
+- **pocket-id/pocket-id** - diagrams, and LaTeX math inline. The killer feature is voice call mode. Depot OS integration means it uses native CallKit on iOS and looks exactly like a regula
+- **ponzischeme89/FaveSwitch** - costs, and streaming subscriptions you'd cancel. Shows monthly difference in ROI payback time in months or years. Add custom services as needed. New Alert is a 
+- **psviderski/uncloud** - 128 megabits with sub-second cold starts and zero config setup. It's powerful, too. Integrate with OpenAI, local models, or OpenRouter. Upload PDFs, generate im
+- **refrefhq/refref** - Welcome back to GitHub Awesome channel. Today, we're diving into 25 incredible self-hosted projects on GitHub that you can run yourself. Let's get started. Ref 
+- **rejourneyco/rejourney** - browser interface for any IMAP server with folders, search, address book, and a plugin system for extensions. Battle-tested at massive scale, it's the webmail c
+- **relaticle/relaticle** - Open Connector is an open-source gateway your agent talks to instead of you hand-wiring a different SDK for every SaaS tool you connect. Usually that means rebu
+- **repowise-dev/repowise** - It even features a built-in SFTP file editor and a basic container manager right in your browser. Your AI coding agent treats every file as equally important an
+- **rifkyputra/postlab** - playlist from a text prompt like high-tempo, low-energy, and even searches lyrics by theme across 72 languages. PostLab is one TUI that replaces the dozen separ
+- **rmfatemi/nutalert** - costs, and streaming subscriptions you'd cancel. Shows monthly difference in ROI payback time in months or years. Add custom services as needed. New Alert is a 
+- **robiningelbrecht/statistics-for-strava** - more engines on the way. OpenTable charges per cover fees, owns your customer data, and puts their brand between you and your diners. OpenResto is a self-hosted
+- **roflcoopter/viseron** - is tedious and always out of date. Home label actively scans your network, identifies machines and open ports, and automatically generates an interactive map of
+- **rommapp/romm** - optimized thumbnails, and works perfectly on mobile and desktop. You can add descriptions, split your gallery into sections to tell a story. Imagine fly.io, but
+- **roundcube/roundcubemail** - entirely on PocketBase and LiveKit, it runs inside a single lightweight back-end container. An unplanned power outage doesn't just cut your lights, it's a fast 
+- **rowboatlabs/rowboat** - while its optional agent can fill metadata and search assets semantically. Robo is a desktop AI co-worker that keeps its memory as plain markdown on your machin
+- **rufftruffles/spameater** - If you're an audio file who loves self-hosted music setups, Rockbox Zigg is a modern take on the classic Rockbox open-source audio player rebuilt with Zig and R
+- **runtipi/runtipi** - beautiful heat maps, tracks your travel statistics like countries visited and miles traveled, and visualizes your life on a global scale. Link Warden, the self-
+- **rybbit-io/rybbit** - understanding your code. Built with web technologies like web GPU, web assembly, and web audio, airy runs seamlessly across browsers, desktops, and even mobile 
+- **safebucket/safebucket** - on the price. When they agree, you're set. When they disagree, you see all candidates with context and make the final call. AI verification catches mistakes lik
+- **sam1am/backlogia** - monitoring for free. Monitor websites, page speed, SSL certificates, Docker containers, ports, and game servers. Get real-time alerts via email, Discord, Slack,
+- **sassanix/Warracker** - Plex, Jellyfin, and MB, and integrates with tools like Tuli and Radar to automatically trigger updates when new media arrives. This is Back Vault, a lightweight
+- **scanopy/scanopy** - automatically fixes any server config that's drifted. Scanopy replaces the network diagram you drew once and never updated again. The usual draw.io diagram or I
+- **secluso/secluso** - required. Everything is built to protect your privacy. Foss billing, an open-source billing and client management system designed for online service businesses.
+- **seethroughlab/familiar** - developer assistant. Your data stays strictly on your machine. If you're on multiple private trackers, you know the pain. Log in to each one, eyeball your ratio
+- **sethcottle/littlelink** - remote access platform built on WireGuard. It combines a VPN and a reverse proxy into one clean open-source system for accessing anything anywhere. Panggalan le
+- **shukiv/jabali-panel** - messages and hand back the closest match, which the makers of Brain API call a database, not memory. This builds a knowledge graph instead. Feed it plain senten
+- **siinghd/yourinfo** - remote, and it just works. Blocked website? It falls back automatically. No transcript? It tries again with backups. As it runs, it streams the summary live, be
+- **simjanos-dev/LinguaCafe** - engineering docs simple and independent. It packages a clean web interface as a single go binary with zero external database dependencies. It stores all your co
+- **simplesuite/simplebudget** - library the one thing streaming still holds over it, real discovery. It builds a taste profile from up to eight sources, Last.fm, Listen Brains, Spotify, your P
+- **slskd/slskd** - to edit together. This handles real-time collaborative editing properly and organizes everything into permission spaces and groups instead of one flat page tree
+- **sockudo/sockudo** - the MCP endpoint lets external tools do the same. Sokudo is a self-hosted Rust real-time server that accepts Pusher-compatible clients, then adds a second proto
+- **solidtime-io/solidtime** - that is 100% yours and 0% ad supported. Omni Tools, the self-hosted Swiss Army knife that replaces all those sketchy utility sites. It packs over 80 privacy fir
+- **stabldev/torrra** - compressor that makes your videos small without losing quality. Drop a file, choose a target size, and let it do the magic. Supports Nvidia, Intel, AMD GPUs or 
+- **stefanpejcic/EmailFilter** - testers, run AB or multivariate experiments, and segment users however you want. Building for web, mobile, or back-end? Flagsmith has 15 SDKs, so you can plug i
+- **steveiliop56/tinyauth** - proactive alerts via email or over 100 push services, and full warranty claim management. You can also search and import warranty data with multi-user support a
+- **stirling-image/stirling-image** - Duwarich is the self-hosted alternative. Take your Google Takeout archive, drop it into Duwarich, and it instantly plots your entire life's location history ont
+- **suitenumerique/drive** - and formats it perfectly. Local first, privacy-focused, and powered by GenAI. Drive, the open-source file platform that turns your documents into real collabora
+- **sunburnco/sunburn** - no third-party reading your transactions. Most commercial fitness apps make money by locking your health logs behind a paywall and selling your data. Sparky Fit
+- **superloglabs/superlog** - The dashboard stays on localhost and internet relays are disabled. Superlog turns raw open telemetry data into incidents you can actually investigate instead of
+- **swingmx/swingmusic** - You can organize your entire life into projects and subprojects, keep everything neatly grouped, and switch between list, Gantt, table, or full Kanban, whatever
+- **sysadminsmedia/homebox** - magic. Feeds Fun is a self-hosted newsreader that automatically assigns tags to every article, letting you filter and sort content exactly how you want. You can
+- **technomancer702/nodecast-tv** - Welcome back to the channel. It's time for another episode of GitHub Trending Today. We've got 30 amazing projects that are trending today. Let's get started. N
+- **teelur/budget-board** - You want an RSS reader, but you don't want to run a server or trust a hosted app with your reading list. Liveboat does an end run around both. It's a template t
+- **terry90/soulbeet** - backends, synchronized lyrics, smart playlist editing, and scrobbling straight to your server. A retro milkdrop style audio visualizer reacting to your music in
+- **tess1o/geopulse** - day, so you're not staring at a blank daily report trying to remember what you actually did. Every app you open, every site you visit, even window titles, get c
+- **the-booklore/booklore** - restore specific files with a single click. Octopoda OS is an open-source memory operating system for AI agents. Two lines of Python gives your agent persistent
+- **the-momentum/open-wearables** - boom, Fit Tracky turns them into clean maps, stats, and visualizations you actually want to see. Track speed, distance, and filter workouts across time, locatio
+- **tiehfood/xpferd** - sync across phone, laptop, and tablet running on your own infrastructure for free. Same sync, zero subscription. Kumiko is a self-hosted reader for comics, mang
+- **timelinize/timelinize** - generates those professional public status pages to keep your users happy during an outage. You know how your entire life history is scattered across different 
+- **tomascupr/sandstorm** - dictation app. Hold fn anywhere to record, release to paste the transcription into whatever field you're typing in. It reads context from the active window. If 
+- **tonyantony300/alt-sendme** - actually conducts the interview, not just schedules or transcribes it. Building a good interview usually means writing every question yourself and reviewing eve
+- **toorandom/malhaus** - and SQLite app that logs exercises, tracks reps, and monitors personal records from a clean, mobile-friendly interface. Deploy it with Docker, and your training
+- **trailbaseio/trailbase** - GPU-over-IP bridge that attaches a GPU on a remote machine to a CPU-only machine over your network. So, your server can run inference or training on a graphics 
+- **usememos/memos** - 2FA, OIDC, and full user management. Torah, a Python CLI tool that lets you search and download torrent without leaving your terminal. Powered by Jacket, Prowle
+- **value1338/selfhost-roi-calculator** - proxy list imports. Auto captures screenshots and recordings, stores cookies with a captures tab for viewing or downloading assets. DD wrap is a lightweight cut
+- **vavallee/bindery** - grocery lists grouped by supermarket aisle based on what you planned. Read Air is essentially dead. The project got archived. The metadata back end went offline
+- **vitodeploy/vito** - generates those professional public status pages to keep your users happy during an outage. You know how your entire life history is scattered across different 
+- **voidauth/voidauth** - scheduling, move matches between courts, and adjust start times in real time. Public facing dashboards are available and can be branded with your own logo, maki
+- **voidmind-io/voidllm** - backends, synchronized lyrics, smart playlist editing, and scrobbling straight to your server. A retro milkdrop style audio visualizer reacting to your music in
+- **whwangovo/pyre-code** - Full admin dashboard to approve or reject before photos go live. Pyre code is a self-hosted platform with 68 hands-on implementation problems ranging from real 
+- **wizarrrr/wizarr** - layouts, light and dark themes, keyboard shortcuts for almost everything, and full mobile and desktop responsiveness. Power users will appreciate support for th
+- **wm94i/Work-Review** - each one covering only its own narrow slice of formats. This wraps FFmpeg, ImageMagick, Pandoc, LibreOffice, and a dozen other engines behind one upload box, ba
+- **xaspx/hermes-control-interface** - telemetry. Stop uploading private photos to sketchy online converters. Asheem is Sterling PDF, but for images. 30-plus tools packed into a single Docker contain
+- **xpipe-io/xpipe** - Today's video is packed with 31 trending self-hosted projects from developer tools to media servers and productivity platforms you can run entirely on your own 
+- **ygwyg/merchant** - clusters. Get a dashboard view of all your nodes showing CPU, memory, and disk usage at a glance. Manage VMs and Lexe containers effortlessly. List them, start,
+- **zhfahim/anchor** - that bridges your local desktop with your entire server fleet. It requires zero installation on the remote side. It just piggybacks off your existing SSH, Docke
+- **zoriya/kyoo** - grocery lists grouped by supermarket aisle based on what you planned. Read Air is essentially dead. The project got archived. The metadata back end went offline
+- **zscole/gru** - worrying about metadata. You get total control over your file storage and consensus nodes with a single Docker command. This is like running a tiny ops team fro
+- **zymazza/mazzap** - collaborative file editing with Monaco, chunked uploads for big files, and a recovery bin, all backed by SQLite. Muzapp turns raw lidar point clouds into a walk
+
+## Related
+
+[[dashboard]] [[monitoring]] [[notes]] [[productivity]]
