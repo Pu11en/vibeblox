@@ -109,7 +109,7 @@ class Handler(BaseHTTPRequestHandler):
         if self.headers.get("X-P2B-Secret") != SECRET:
             return self._send(401, {"error": "bad secret"})
         path = self.path.split("?")[0]
-        if path == "/api/questions/for-idea":
+        if path == "/api/plan":
             length = int(self.headers.get("Content-Length", 0) or 0)
             try:
                 body = json.loads(self.rfile.read(length) or b"{}")
@@ -118,7 +118,9 @@ class Handler(BaseHTTPRequestHandler):
             idea = body.get("idea")
             if not isinstance(idea, dict):
                 return self._send(400, {"error": "missing idea"})
-            return self._send(200, {"questions": agent.generate_questions(idea)})
+            step = agent.plan_step(idea, body.get("answers") or [],
+                                   bool(body.get("enough")))
+            return self._send(200, step)
 
         if path != "/api/start":
             return self._send(404, {"error": "no such route"})
@@ -135,6 +137,7 @@ class Handler(BaseHTTPRequestHandler):
             "jobId": uuid.uuid4().hex[:12],
             "idea": idea,
             "answers": answers,
+            "plan": body.get("plan") or None,
             "player": str(body.get("playerName") or "player")[:40],
             "state": "queued",
             "stage": "queued",

@@ -111,42 +111,76 @@ def run(auto_idea=None, auto_answers=None, auto_name=None, find_idea=False):
     else:
         idea = pick_idea(ideas)
 
-    # brain-proposed questions for this idea (static set as fallback)
-    try:
+    # planning loop: the brain asks one question at a time, no limit,
+    # until the plan is detailed - then shows the plan. Build is separate.
+    def plan_call(answers, enough=False):
         req = urllib.request.Request(
-            BASE + "/api/questions/for-idea",
-            data=json.dumps({"idea": idea}).encode(), method="POST")
+            BASE + "/api/plan",
+            data=json.dumps({"idea": idea, "answers": answers, "enough": enough}).encode(),
+            method="POST")
         req.add_header("X-P2B-Secret", SECRET)
         req.add_header("Content-Type", "application/json")
-        with urllib.request.urlopen(req, timeout=30) as r:
-            qdata = json.loads(r.read()).get("questions")
-        if isinstance(qdata, list) and qdata:
-            questions = qdata
-    except Exception:
-        pass  # static questions
+        with urllib.request.urlopen(req, timeout=60) as r:
+            return json.loads(r.read())
 
     answers = []
-    if auto_answers:
-        for i, q in enumerate(questions):
-            key = auto_answers[i] if i < len(auto_answers) else "a"
+    plan = None
+    auto_i = 0
+    while True:
+        enough = False
+        if auto_answers is not None:
+            # auto mode: consume provided letters; once exhausted, say enough
+            if auto_i >= len(auto_answers):
+                enough = True
+            step = plan_call(answers, enough)
+            if step.get("done"):
+                plan = step.get("plan")
+                break
+            q = step["question"]
+            key = auto_answers[auto_i] if auto_i < len(auto_answers) else "a"
+            auto_i += 1
             idx = "abcd".index(key)
             opt = q["options"][min(idx, len(q["options"]) - 1)]
             answers.append({"id": q["id"], "text": q["text"], "label": opt["label"]})
             print(f"\n{q['text']}\n  -> {key.upper()}. {opt['label']}")
-    else:
-        for i, q in enumerate(questions, 1):
-            opts = [("abcd"[j], o["label"], o["description"]) for j, o in enumerate(q["options"])]
-            idx = ask(f"Question {i} of {len(questions)}: {q['text']}", opts)
-            if idx is None:
-                print("  (enough answers - building now)")
-                break
-            opt = q["options"][idx]
-            answers.append({"id": q["id"], "text": q["text"], "label": opt["label"]})
+            continue
+        step = plan_call(answers)
+        if step.get("done"):
+            plan = step.get("plan")
+            break
+        q = step["question"]
+        opts = [("abcd"[j], o["label"], o["description"]) for j, o in enumerate(q["options"])]
+        idx = ask(f"Question {len(answers) + 1}: {q['text']}", opts)
+        if idx is None:
+            enough = True
+            step = plan_call(answers, enough)
+            plan = step.get("plan")
+            break
+        opt = q["options"][idx]
+        answers.append({"id": q["id"], "text": q["text"], "label": opt["label"]})
+
+    if not plan:
+        plan = {"title": idea.get("name"), "summary": "Planned.", "details": ""}
+    print("\n" + "=" * 52)
+    print(f"PLAN — {plan.get('title', idea.get('name'))}")
+    print(plan.get("summary", ""))
+    details = (plan.get("details") or "").strip()
+    if details:
+        print("---")
+        print(details)
+    print("=" * 52)
+
+    if auto_answers is None:
+        go = input("\nBuild it? (y/n): ").strip().lower()
+        if go not in ("y", "yes"):
+            print("Plan saved. Say 'build it' when ready.")
+            return 0
 
     print(f"\nStarting: {idea['name']}")
     import board
     board_key = board.add_idea(idea)
-    job = post("/api/start", {"idea": idea, "answers": answers, "playerName": "cli"})
+    job = post("/api/start", {"idea": idea, "answers": answers,
+                               "plan": plan, "playerName": "cli"})
     job_id = job["jobId"]
 
     last_stage = None

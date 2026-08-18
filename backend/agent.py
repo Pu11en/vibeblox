@@ -82,6 +82,9 @@ def build_prompt(job):
         if isinstance(a, dict) and (a.get("label") or a.get("choice")):
             q = a.get("text") or a.get("id") or "question"
             lines.append(f"Planning answer — {q}: {a.get('label') or a.get('choice')}")
+    if job.get("plan"):
+        plan = job["plan"]
+        lines.append(f"The agreed plan — {plan.get('title', '')}:\n{plan.get('details', '')}")
     user = "\n".join(lines)
     return SYSTEM_PROMPT, user
 
@@ -89,35 +92,58 @@ def build_prompt(job):
 
 # ---------------------------------------------------------------- planning questions
 
-QUESTIONS_SYSTEM = """You are the planning brain of a build machine. Given an
-idea, propose 2 to 6 plain questions that pin down exactly what to build so it
-can be built well in one pass. Requirements:
-- Each question: short, plain, elementary words. No emojis, no decoration.
-- Each question has 2 to 4 options; each option has a short label and a one-line
-  description. Options must be tappable (a letter), concrete, mutually distinct.
-- Ask what actually changes the build: scope, language, platform, integrations,
-  inputs/outputs, who it is for, what must work first. Do not pad with generic
-  questions when fewer are needed; do not stop early when more are needed.
+PLAN_SYSTEM = """You are a precise planning assistant for a build machine.
+You are planning a software project with the player, one plain question at a
+time. The goal: a plan detailed enough that the project can be built in one
+pass, with every important decision pinned down.
+
+Rules:
+- Questions: plain, elementary words. No emojis, no decoration. Each has 2-4
+  tappable options (label + one-line description).
+- There is NO question limit. Keep asking while anything important is
+  unresolved (scope, features, users, platform, data, monetization, what
+  must work first, what success looks like). Stop only when the plan is
+  genuinely complete and detailed.
+- NEVER ask the same question twice, and never ask about something already
+  answered.
+- When the player says enough is enough, finish the plan with what you have.
 Reply with ONLY a JSON object:
-{"questions": [{"id": "q1", "text": "...", "options": [
-  {"id": "o1", "label": "...", "description": "..."}]}]}"""
+- not done: {"done": false, "question": {"id": "q3", "text": "...", "options":
+  [{"id": "o1", "label": "...", "description": "..."}]}}
+- done: {"done": true, "plan": {"title": "...", "summary": "one plain
+  sentence", "details": "the full detailed plan, several plain lines:
+  what is being built, the features, the tech, the structure, what success
+  looks like"}}"""
 
 
-def generate_questions(idea):
-    """Brain-proposed planning questions for an idea (2-6). Falls back to the
-    static set if the brain fails."""
+def plan_step(idea, answers, enough=False):
+    """One step of the planning loop: brain asks the next question or, when
+    the plan is complete, returns the detailed plan. Falls back to the static
+    question set if the brain fails."""
     from questions import QUESTIONS
-    try:
-        result, _ = llm.json_call(
-            QUESTIONS_SYSTEM,
-            f"Idea: {idea.get('name')} — {idea.get('description', '')}",
-            max_tokens=1500)
-        qs = result.get("questions")
-        if isinstance(qs, list) and 1 <= len(qs) <= 8:
-            return qs
-    except Exception as e:
-        print(f"[p2b] question generation failed ({e}) - using static set", flush=True)
-    return QUESTIONS
+    user = [f"Idea: {idea.get('name')} — {idea.get('description', '')}"]
+    for a in answers:
+        if isinstance(a, dict) and (a.get("label") or a.get("choice")):
+            user.append(f"Answer — {a.get('text') or a.get('id')}: {a.get('label') or a.get('choice')}")
+    if enough:
+        user.append("The player says: enough questions. Finish the detailed plan now with what we have.")
+    for attempt in (1, 2):
+        try:
+            result, _ = llm.json_call(PLAN_SYSTEM, "\n".join(user), max_tokens=2500)
+            if result.get("done") is True and result.get("plan"):
+                return {"done": True, "plan": result["plan"]}
+            q = result.get("question")
+            if isinstance(q, dict) and q.get("text") and q.get("options"):
+                return {"done": False, "question": q}
+        except Exception as e:
+            if attempt == 1:
+                print(f"[p2b] planning attempt {attempt} failed ({e}) - retrying", flush=True)
+            else:
+                print(f"[p2b] planning failed ({e}) - using static question set", flush=True)
+    if not answers:
+        return {"done": False, "question": QUESTIONS[0]}
+    return {"done": True, "plan": {"title": idea.get("name"), "summary": "Planned.",
+                                    "details": "Plan completed with the answers given."}}
 
 
 # ---------------------------------------------------------------- checks
